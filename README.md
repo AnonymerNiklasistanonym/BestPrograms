@@ -35,6 +35,7 @@ TODO Write JSON configuration and javascript md writer
   - github-desktop[aur]
   - krita
   - visdata[aur]
+  - tldr: [shortcut for popular cli commands with tldr PROGRAM]
 - Office
   - gscan2pdf (openSource scanner gui linux): [use scanner]
   - hplip (printerManager gui linux): [manage hp printer even over network]
