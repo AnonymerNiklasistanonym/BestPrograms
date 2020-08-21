@@ -15,15 +15,19 @@ TODO Write JSON configuration and javascript md writer
   - mpv (openSource videoPlayer gui linux windows)
   - vlc (openSource videoPlayer gui linux windows)
   - handbrake (openSource videoConverter gui linux windows): [backup DVDs and BluRays]
+  - shotcut (openSource videoEditor gui linux windows)
 - Images
   - inkscape (openSource vectorGraphicsEditor gui linux windows)
-  - paint.net (openSource imageEditor gui linux windows alternative=pinta[aur])
-  - gThumb
+  - paint.net (freeware imageEditor gui windows linux_alternative=pinta)
+  - pinta (openSource imageEditor gui linux aur)
+  - gThumb (openSource imageEditor gui linux windows)
+  - darktable (openSource imageEditor gui linux windows)
 - Graphs
   - dia (openSource diagramEditor gui linux windows)
 - Texteditor
   - code (openSource textEditor gui linux windows nightly=visual-studio-code-insiders)
   - gedit (openSource textEditor gui linux)
+  - typora (freeware textEditor gui linux windows)
 - Other
   - Filezilla (openSource networkStorageClient sftp ftp gui linux windows)
   - htop (openSource hardwareMonitor linux)
@@ -36,6 +40,8 @@ TODO Write JSON configuration and javascript md writer
   - krita
   - visdata[aur]
   - tldr: [shortcut for popular cli commands with tldr PROGRAM]
+  - balena etcher
 - Office
   - gscan2pdf (openSource scanner gui linux): [use scanner]
   - hplip (printerManager gui linux): [manage hp printer even over network]
+  - libre office (openSource)
