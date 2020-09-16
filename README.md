@@ -40,7 +40,7 @@ TODO Write JSON configuration and javascript md writer
   - baobab
   - github-desktop[aur]
   - krita
-  - visdata[aur]
+  - visidata[aur]
   - tldr: [shortcut for popular cli commands with tldr PROGRAM]
   - balena etcher
   - xscreensaver
@@ -48,3 +48,5 @@ TODO Write JSON configuration and javascript md writer
   - gscan2pdf (openSource scanner gui linux): [use scanner]
   - hplip (printerManager gui linux): [manage hp printer even over network]
   - libre office (openSource)
+- SQL
+  - mysql-workbench
