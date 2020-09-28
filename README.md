@@ -8,6 +8,7 @@ TODO Write JSON configuration and javascript md writer
 - Audio
   - audacity (openSource audioEditor gui linux windows)
   - playerctl (openSource audioController linux): [control audio playback via command line]
+  - noisetorch (openSource audio gui linux): [microphone ambient sound suppresser]
 - 3D Modelling
   - blender (openSource 3D gui linux windows)
 - Web
@@ -48,5 +49,6 @@ TODO Write JSON configuration and javascript md writer
   - gscan2pdf (openSource scanner gui linux): [use scanner]
   - hplip (printerManager gui linux): [manage hp printer even over network]
   - libre office (openSource)
+  - system-config-printer: [cups desktop interface]
 - SQL
   - mysql-workbench
