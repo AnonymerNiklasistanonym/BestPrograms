@@ -47,6 +47,7 @@ TODO Write JSON configuration and javascript md writer
 - Communication
   - skype-preview
   - discord
+  - discover-overlay-git (openSource gui linux): Discord overlay for Linux PCs
   - slack
   - teamspeak3
 - IDEs
