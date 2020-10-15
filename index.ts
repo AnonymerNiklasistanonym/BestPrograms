@@ -5,6 +5,7 @@ import * as path from "path";
 import { performance } from "perf_hooks";
 
 import * as render from "./render";
+import { getAllJSDocTags } from "typescript";
 
 
 /** Input file path to data file */
@@ -18,6 +19,15 @@ const readmeBestProgramsIndicators = {
     begin: `[//]: # (Best Programs begin)`,
     end: `[//]: # (Best Programs end)`
 };
+
+/** Sort JSON object keys */
+const sortObject = <T>(unsorted: T): T => {
+    const sorted = {};
+    Object.keys(unsorted).sort().forEach(key => {
+      sorted[key] = unsorted[key];
+    });
+    return sorted as T;
+}
 
 (async (): Promise<void> => {
 
@@ -43,6 +53,30 @@ const readmeBestProgramsIndicators = {
     // Write table to local file
     await fs.writeFile(inputOutputBestProgramsReadmeFilePath, readmeContentBeforeSection + readmeBestProgramsIndicators.begin + "\n" + bestProgramsContent + "\n" + "\n" + readmeBestProgramsIndicators.end + readmeContentAfterSection);
     console.info(`README was updated in ${performance.now()} ms using ${inputBestProgramsFilePath}`);
+
+    // If enabled it also reorders the best programs JSON file
+    const orderBestProgramsJsonFile = true;
+    if (orderBestProgramsJsonFile) {
+        const newData: BestPrograms.BestPrograms = { ...data };
+        newData.programs = data.programs.sort((a, b) => {
+            if (a.category < b.category) {
+                return -1;
+            } else if (a.category > b.category) {
+                return 1;
+            } else {
+                if (a.name < b.name) {
+                    return -1;
+                }
+                return a.name > b.name ? 1 : 0;
+            }
+        }).map(unordered => {
+            if (unordered.tags) {
+                unordered.tags = unordered.tags.sort();
+            }
+            return sortObject(unordered);
+        })
+        await fs.writeFile(inputBestProgramsFilePath, JSON.stringify(newData, undefined, 4));
+    }
 
 })().catch(err => {
     console.error(err);

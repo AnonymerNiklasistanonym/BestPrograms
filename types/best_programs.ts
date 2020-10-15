@@ -71,6 +71,10 @@ export interface Program {
      */
     pacman?: string;
     /**
+     * The pacman group ID
+     */
+    pacmanGroup?: string;
+    /**
      * The pacman AUR ID
      */
     pacmanAur?: string;
@@ -132,6 +136,10 @@ export interface PackageManagerInfo {
    * The pacman ID
    */
   pacman?: string;
+  /**
+   * The pacman group ID
+   */
+  pacmanGroup?: string;
   /**
    * The pacman AUR ID
    */

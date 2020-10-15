@@ -49,7 +49,7 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
                 tags.push("GUI");
             }
             if (program.tags) {
-                tags.push(...program.tags);
+                tags.push(...program.tags.sort());
             }
 
             let setupString = "";
@@ -66,6 +66,9 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
             if (program.packageManagerInfo) {
                 if (program.packageManagerInfo.pacman) {
                     packageManagerString += `\n    - Pacman: [\`${program.packageManagerInfo.pacman}\`](https://www.archlinux.org/packages/?sort=&q=${program.packageManagerInfo.pacman})`;
+                }
+                if (program.packageManagerInfo.pacmanGroup) {
+                    packageManagerString += `\n    - Pacman [GROUP]: [\`${program.packageManagerInfo.pacmanGroup}\`](https://www.archlinux.org/groups/x86_64/${program.packageManagerInfo.pacmanGroup})`;
                 }
                 if (program.packageManagerInfo.pacmanAur) {
                     packageManagerString += `\n    - Pacman [AUR]: [\`${program.packageManagerInfo.pacmanAur}\`](https://aur.archlinux.org/packages/?O=0&K=${program.packageManagerInfo.pacmanAur})`;

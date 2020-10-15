@@ -2,6 +2,25 @@
     "$schema": "./types/best_programs.schema.json",
     "programs": [
         {
+            "category": "3D Computer Graphics",
+            "description": "A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games",
+            "gui": true,
+            "name": "Blender",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "blender"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "modelling",
+                "rendering"
+            ],
+            "website": "https://github.com/lawl/NoiseTorch"
+        },
+        {
             "category": "Audio",
             "description": "Edit/Mix audio tracks",
             "gui": true,
@@ -36,8 +55,8 @@
             "setup": "To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded",
             "tags": [
                 "microphone",
-                "real-time",
-                "noise-suppression"
+                "noise-suppression",
+                "real-time"
             ],
             "website": "https://github.com/lawl/NoiseTorch"
         },
@@ -57,178 +76,6 @@
                 "media-player-control"
             ],
             "website": "https://github.com/altdesktop/playerctl"
-        },
-        {
-            "category": "3D Computer Graphics",
-            "description": "A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games",
-            "gui": true,
-            "name": "Blender",
-            "openSource": "GPL",
-            "packageManagerInfo": {
-                "pacman": "blender"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "modelling",
-                "rendering"
-            ],
-            "website": "https://github.com/lawl/NoiseTorch"
-        },
-        {
-            "category": "Web",
-            "description": "A browser",
-            "gui": true,
-            "name": "Firefox",
-            "openSource": "GPL+LGPL+MPL",
-            "packageManagerInfo": {
-                "pacman": "firefox",
-                "pacmanAurNightly": "firefox-nightly"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "web-browser"
-            ],
-            "website": "https://www.mozilla.org/de/firefox/new/"
-        },
-        {
-            "category": "Video",
-            "description": "A animalistic video player",
-            "gui": true,
-            "name": "MPV",
-            "openSource": "GPL3",
-            "packageManagerInfo": {
-                "pacman": "mpv"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "audio-player",
-                "video-player"
-            ],
-            "website": "https://mpv.io/"
-        },
-        {
-            "category": "Video",
-            "description": "A feature rich video player",
-            "gui": true,
-            "name": "VLC Media Player",
-            "openSource": "GPL2+LGPL2.1",
-            "packageManagerInfo": {
-                "pacman": "vlc"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "audio-player",
-                "video-player"
-            ],
-            "website": "https://mpv.io/"
-        },
-        {
-            "category": "Video",
-            "description": "A video converter",
-            "gui": true,
-            "name": "Handbrake",
-            "openSource": "GPL",
-            "packageManagerInfo": {
-                "pacman": "handbrake"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "video-compressor",
-                "video-converter"
-            ],
-            "website": "https://handbrake.fr"
-        },
-        {
-            "category": "Video",
-            "description": "A video editor",
-            "gui": true,
-            "name": "Shotcut",
-            "openSource": "GPL3",
-            "packageManagerInfo": {
-                "pacman": "shotcut"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "video-compressor",
-                "video-converter"
-            ],
-            "website": "https://www.shotcut.org"
-        },
-        {
-            "category": "Video",
-            "description": "A command-line program to download videos from YouTube.com and a few more sites",
-            "gui": true,
-            "name": "youtube-dl",
-            "openSource": "The Unlicense",
-            "packageManagerInfo": {
-                "pacman": "youtube-dl"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "video-downloader"
-            ],
-            "website": "https://ytdl-org.github.io/youtube-dl/"
-        },
-        {
-            "category": "Video",
-            "description": "A live streaming toolbox (YouTube, Twitch, ...)",
-            "gui": true,
-            "name": "OBS",
-            "openSource": "GPL2",
-            "packageManagerInfo": {
-                "pacman": "obs-studio"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "video-streaming",
-                "live-streaming"
-            ],
-            "website": "https://obsproject.com"
-        },
-        {
-            "category": "Office",
-            "description": "Free office suite",
-            "gui": true,
-            "name": "Libre Office",
-            "openSource": "LGPL3",
-            "packageManagerInfo": {
-                "pacman": "libreoffice-fresh"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "office-suit",
-                "document-editor",
-                "presentation-editor",
-                "table-editor"
-            ],
-            "website": "https://www.libreoffice.org/"
         },
         {
             "category": "Command Line",
@@ -266,24 +113,6 @@
             "website": "https://www.visidata.org"
         },
         {
-            "category": "Printing/Scanning",
-            "description": "A CUPS printer configuration tool and status applet",
-            "gui": true,
-            "name": "system-config-printer",
-            "openSource": "GPL",
-            "packageManagerInfo": {
-                "pacman": "system-config-printer"
-            },
-            "platformInfo": {
-                "linux": true
-            },
-            "tags": [
-                "printer-manager",
-                "cups"
-            ],
-            "website": "https://github.com/OpenPrinting/system-config-printer"
-        },
-        {
             "category": "Databases",
             "description": "Manage/Read SQL databases",
             "gui": true,
@@ -299,6 +128,230 @@
                 "sql"
             ],
             "website": "https://www.mysql.com/de/products/workbench/"
+        },
+        {
+            "category": "Office",
+            "description": "Free office suite",
+            "gui": true,
+            "name": "Libre Office",
+            "openSource": "LGPL3",
+            "packageManagerInfo": {
+                "pacman": "libreoffice-fresh"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "document-editor",
+                "office-suit",
+                "presentation-editor",
+                "table-editor"
+            ],
+            "website": "https://www.libreoffice.org/"
+        },
+        {
+            "category": "Office",
+            "description": "TeX Live suite",
+            "gui": true,
+            "name": "TeX Live suite",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacmanGroup": "texlive-most"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "document-editor",
+                "office-suit",
+                "presentation-editor"
+            ],
+            "website": "http://tug.org/texlive/"
+        },
+        {
+            "category": "Printing/Scanning",
+            "description": "A GUI with OCR capability to produce PDFs or DjVus from scanned documents",
+            "gui": true,
+            "name": "gscan2pdf",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "gscan2pdf"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "scanner-manager"
+            ],
+            "website": "http://gscan2pdf.sourceforge.net/"
+        },
+        {
+            "category": "Printing/Scanning",
+            "description": "Provides drivers for HP printers and manages them",
+            "gui": true,
+            "name": "hplip",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "hplip"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "printer-manager"
+            ],
+            "website": "https://hplipopensource.com"
+        },
+        {
+            "category": "Printing/Scanning",
+            "description": "A CUPS printer configuration tool and status applet",
+            "gui": true,
+            "name": "system-config-printer",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "system-config-printer"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "cups",
+                "printer-manager"
+            ],
+            "website": "https://github.com/OpenPrinting/system-config-printer"
+        },
+        {
+            "category": "Video",
+            "description": "A video converter",
+            "gui": true,
+            "name": "Handbrake",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "handbrake"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-compressor",
+                "video-converter"
+            ],
+            "website": "https://handbrake.fr"
+        },
+        {
+            "category": "Video",
+            "description": "A animalistic video player",
+            "gui": true,
+            "name": "MPV",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "mpv"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-player",
+                "video-player"
+            ],
+            "website": "https://mpv.io/"
+        },
+        {
+            "category": "Video",
+            "description": "A live streaming toolbox (YouTube, Twitch, ...)",
+            "gui": true,
+            "name": "OBS",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "obs-studio"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "live-streaming",
+                "video-streaming"
+            ],
+            "website": "https://obsproject.com"
+        },
+        {
+            "category": "Video",
+            "description": "A video editor",
+            "gui": true,
+            "name": "Shotcut",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "shotcut"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-compressor",
+                "video-converter"
+            ],
+            "website": "https://www.shotcut.org"
+        },
+        {
+            "category": "Video",
+            "description": "A feature rich video player",
+            "gui": true,
+            "name": "VLC Media Player",
+            "openSource": "GPL2+LGPL2.1",
+            "packageManagerInfo": {
+                "pacman": "vlc"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-player",
+                "video-player"
+            ],
+            "website": "https://mpv.io/"
+        },
+        {
+            "category": "Video",
+            "description": "A command-line program to download videos from YouTube.com and a few more sites",
+            "gui": true,
+            "name": "youtube-dl",
+            "openSource": "The Unlicense",
+            "packageManagerInfo": {
+                "pacman": "youtube-dl"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-downloader"
+            ],
+            "website": "https://ytdl-org.github.io/youtube-dl/"
+        },
+        {
+            "category": "Web",
+            "description": "A browser",
+            "gui": true,
+            "name": "Firefox",
+            "openSource": "GPL+LGPL+MPL",
+            "packageManagerInfo": {
+                "pacman": "firefox",
+                "pacmanAurNightly": "firefox-nightly"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "web-browser"
+            ],
+            "website": "https://www.mozilla.org/de/firefox/new/"
         }
     ]
 }

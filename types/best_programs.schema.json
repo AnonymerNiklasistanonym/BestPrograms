@@ -10,6 +10,10 @@
                     "description": "The pacman ID",
                     "type": "string"
                 },
+                "pacmanGroup": {
+                    "description": "The pacman group ID",
+                    "type": "string"
+                },
                 "pacmanAur": {
                     "description": "The pacman AUR ID",
                     "type": "string"

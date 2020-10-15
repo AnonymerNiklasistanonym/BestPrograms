@@ -11,7 +11,7 @@ Repo for a list of the best programs (Linux + Windows)
 - Audio
   - [Audacity](https://www.audacityteam.org/) (`Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`): Edit/Mix audio tracks
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
-  - [Noisetorch](https://github.com/lawl/NoiseTorch) (`Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `real-time`, `noise-suppression`): Real-time microphone noise suppression
+  - [Noisetorch](https://github.com/lawl/NoiseTorch) (`Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `noise-suppression`, `real-time`): Real-time microphone noise suppression
     - Setup: To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded
     - Bugs: If a source changes or an output is changed everything needs to be initialized again
     - Pacman [AUR]: [`noisetorch-bin`](https://aur.archlinux.org/packages/?O=0&K=noisetorch-bin)
@@ -26,17 +26,23 @@ Repo for a list of the best programs (Linux + Windows)
   - [MySQL Workbench](https://www.mysql.com/de/products/workbench/) (`Linux`, `OpenSource-GPL2`, `GUI`, `sql`): Manage/Read SQL databases
     - Pacman: [`mysql-workbench`](https://www.archlinux.org/packages/?sort=&q=mysql-workbench)
 - Office
-  - [Libre Office](https://www.libreoffice.org/) (`Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `office-suit`, `document-editor`, `presentation-editor`, `table-editor`): Free office suite
+  - [Libre Office](https://www.libreoffice.org/) (`Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`): Free office suite
     - Pacman: [`libreoffice-fresh`](https://www.archlinux.org/packages/?sort=&q=libreoffice-fresh)
+  - [TeX Live suite](http://tug.org/texlive/) (`Linux`, `OpenSource-GPL`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`): TeX Live suite
+    - Pacman [GROUP]: [`texlive-most`](https://www.archlinux.org/groups/x86_64/texlive-most)
 - Printing/Scanning
-  - [system-config-printer](https://github.com/OpenPrinting/system-config-printer) (`Linux`, `OpenSource-GPL`, `GUI`, `printer-manager`, `cups`): A CUPS printer configuration tool and status applet
+  - [gscan2pdf](http://gscan2pdf.sourceforge.net/) (`Linux`, `OpenSource-GPL`, `GUI`, `scanner-manager`): A GUI with OCR capability to produce PDFs or DjVus from scanned documents
+    - Pacman: [`gscan2pdf`](https://www.archlinux.org/packages/?sort=&q=gscan2pdf)
+  - [hplip](https://hplipopensource.com) (`Linux`, `OpenSource-GPL2`, `GUI`, `printer-manager`): Provides drivers for HP printers and manages them
+    - Pacman: [`hplip`](https://www.archlinux.org/packages/?sort=&q=hplip)
+  - [system-config-printer](https://github.com/OpenPrinting/system-config-printer) (`Linux`, `OpenSource-GPL`, `GUI`, `cups`, `printer-manager`): A CUPS printer configuration tool and status applet
     - Pacman: [`system-config-printer`](https://www.archlinux.org/packages/?sort=&q=system-config-printer)
 - Video
   - [Handbrake](https://handbrake.fr) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `video-compressor`, `video-converter`): A video converter
     - Pacman: [`handbrake`](https://www.archlinux.org/packages/?sort=&q=handbrake)
   - [MPV](https://mpv.io/) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `audio-player`, `video-player`): A animalistic video player
     - Pacman: [`mpv`](https://www.archlinux.org/packages/?sort=&q=mpv)
-  - [OBS](https://obsproject.com) (`Linux`, `Windows`, `OpenSource-GPL2`, `GUI`, `video-streaming`, `live-streaming`): A live streaming toolbox (YouTube, Twitch, ...)
+  - [OBS](https://obsproject.com) (`Linux`, `Windows`, `OpenSource-GPL2`, `GUI`, `live-streaming`, `video-streaming`): A live streaming toolbox (YouTube, Twitch, ...)
     - Pacman: [`obs-studio`](https://www.archlinux.org/packages/?sort=&q=obs-studio)
   - [Shotcut](https://www.shotcut.org) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-compressor`, `video-converter`): A video editor
     - Pacman: [`shotcut`](https://www.archlinux.org/packages/?sort=&q=shotcut)
@@ -91,9 +97,3 @@ Repo for a list of the best programs (Linux + Windows)
 - Other
   - musescore
   - krita
-- Office
-  - gscan2pdf (openSource scanner gui linux): [use scanner]
-  - hplip (printerManager gui linux): [manage hp printer even over network]
-  - libre office (openSource)
-  - system-config-printer: [cups desktop interface]
-  - texlive-most (group)
