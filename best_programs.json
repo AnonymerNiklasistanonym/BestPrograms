@@ -25,7 +25,10 @@
             "description": "Edit/Mix audio tracks",
             "gui": true,
             "name": "Audacity",
-            "openSource": "CCPL+GPL2",
+            "openSource": [
+                "CCPL",
+                "GPL2"
+            ],
             "packageManagerInfo": {
                 "pacman": "audacity"
             },
@@ -725,7 +728,10 @@
             "description": "A feature rich video player",
             "gui": true,
             "name": "VLC Media Player",
-            "openSource": "GPL2+LGPL2.1",
+            "openSource": [
+                "GPL2",
+                "LGPL2.1"
+            ],
             "packageManagerInfo": {
                 "pacman": "vlc"
             },
@@ -744,7 +750,7 @@
             "description": "A command-line program to download videos from YouTube.com and a few more sites",
             "gui": true,
             "name": "youtube-dl",
-            "openSource": "The Unlicense",
+            "openSource": "Unlicense",
             "packageManagerInfo": {
                 "pacman": "youtube-dl"
             },
@@ -762,7 +768,11 @@
             "description": "A browser",
             "gui": true,
             "name": "Firefox",
-            "openSource": "GPL+LGPL+MPL",
+            "openSource": [
+                "GPL",
+                "LGPL",
+                "MPL"
+            ],
             "packageManagerInfo": {
                 "pacman": "firefox",
                 "pacmanAurNightly": "firefox-nightly"

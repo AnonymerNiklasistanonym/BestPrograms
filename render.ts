@@ -37,7 +37,7 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
             }
             if (program.openSource) {
                 if (program.openSource !== true) {
-                    tags.push(`OpenSource-${program.openSource}`);
+                    tags.push(`OpenSource-${Array.isArray(program.openSource) ? program.openSource.join("+") : program.openSource}`);
                 } else {
                     tags.push("OpenSource");
                 }

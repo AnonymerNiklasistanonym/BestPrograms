@@ -51,16 +51,32 @@ export interface Program {
   openSource?:
     | boolean
     | (
+        | "APACHE"
+        | "BSD"
         | "MIT"
         | "GPL"
         | "GPL2"
         | "GPL3"
+        | "LGPL"
         | "LGPL2.1"
         | "LGPL3"
-        | "GPL2+LGPL2.1"
-        | "GPL+LGPL+MPL"
-        | "CCPL+GPL2"
-        | "The Unlicense"
+        | "MPL"
+        | "CCPL"
+        | "Unlicense"
+      )[]
+    | (
+        | "APACHE"
+        | "BSD"
+        | "MIT"
+        | "GPL"
+        | "GPL2"
+        | "GPL3"
+        | "LGPL"
+        | "LGPL2.1"
+        | "LGPL3"
+        | "MPL"
+        | "CCPL"
+        | "Unlicense"
       );
   /**
    * Package Manager information for this program

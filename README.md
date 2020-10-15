@@ -13,7 +13,7 @@ Repo for a list of the best programs (Linux + Windows)
 - Audio
   - [Audacity](https://www.audacityteam.org): Edit/Mix audio tracks
 
-    `Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`
+    `Linux`, `Windows`, `OpenSource-CCPL+++GPL2`, `GUI`, `audio-editor`
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
   - [Noisetorch](https://github.com/lawl/NoiseTorch): Real-time microphone noise suppression
 
@@ -178,16 +178,16 @@ Repo for a list of the best programs (Linux + Windows)
     - Pacman: [`shotcut`](https://www.archlinux.org/packages/?sort=&q=shotcut)
   - [VLC Media Player](https://www.videolan.org/vlc): A feature rich video player
 
-    `Linux`, `Windows`, `OpenSource-GPL2+LGPL2.1`, `GUI`, `audio-player`, `video-player`
+    `Linux`, `Windows`, `OpenSource-GPL2+++LGPL2.1`, `GUI`, `audio-player`, `video-player`
     - Pacman: [`vlc`](https://www.archlinux.org/packages/?sort=&q=vlc)
   - [youtube-dl](https://ytdl-org.github.io/youtube-dl): A command-line program to download videos from YouTube.com and a few more sites
 
-    `Linux`, `Windows`, `OpenSource-The Unlicense`, `GUI`, `video-downloader`
+    `Linux`, `Windows`, `OpenSource-Unlicense`, `GUI`, `video-downloader`
     - Pacman: [`youtube-dl`](https://www.archlinux.org/packages/?sort=&q=youtube-dl)
 - Web
   - [Firefox](https://www.mozilla.org/de/firefox/new): A browser
 
-    `Linux`, `Windows`, `OpenSource-GPL+LGPL+MPL`, `GUI`, `web-browser`
+    `Linux`, `Windows`, `OpenSource-GPL+++LGPL+++MPL`, `GUI`, `web-browser`
     - Pacman: [`firefox`](https://www.archlinux.org/packages/?sort=&q=firefox)
     - Pacman [AUR NIGHTLY]: [`firefox-nightly`](https://aur.archlinux.org/packages/?O=0&K=firefox-nightly)
 
