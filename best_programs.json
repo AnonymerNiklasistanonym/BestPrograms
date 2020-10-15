@@ -36,7 +36,7 @@
             "tags": [
                 "audio-editor"
             ],
-            "website": "https://www.audacityteam.org/"
+            "website": "https://www.audacityteam.org"
         },
         {
             "bugs": "If a source changes or an output is changed everything needs to be initialized again",
@@ -113,6 +113,105 @@
             "website": "https://www.visidata.org"
         },
         {
+            "category": "Communication",
+            "description": "Video/Audio/Text messaging service that can share your screen",
+            "gui": true,
+            "name": "Discord",
+            "openSource": false,
+            "packageManagerInfo": {
+                "pacman": "discord"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-call",
+                "chat",
+                "screen-share",
+                "video-call"
+            ],
+            "website": "https://discordapp.com"
+        },
+        {
+            "category": "Communication",
+            "description": "Discord overlay for linux",
+            "gui": true,
+            "name": "Discord Overlay 'Discover'",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacmanAurGit": "discover-overlay-git"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "screen-overlay"
+            ],
+            "website": "https://github.com/trigg/Discover"
+        },
+        {
+            "category": "Communication",
+            "description": "Video/Audio/Text messaging service that can share your screen from Microsoft",
+            "gui": true,
+            "name": "Skype",
+            "openSource": false,
+            "packageManagerInfo": {
+                "pacmanAur": "skype-preview"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-call",
+                "chat",
+                "screen-share",
+                "video-call"
+            ],
+            "website": "http://www.skype.com"
+        },
+        {
+            "category": "Communication",
+            "description": "Video/Audio/Text messaging service that can share your screen",
+            "gui": true,
+            "name": "Slack",
+            "openSource": false,
+            "packageManagerInfo": {
+                "pacmanAur": "slack-desktop"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-call",
+                "chat",
+                "screen-share",
+                "video-call"
+            ],
+            "website": "https://slack.com/downloads"
+        },
+        {
+            "category": "Communication",
+            "description": "Audio/Text messaging service",
+            "gui": true,
+            "name": "Teamspeak",
+            "openSource": false,
+            "packageManagerInfo": {
+                "pacman": "teamspeak3"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-call",
+                "chat"
+            ],
+            "website": "http://www.teamspeak.com"
+        },
+        {
             "category": "Databases",
             "description": "Manage/Read SQL databases",
             "gui": true,
@@ -127,7 +226,223 @@
             "tags": [
                 "sql"
             ],
-            "website": "https://www.mysql.com/de/products/workbench/"
+            "website": "https://www.mysql.com/de/products/workbench"
+        },
+        {
+            "bugs": "The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown",
+            "category": "Desktop Environment",
+            "description": "Extended screensaver/locker for xserver environments",
+            "gui": true,
+            "name": "xscreensaver",
+            "openSource": "BSD",
+            "packageManagerInfo": {
+                "pacman": "xscreensaver"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "screensaver",
+                "xserver"
+            ],
+            "website": "https://www.jwz.org/xscreensaver"
+        },
+        {
+            "category": "Development",
+            "description": "GUI for git repository managing that is optimized for GitHub repositories",
+            "gui": true,
+            "name": "GitHub Desktop",
+            "openSource": "MIT",
+            "packageManagerInfo": {
+                "pacmanAur": "github-desktop"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "git",
+                "git-manager",
+                "github"
+            ],
+            "website": "https://desktop.github.com"
+        },
+        {
+            "category": "Development",
+            "description": "Java (Android) IDE",
+            "gui": true,
+            "name": "Intellij Idea Community",
+            "openSource": "APACHE",
+            "packageManagerInfo": {
+                "pacman": "intellij-idea-community-edition"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "android",
+                "debugging",
+                "java",
+                "text-editor"
+            ],
+            "website": "https://www.jetbrains.com/idea"
+        },
+        {
+            "category": "Development",
+            "description": "Python IDE",
+            "gui": true,
+            "name": "Pycharm Community",
+            "openSource": "APACHE",
+            "packageManagerInfo": {
+                "pacman": "pycharm-community-edition"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "debugging",
+                "python",
+                "text-editor"
+            ],
+            "website": "https://www.jetbrains.com/pycharm"
+        },
+        {
+            "category": "Development",
+            "description": "C++ (Qt) development environment",
+            "gui": true,
+            "name": "QtCreator",
+            "openSource": "LGPL",
+            "packageManagerInfo": {
+                "pacman": "qtcreator"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "c++",
+                "debugging",
+                "qt",
+                "text-editor"
+            ],
+            "website": "https://www.qt.io"
+        },
+        {
+            "category": "Development",
+            "description": "Markdown text editor with PDF/HTML export and LaTeX Math support",
+            "gui": true,
+            "name": "Typora",
+            "openSource": false,
+            "packageManagerInfo": {
+                "pacmanAur": "typora"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "markdown",
+                "text-editor"
+            ],
+            "website": "https://typora.io"
+        },
+        {
+            "category": "Development",
+            "description": "Open Source build of Visual Studio Code (vscode) editor that is able to provide development environments for many languages",
+            "gui": true,
+            "name": "VSCode",
+            "openSource": "MIT",
+            "packageManagerInfo": {
+                "pacman": "code"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "debugging",
+                "extensions",
+                "javascript",
+                "text-editor",
+                "typescript",
+                "web-development"
+            ],
+            "website": "https://github.com/microsoft/vscode"
+        },
+        {
+            "category": "Development",
+            "description": "Simple text editor",
+            "gui": true,
+            "name": "gedit",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "gedit"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "text-editor"
+            ],
+            "website": "https://wiki.gnome.org/Apps/Gedit"
+        },
+        {
+            "category": "Graphs",
+            "description": "End of life graph creator for UML/ERM/... that also has a cli export interface",
+            "gui": true,
+            "name": "dia",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "dia"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "class-diagrams",
+                "erm",
+                "uml"
+            ],
+            "website": "http://live.gnome.org/Dia"
+        },
+        {
+            "category": "Images",
+            "description": "Edit and paint images",
+            "gui": true,
+            "name": "Krita",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "krita"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "draw"
+            ],
+            "website": "https://krita.org"
+        },
+        {
+            "category": "Music",
+            "description": "A scorewriter",
+            "gui": true,
+            "name": "MuseScore",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "musescore"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "scorewriter"
+            ],
+            "website": "https://musescore.org"
         },
         {
             "category": "Office",
@@ -148,7 +463,7 @@
                 "presentation-editor",
                 "table-editor"
             ],
-            "website": "https://www.libreoffice.org/"
+            "website": "https://www.libreoffice.org"
         },
         {
             "category": "Office",
@@ -167,7 +482,7 @@
                 "office-suit",
                 "presentation-editor"
             ],
-            "website": "http://tug.org/texlive/"
+            "website": "http://tug.org/texlive"
         },
         {
             "category": "Printing/Scanning",
@@ -184,7 +499,7 @@
             "tags": [
                 "scanner-manager"
             ],
-            "website": "http://gscan2pdf.sourceforge.net/"
+            "website": "http://gscan2pdf.sourceforge.net"
         },
         {
             "category": "Printing/Scanning",
@@ -222,6 +537,114 @@
             "website": "https://github.com/OpenPrinting/system-config-printer"
         },
         {
+            "category": "Storage",
+            "description": "FTP, FTPS and SFTP client",
+            "gui": true,
+            "name": "Filezilla",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "filezilla"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "file-system-usage-monitor"
+            ],
+            "website": "https://filezilla-project.org"
+        },
+        {
+            "category": "Storage",
+            "description": "Visualize files and their sizes of a drive in a pie graph",
+            "gui": true,
+            "name": "baobab",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "baobab"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "file-system-usage-monitor"
+            ],
+            "website": "https://wiki.gnome.org/Apps/DiskUsageAnalyzer"
+        },
+        {
+            "category": "Storage",
+            "description": "Disk Management Utility to get connected drives, their partitions and more details",
+            "gui": true,
+            "name": "gnome-disk-utility",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "gnome-disk-utility"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "file-system-usage-monitor",
+                "partition-manager"
+            ],
+            "website": "https://gitlab.gnome.org/GNOME/gnome-disk-utility"
+        },
+        {
+            "category": "Storage",
+            "description": "Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives",
+            "gui": true,
+            "name": "smartmontools",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "smartmontools"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "setup": "Get SSD drive health/stats via `sudo smartctl -t long -a /dev/nvme0n1`",
+            "tags": [
+                "file-system-usage-monitor",
+                "ssd-health"
+            ],
+            "website": "http://smartmontools.sourceforge.net"
+        },
+        {
+            "category": "System",
+            "description": "Burn ISO files for operating systems to USB sticks",
+            "gui": true,
+            "name": "Balena Etcher",
+            "openSource": "APACHE",
+            "packageManagerInfo": {
+                "pacmanAur": "balena-etcher"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "iso-burner"
+            ],
+            "website": "https://balena.io/etcher"
+        },
+        {
+            "category": "System",
+            "description": "Task Manager",
+            "gui": false,
+            "name": "htop",
+            "openSource": "MIT",
+            "packageManagerInfo": {
+                "pacman": "htop"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "hardware-monitor",
+                "task-manager"
+            ],
+            "website": "https://htop.dev"
+        },
+        {
             "category": "Video",
             "description": "A video converter",
             "gui": true,
@@ -257,7 +680,7 @@
                 "audio-player",
                 "video-player"
             ],
-            "website": "https://mpv.io/"
+            "website": "https://mpv.io"
         },
         {
             "category": "Video",
@@ -314,7 +737,7 @@
                 "audio-player",
                 "video-player"
             ],
-            "website": "https://mpv.io/"
+            "website": "https://www.videolan.org/vlc"
         },
         {
             "category": "Video",
@@ -332,7 +755,7 @@
             "tags": [
                 "video-downloader"
             ],
-            "website": "https://ytdl-org.github.io/youtube-dl/"
+            "website": "https://ytdl-org.github.io/youtube-dl"
         },
         {
             "category": "Web",
@@ -351,7 +774,7 @@
             "tags": [
                 "web-browser"
             ],
-            "website": "https://www.mozilla.org/de/firefox/new/"
+            "website": "https://www.mozilla.org/de/firefox/new"
         }
     ]
 }

@@ -83,10 +83,13 @@
                         },
                         {
                             "enum": [
+                                "APACHE",
+                                "BSD",
                                 "MIT",
                                 "GPL",
                                 "GPL2",
                                 "GPL3",
+                                "LGPL",
                                 "LGPL2.1",
                                 "LGPL3",
                                 "GPL2+LGPL2.1",
