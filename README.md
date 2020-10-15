@@ -6,106 +6,227 @@ Repo for a list of the best programs (Linux + Windows)
 
 [//]: # (Best Programs begin)
 - 3D Computer Graphics
-  - [Blender](https://github.com/lawl/NoiseTorch) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `modelling`, `rendering`): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games
+  - [Blender](https://github.com/lawl/NoiseTorch): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games$
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `modelling`, `rendering`
+{setupString}
     - Pacman: [`blender`](https://www.archlinux.org/packages/?sort=&q=blender)
 - Audio
-  - [Audacity](https://www.audacityteam.org) (`Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`): Edit/Mix audio tracks
+  - [Audacity](https://www.audacityteam.org): Edit/Mix audio tracks$
+
+    `Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`
+{setupString}
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
-  - [Noisetorch](https://github.com/lawl/NoiseTorch) (`Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `noise-suppression`, `real-time`): Real-time microphone noise suppression
-    - Setup: To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded
+  - [Noisetorch](https://github.com/lawl/NoiseTorch): Real-time microphone noise suppression$
+
+    `Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `noise-suppression`, `real-time`
+{setupString}
     - Bugs: If a source changes or an output is changed everything needs to be initialized again
     - Pacman [AUR]: [`noisetorch-bin`](https://aur.archlinux.org/packages/?O=0&K=noisetorch-bin)
-  - [Playerctl](https://github.com/altdesktop/playerctl) (`Linux`, `OpenSource-LGPL3`, `media-player-control`): Control global media player playback via the command line
+  - [Playerctl](https://github.com/altdesktop/playerctl): Control global media player playback via the command line$
+
+    `Linux`, `OpenSource-LGPL3`, `media-player-control`
+{setupString}
     - Pacman: [`playerctl`](https://www.archlinux.org/packages/?sort=&q=playerctl)
 - Command Line
-  - [tldr](https://github.com/tldr-pages/tldr-python-client) (`Linux`, `OpenSource-MIT`, `cli-helper`): Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`
+  - [tldr](https://github.com/tldr-pages/tldr-python-client): Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`$
+
+    `Linux`, `OpenSource-MIT`, `cli-helper`
+{setupString}
     - Pacman: [`tldr`](https://www.archlinux.org/packages/?sort=&q=tldr)
-  - [visidata](https://www.visidata.org) (`Linux`, `OpenSource-GPL3`, `cli-helper`, `data-visualizer`): Display multiple data structures in the command line
+  - [visidata](https://www.visidata.org): Display multiple data structures in the command line$
+
+    `Linux`, `OpenSource-GPL3`, `cli-helper`, `data-visualizer`
+{setupString}
     - Pacman [AUR]: [`visidata`](https://aur.archlinux.org/packages/?O=0&K=visidata)
 - Communication
-  - [Discord](https://discordapp.com) (`Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`): Video/Audio/Text messaging service that can share your screen
+  - [Discord](https://discordapp.com): Video/Audio/Text messaging service that can share your screen$
+
+    `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`
+{setupString}
     - Pacman: [`discord`](https://www.archlinux.org/packages/?sort=&q=discord)
-  - [Discord Overlay 'Discover'](https://github.com/trigg/Discover) (`Linux`, `OpenSource-GPL3`, `GUI`, `screen-overlay`): Discord overlay for linux
+  - [Discord Overlay 'Discover'](https://github.com/trigg/Discover): Discord overlay for linux$
+
+    `Linux`, `OpenSource-GPL3`, `GUI`, `screen-overlay`
+{setupString}
     - Pacman [AUR GIT]: [`discover-overlay-git`](https://aur.archlinux.org/packages/?O=0&K=discover-overlay-git)
-  - [Skype](http://www.skype.com) (`Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`): Video/Audio/Text messaging service that can share your screen from Microsoft
+  - [Skype](http://www.skype.com): Video/Audio/Text messaging service that can share your screen from Microsoft$
+
+    `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`
+{setupString}
     - Pacman [AUR]: [`skype-preview`](https://aur.archlinux.org/packages/?O=0&K=skype-preview)
-  - [Slack](https://slack.com/downloads) (`Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`): Video/Audio/Text messaging service that can share your screen
+  - [Slack](https://slack.com/downloads): Video/Audio/Text messaging service that can share your screen$
+
+    `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`
+{setupString}
     - Pacman [AUR]: [`slack-desktop`](https://aur.archlinux.org/packages/?O=0&K=slack-desktop)
-  - [Teamspeak](http://www.teamspeak.com) (`Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`): Audio/Text messaging service
+  - [Teamspeak](http://www.teamspeak.com): Audio/Text messaging service$
+
+    `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`
+{setupString}
     - Pacman: [`teamspeak3`](https://www.archlinux.org/packages/?sort=&q=teamspeak3)
 - Databases
-  - [MySQL Workbench](https://www.mysql.com/de/products/workbench) (`Linux`, `OpenSource-GPL2`, `GUI`, `sql`): Manage/Read SQL databases
+  - [MySQL Workbench](https://www.mysql.com/de/products/workbench): Manage/Read SQL databases$
+
+    `Linux`, `OpenSource-GPL2`, `GUI`, `sql`
+{setupString}
     - Pacman: [`mysql-workbench`](https://www.archlinux.org/packages/?sort=&q=mysql-workbench)
 - Desktop Environment
-  - [xscreensaver](https://www.jwz.org/xscreensaver) (`Linux`, `OpenSource-BSD`, `GUI`, `screensaver`, `xserver`): Extended screensaver/locker for xserver environments
+  - [xscreensaver](https://www.jwz.org/xscreensaver): Extended screensaver/locker for xserver environments$
+
+    `Linux`, `OpenSource-BSD`, `GUI`, `screensaver`, `xserver`
+{setupString}
     - Bugs: The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown
     - Pacman: [`xscreensaver`](https://www.archlinux.org/packages/?sort=&q=xscreensaver)
 - Development
-  - [GitHub Desktop](https://desktop.github.com) (`Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `git`, `git-manager`, `github`): GUI for git repository managing that is optimized for GitHub repositories
+  - [GitHub Desktop](https://desktop.github.com): GUI for git repository managing that is optimized for GitHub repositories$
+
+    `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `git`, `git-manager`, `github`
+{setupString}
     - Pacman [AUR]: [`github-desktop`](https://aur.archlinux.org/packages/?O=0&K=github-desktop)
-  - [Intellij Idea Community](https://www.jetbrains.com/idea) (`Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `android`, `debugging`, `java`, `text-editor`): Java (Android) IDE
+  - [Intellij Idea Community](https://www.jetbrains.com/idea): Java (Android) IDE$
+
+    `Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `android`, `debugging`, `java`, `text-editor`
+{setupString}
     - Pacman: [`intellij-idea-community-edition`](https://www.archlinux.org/packages/?sort=&q=intellij-idea-community-edition)
-  - [Pycharm Community](https://www.jetbrains.com/pycharm) (`Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `debugging`, `python`, `text-editor`): Python IDE
+  - [Pycharm Community](https://www.jetbrains.com/pycharm): Python IDE$
+
+    `Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `debugging`, `python`, `text-editor`
+{setupString}
     - Pacman: [`pycharm-community-edition`](https://www.archlinux.org/packages/?sort=&q=pycharm-community-edition)
-  - [QtCreator](https://www.qt.io) (`Linux`, `Windows`, `OpenSource-LGPL`, `GUI`, `c++`, `debugging`, `qt`, `text-editor`): C++ (Qt) development environment
+  - [QtCreator](https://www.qt.io): C++ (Qt) development environment$
+
+    `Linux`, `Windows`, `OpenSource-LGPL`, `GUI`, `c++`, `debugging`, `qt`, `text-editor`
+{setupString}
     - Pacman: [`qtcreator`](https://www.archlinux.org/packages/?sort=&q=qtcreator)
-  - [Typora](https://typora.io) (`Linux`, `Windows`, `ClosedSource`, `GUI`, `markdown`, `text-editor`): Markdown text editor with PDF/HTML export and LaTeX Math support
+  - [Typora](https://typora.io): Markdown text editor with PDF/HTML export and LaTeX Math support$
+
+    `Linux`, `Windows`, `ClosedSource`, `GUI`, `markdown`, `text-editor`
+{setupString}
     - Pacman [AUR]: [`typora`](https://aur.archlinux.org/packages/?O=0&K=typora)
-  - [VSCode](https://github.com/microsoft/vscode) (`Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `debugging`, `extensions`, `javascript`, `text-editor`, `typescript`, `web-development`): Open Source build of Visual Studio Code (vscode) editor that is able to provide development environments for many languages
+  - [VSCode](https://github.com/microsoft/vscode): Open Source build of Visual Studio Code (vscode) editor that is able to provide development environments for many languages$
+
+    `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `debugging`, `extensions`, `javascript`, `text-editor`, `typescript`, `web-development`
+{setupString}
     - Pacman: [`code`](https://www.archlinux.org/packages/?sort=&q=code)
-  - [gedit](https://wiki.gnome.org/Apps/Gedit) (`Linux`, `OpenSource-GPL`, `GUI`, `text-editor`): Simple text editor
+  - [gedit](https://wiki.gnome.org/Apps/Gedit): Simple text editor$
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `text-editor`
+{setupString}
     - Pacman: [`gedit`](https://www.archlinux.org/packages/?sort=&q=gedit)
 - Graphs
-  - [dia](http://live.gnome.org/Dia) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `class-diagrams`, `erm`, `uml`): End of life graph creator for UML/ERM/... that also has a cli export interface
+  - [dia](http://live.gnome.org/Dia): End of life graph creator for UML/ERM/... that also has a cli export interface$
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `class-diagrams`, `erm`, `uml`
+{setupString}
     - Pacman: [`dia`](https://www.archlinux.org/packages/?sort=&q=dia)
 - Images
-  - [Krita](https://krita.org) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `draw`): Edit and paint images
+  - [Krita](https://krita.org): Edit and paint images$
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `draw`
+{setupString}
     - Pacman: [`krita`](https://www.archlinux.org/packages/?sort=&q=krita)
 - Music
-  - [MuseScore](https://musescore.org) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `scorewriter`): A scorewriter
+  - [MuseScore](https://musescore.org): A scorewriter$
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `scorewriter`
+{setupString}
     - Pacman: [`musescore`](https://www.archlinux.org/packages/?sort=&q=musescore)
 - Office
-  - [Libre Office](https://www.libreoffice.org) (`Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`): Free office suite
+  - [Libre Office](https://www.libreoffice.org): Free office suite$
+
+    `Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`
+{setupString}
     - Pacman: [`libreoffice-fresh`](https://www.archlinux.org/packages/?sort=&q=libreoffice-fresh)
-  - [TeX Live suite](http://tug.org/texlive) (`Linux`, `OpenSource-GPL`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`): TeX Live suite
+  - [TeX Live suite](http://tug.org/texlive): TeX Live suite$
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`
+{setupString}
     - Pacman [GROUP]: [`texlive-most`](https://www.archlinux.org/groups/x86_64/texlive-most)
 - Printing/Scanning
-  - [gscan2pdf](http://gscan2pdf.sourceforge.net) (`Linux`, `OpenSource-GPL`, `GUI`, `scanner-manager`): A GUI with OCR capability to produce PDFs or DjVus from scanned documents
+  - [gscan2pdf](http://gscan2pdf.sourceforge.net): A GUI with OCR capability to produce PDFs or DjVus from scanned documents$
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `scanner-manager`
+{setupString}
     - Pacman: [`gscan2pdf`](https://www.archlinux.org/packages/?sort=&q=gscan2pdf)
-  - [hplip](https://hplipopensource.com) (`Linux`, `OpenSource-GPL2`, `GUI`, `printer-manager`): Provides drivers for HP printers and manages them
+  - [hplip](https://hplipopensource.com): Provides drivers for HP printers and manages them$
+
+    `Linux`, `OpenSource-GPL2`, `GUI`, `printer-manager`
+{setupString}
     - Pacman: [`hplip`](https://www.archlinux.org/packages/?sort=&q=hplip)
-  - [system-config-printer](https://github.com/OpenPrinting/system-config-printer) (`Linux`, `OpenSource-GPL`, `GUI`, `cups`, `printer-manager`): A CUPS printer configuration tool and status applet
+  - [system-config-printer](https://github.com/OpenPrinting/system-config-printer): A CUPS printer configuration tool and status applet$
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `cups`, `printer-manager`
+{setupString}
     - Pacman: [`system-config-printer`](https://www.archlinux.org/packages/?sort=&q=system-config-printer)
 - Storage
-  - [Filezilla](https://filezilla-project.org) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`): FTP, FTPS and SFTP client
+  - [Filezilla](https://filezilla-project.org): FTP, FTPS and SFTP client$
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`
+{setupString}
     - Pacman: [`filezilla`](https://www.archlinux.org/packages/?sort=&q=filezilla)
-  - [baobab](https://wiki.gnome.org/Apps/DiskUsageAnalyzer) (`Linux`, `OpenSource-GPL2`, `GUI`, `file-system-usage-monitor`): Visualize files and their sizes of a drive in a pie graph
+  - [baobab](https://wiki.gnome.org/Apps/DiskUsageAnalyzer): Visualize files and their sizes of a drive in a pie graph$
+
+    `Linux`, `OpenSource-GPL2`, `GUI`, `file-system-usage-monitor`
+{setupString}
     - Pacman: [`baobab`](https://www.archlinux.org/packages/?sort=&q=baobab)
-  - [gnome-disk-utility](https://gitlab.gnome.org/GNOME/gnome-disk-utility) (`Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `partition-manager`): Disk Management Utility to get connected drives, their partitions and more details
+  - [gnome-disk-utility](https://gitlab.gnome.org/GNOME/gnome-disk-utility): Disk Management Utility to get connected drives, their partitions and more details$
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `partition-manager`
+{setupString}
     - Pacman: [`gnome-disk-utility`](https://www.archlinux.org/packages/?sort=&q=gnome-disk-utility)
-  - [smartmontools](http://smartmontools.sourceforge.net) (`Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `ssd-health`): Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
-    - Setup: Get SSD drive health/stats via `sudo smartctl -t long -a /dev/nvme0n1`
+  - [smartmontools](http://smartmontools.sourceforge.net): Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives$
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `ssd-health`
+{setupString}
     - Pacman: [`smartmontools`](https://www.archlinux.org/packages/?sort=&q=smartmontools)
 - System
-  - [Balena Etcher](https://balena.io/etcher) (`Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `iso-burner`): Burn ISO files for operating systems to USB sticks
+  - [Balena Etcher](https://balena.io/etcher): Burn ISO files for operating systems to USB sticks$
+
+    `Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `iso-burner`
+{setupString}
     - Pacman [AUR]: [`balena-etcher`](https://aur.archlinux.org/packages/?O=0&K=balena-etcher)
-  - [htop](https://htop.dev) (`Linux`, `OpenSource-MIT`, `hardware-monitor`, `task-manager`): Task Manager
+  - [htop](https://htop.dev): Task Manager$
+
+    `Linux`, `OpenSource-MIT`, `hardware-monitor`, `task-manager`
+{setupString}
     - Pacman: [`htop`](https://www.archlinux.org/packages/?sort=&q=htop)
 - Video
-  - [Handbrake](https://handbrake.fr) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `video-compressor`, `video-converter`): A video converter
+  - [Handbrake](https://handbrake.fr): A video converter$
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `video-compressor`, `video-converter`
+{setupString}
     - Pacman: [`handbrake`](https://www.archlinux.org/packages/?sort=&q=handbrake)
-  - [MPV](https://mpv.io) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `audio-player`, `video-player`): A animalistic video player
+  - [MPV](https://mpv.io): A animalistic video player$
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `audio-player`, `video-player`
+{setupString}
     - Pacman: [`mpv`](https://www.archlinux.org/packages/?sort=&q=mpv)
-  - [OBS](https://obsproject.com) (`Linux`, `Windows`, `OpenSource-GPL2`, `GUI`, `live-streaming`, `video-streaming`): A live streaming toolbox (YouTube, Twitch, ...)
+  - [OBS](https://obsproject.com): A live streaming toolbox (YouTube, Twitch, ...)$
+
+    `Linux`, `Windows`, `OpenSource-GPL2`, `GUI`, `live-streaming`, `video-streaming`
+{setupString}
     - Pacman: [`obs-studio`](https://www.archlinux.org/packages/?sort=&q=obs-studio)
-  - [Shotcut](https://www.shotcut.org) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-compressor`, `video-converter`): A video editor
+  - [Shotcut](https://www.shotcut.org): A video editor$
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-compressor`, `video-converter`
+{setupString}
     - Pacman: [`shotcut`](https://www.archlinux.org/packages/?sort=&q=shotcut)
-  - [VLC Media Player](https://www.videolan.org/vlc) (`Linux`, `Windows`, `OpenSource-GPL2+LGPL2.1`, `GUI`, `audio-player`, `video-player`): A feature rich video player
+  - [VLC Media Player](https://www.videolan.org/vlc): A feature rich video player$
+
+    `Linux`, `Windows`, `OpenSource-GPL2+LGPL2.1`, `GUI`, `audio-player`, `video-player`
+{setupString}
     - Pacman: [`vlc`](https://www.archlinux.org/packages/?sort=&q=vlc)
-  - [youtube-dl](https://ytdl-org.github.io/youtube-dl) (`Linux`, `Windows`, `OpenSource-The Unlicense`, `GUI`, `video-downloader`): A command-line program to download videos from YouTube.com and a few more sites
+  - [youtube-dl](https://ytdl-org.github.io/youtube-dl): A command-line program to download videos from YouTube.com and a few more sites$
+
+    `Linux`, `Windows`, `OpenSource-The Unlicense`, `GUI`, `video-downloader`
+{setupString}
     - Pacman: [`youtube-dl`](https://www.archlinux.org/packages/?sort=&q=youtube-dl)
 - Web
-  - [Firefox](https://www.mozilla.org/de/firefox/new) (`Linux`, `Windows`, `OpenSource-GPL+LGPL+MPL`, `GUI`, `web-browser`): A browser
+  - [Firefox](https://www.mozilla.org/de/firefox/new): A browser$
+
+    `Linux`, `Windows`, `OpenSource-GPL+LGPL+MPL`, `GUI`, `web-browser`
+{setupString}
     - Pacman: [`firefox`](https://www.archlinux.org/packages/?sort=&q=firefox)
     - Pacman [AUR NIGHTLY]: [`firefox-nightly`](https://aur.archlinux.org/packages/?O=0&K=firefox-nightly)
 
