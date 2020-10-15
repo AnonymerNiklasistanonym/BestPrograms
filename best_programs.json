@@ -227,9 +227,29 @@
                 "linux": true
             },
             "tags": [
+                "database-manager",
                 "sql"
             ],
             "website": "https://www.mysql.com/de/products/workbench"
+        },
+        {
+            "category": "Databases",
+            "description": "Manage/Read SQLite databases",
+            "gui": true,
+            "name": "sqlitestudio",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacmanAur": "sqlitestudio"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "database-manager",
+                "sqlite"
+            ],
+            "website": "http://sqlitestudio.pl"
         },
         {
             "bugs": "The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown",

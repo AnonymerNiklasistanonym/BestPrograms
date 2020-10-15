@@ -56,8 +56,12 @@ Repo for a list of the best programs (Linux + Windows):
 - Databases
   - [MySQL Workbench](https://www.mysql.com/de/products/workbench): Manage/Read SQL databases
 
-    `Linux`, `OpenSource-GPL2`, `GUI`, `sql`
+    `Linux`, `OpenSource-GPL2`, `GUI`, `database-manager`, `sql`
     - Pacman: [`mysql-workbench`](https://www.archlinux.org/packages/?sort=&q=mysql-workbench)
+  - [sqlitestudio](http://sqlitestudio.pl): Manage/Read SQLite databases
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `database-manager`, `sqlite`
+    - Pacman: [`sqlitestudio`](https://www.archlinux.org/packages/?sort=&q=sqlitestudio)
 - Desktop Environment
   - [xscreensaver](https://www.jwz.org/xscreensaver): Extended screensaver/locker for xserver environments
 
