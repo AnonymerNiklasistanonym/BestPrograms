@@ -81,7 +81,7 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
                 }
             }
 
-            return `  - ${nameString}: ${program.description}$\n\n    ${tags.map(a => '`' + a + '`').join(", ")}\n{setupString}${bugString}${packageManagerString}`;
+            return `  - ${nameString}: ${program.description}\n\n    ${tags.map(a => '`' + a + '`').join(", ")}${setupString}${bugString}${packageManagerString}`;
         }).join("\n")
     }).join("\n")
 }
