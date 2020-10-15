@@ -1,8 +1,6 @@
 # BestPrograms
 
-Repo for a list of the best programs (Linux + Windows)
-
-*New:*
+Repo for a list of the best programs (Linux + Windows):
 
 [//]: # (Best Programs begin)
 - 3D Computer Graphics
@@ -13,7 +11,7 @@ Repo for a list of the best programs (Linux + Windows)
 - Audio
   - [Audacity](https://www.audacityteam.org): Edit/Mix audio tracks
 
-    `Linux`, `Windows`, `OpenSource-CCPL+++GPL2`, `GUI`, `audio-editor`
+    `Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
   - [Noisetorch](https://github.com/lawl/NoiseTorch): Real-time microphone noise suppression
 
@@ -101,10 +99,26 @@ Repo for a list of the best programs (Linux + Windows)
     `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `class-diagrams`, `erm`, `uml`
     - Pacman: [`dia`](https://www.archlinux.org/packages/?sort=&q=dia)
 - Images
+  - [Inkscape](https://inkscape.org): Vector graphics editor
+
+    `Linux`, `Windows`, `OpenSource-GPL+LGPL`, `GUI`, `vector-graphics-editor`
+    - Pacman: [`inkscape`](https://www.archlinux.org/packages/?sort=&q=inkscape)
+  - [Inkscape](https://wiki.gnome.org/Apps/gthumb): Image browser and viewer
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `image-editor`, `image-viewer`
+    - Pacman: [`gThumb`](https://www.archlinux.org/packages/?sort=&q=gThumb)
   - [Krita](https://krita.org): Edit and paint images
 
     `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `draw`
     - Pacman: [`krita`](https://www.archlinux.org/packages/?sort=&q=krita)
+  - [Pinta](https://pinta-project.com): Drawing/editing program modeled after Paint.NET (much easier to use than GIMP)
+
+    `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `image-editor`
+    - Pacman: [`pinta`](https://www.archlinux.org/packages/?sort=&q=pinta)
+  - [darktable](https://darktable.org): Utility to organize images
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `image-editor`, `image-viewer`
+    - Pacman: [`darktable`](https://www.archlinux.org/packages/?sort=&q=darktable)
 - Music
   - [MuseScore](https://musescore.org): A scorewriter
 
@@ -178,7 +192,7 @@ Repo for a list of the best programs (Linux + Windows)
     - Pacman: [`shotcut`](https://www.archlinux.org/packages/?sort=&q=shotcut)
   - [VLC Media Player](https://www.videolan.org/vlc): A feature rich video player
 
-    `Linux`, `Windows`, `OpenSource-GPL2+++LGPL2.1`, `GUI`, `audio-player`, `video-player`
+    `Linux`, `Windows`, `OpenSource-GPL2+LGPL2.1`, `GUI`, `audio-player`, `video-player`
     - Pacman: [`vlc`](https://www.archlinux.org/packages/?sort=&q=vlc)
   - [youtube-dl](https://ytdl-org.github.io/youtube-dl): A command-line program to download videos from YouTube.com and a few more sites
 
@@ -187,17 +201,8 @@ Repo for a list of the best programs (Linux + Windows)
 - Web
   - [Firefox](https://www.mozilla.org/de/firefox/new): A browser
 
-    `Linux`, `Windows`, `OpenSource-GPL+++LGPL+++MPL`, `GUI`, `web-browser`
+    `Linux`, `Windows`, `OpenSource-GPL+LGPL+MPL`, `GUI`, `web-browser`
     - Pacman: [`firefox`](https://www.archlinux.org/packages/?sort=&q=firefox)
     - Pacman [AUR NIGHTLY]: [`firefox-nightly`](https://aur.archlinux.org/packages/?O=0&K=firefox-nightly)
 
 [//]: # (Best Programs end)
-
-*Old*: (The following content needs to be migrated to the JSON file)
-
-- Images
-  - inkscape (openSource vectorGraphicsEditor gui linux windows)
-  - paint.net (freeware imageEditor gui windows linux_alternative=pinta)
-  - pinta (openSource imageEditor gui linux aur)
-  - gThumb (openSource imageEditor gui linux windows)
-  - darktable (openSource imageEditor gui linux windows)

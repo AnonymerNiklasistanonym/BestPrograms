@@ -413,6 +413,45 @@
         },
         {
             "category": "Images",
+            "description": "Vector graphics editor",
+            "gui": true,
+            "name": "Inkscape",
+            "openSource": [
+                "GPL",
+                "LGPL"
+            ],
+            "packageManagerInfo": {
+                "pacman": "inkscape"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "vector-graphics-editor"
+            ],
+            "website": "https://inkscape.org"
+        },
+        {
+            "category": "Images",
+            "description": "Image browser and viewer",
+            "gui": true,
+            "name": "Inkscape",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "gThumb"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "image-editor",
+                "image-viewer"
+            ],
+            "website": "https://wiki.gnome.org/Apps/gthumb"
+        },
+        {
+            "category": "Images",
             "description": "Edit and paint images",
             "gui": true,
             "name": "Krita",
@@ -428,6 +467,43 @@
                 "draw"
             ],
             "website": "https://krita.org"
+        },
+        {
+            "category": "Images",
+            "description": "Drawing/editing program modeled after Paint.NET (much easier to use than GIMP)",
+            "gui": true,
+            "name": "Pinta",
+            "openSource": "MIT",
+            "packageManagerInfo": {
+                "pacman": "pinta"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "image-editor"
+            ],
+            "website": "https://pinta-project.com"
+        },
+        {
+            "category": "Images",
+            "description": "Utility to organize images",
+            "gui": true,
+            "name": "darktable",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "darktable"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "image-editor",
+                "image-viewer"
+            ],
+            "website": "https://darktable.org"
         },
         {
             "category": "Music",
