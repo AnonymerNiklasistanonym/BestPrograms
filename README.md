@@ -2,47 +2,57 @@
 
 Repo for a list of the best programs (Linux + Windows)
 
-*The following content needs to be migrated to the JSON file:*
+*New:*
 
 [//]: # (Best Programs begin)
 - 3D Computer Graphics
-  - [Blender](https://github.com/lawl/NoiseTorch) (`Linux`, `Windows`, `OpenSource`, `GUI`, `modelling`, `rendering`): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games
+  - [Blender](https://github.com/lawl/NoiseTorch) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `modelling`, `rendering`): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games
     - Pacman: [`blender`](https://www.archlinux.org/packages/?sort=&q=blender)
 - Audio
-  - [Audacity](https://www.audacityteam.org/) (`Linux`, `Windows`, `OpenSource`, `GUI`, `audio-editor`): Edit/Mix audio tracks
+  - [Audacity](https://www.audacityteam.org/) (`Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`): Edit/Mix audio tracks
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
-  - [Noisetorch](https://github.com/lawl/NoiseTorch) (`Linux`, `sudo-rights-necessary`, `OpenSource`, `GUI`, `microphone`, `real-time`, `noise-suppression`): Real-time microphone noise suppression
+  - [Noisetorch](https://github.com/lawl/NoiseTorch) (`Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `real-time`, `noise-suppression`): Real-time microphone noise suppression
+    - Setup: To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded
     - Bugs: If a source changes or an output is changed everything needs to be initialized again
     - Pacman [AUR]: [`noisetorch-bin`](https://aur.archlinux.org/packages/?O=0&K=noisetorch-bin)
-  - [Playerctl](https://github.com/altdesktop/playerctl) (`Linux`, `OpenSource`, `media-player-control`): Control global media player playback
+  - [Playerctl](https://github.com/altdesktop/playerctl) (`Linux`, `OpenSource-LGPL3`, `media-player-control`): Control global media player playback via the command line
     - Pacman: [`playerctl`](https://www.archlinux.org/packages/?sort=&q=playerctl)
+- Command Line
+  - [tldr](https://github.com/tldr-pages/tldr-python-client) (`Linux`, `OpenSource-MIT`, `cli-helper`): Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`
+    - Pacman: [`tldr`](https://www.archlinux.org/packages/?sort=&q=tldr)
+  - [visidata](https://www.visidata.org) (`Linux`, `OpenSource-GPL3`, `cli-helper`, `data-visualizer`): Display multiple data structures in the command line
+    - Pacman [AUR]: [`visidata`](https://aur.archlinux.org/packages/?O=0&K=visidata)
+- Databases
+  - [MySQL Workbench](https://www.mysql.com/de/products/workbench/) (`Linux`, `OpenSource-GPL2`, `GUI`, `sql`): Manage/Read SQL databases
+    - Pacman: [`mysql-workbench`](https://www.archlinux.org/packages/?sort=&q=mysql-workbench)
+- Office
+  - [Libre Office](https://www.libreoffice.org/) (`Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `office-suit`, `document-editor`, `presentation-editor`, `table-editor`): Free office suite
+    - Pacman: [`libreoffice-fresh`](https://www.archlinux.org/packages/?sort=&q=libreoffice-fresh)
+- Printing/Scanning
+  - [system-config-printer](https://github.com/OpenPrinting/system-config-printer) (`Linux`, `OpenSource-GPL`, `GUI`, `printer-manager`, `cups`): A CUPS printer configuration tool and status applet
+    - Pacman: [`system-config-printer`](https://www.archlinux.org/packages/?sort=&q=system-config-printer)
+- Video
+  - [Handbrake](https://handbrake.fr) (`Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `video-compressor`, `video-converter`): A video converter
+    - Pacman: [`handbrake`](https://www.archlinux.org/packages/?sort=&q=handbrake)
+  - [MPV](https://mpv.io/) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `audio-player`, `video-player`): A animalistic video player
+    - Pacman: [`mpv`](https://www.archlinux.org/packages/?sort=&q=mpv)
+  - [OBS](https://obsproject.com) (`Linux`, `Windows`, `OpenSource-GPL2`, `GUI`, `video-streaming`, `live-streaming`): A live streaming toolbox (YouTube, Twitch, ...)
+    - Pacman: [`obs-studio`](https://www.archlinux.org/packages/?sort=&q=obs-studio)
+  - [Shotcut](https://www.shotcut.org) (`Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-compressor`, `video-converter`): A video editor
+    - Pacman: [`shotcut`](https://www.archlinux.org/packages/?sort=&q=shotcut)
+  - [VLC Media Player](https://mpv.io/) (`Linux`, `Windows`, `OpenSource-GPL2+LGPL2.1`, `GUI`, `audio-player`, `video-player`): A feature rich video player
+    - Pacman: [`vlc`](https://www.archlinux.org/packages/?sort=&q=vlc)
+  - [youtube-dl](https://ytdl-org.github.io/youtube-dl/) (`Linux`, `Windows`, `OpenSource-The Unlicense`, `GUI`, `video-downloader`): A command-line program to download videos from YouTube.com and a few more sites
+    - Pacman: [`youtube-dl`](https://www.archlinux.org/packages/?sort=&q=youtube-dl)
 - Web
-  - [Firefox](https://www.mozilla.org/de/firefox/new/) (`Linux`, `Windows`, `OpenSource`, `GUI`, `web-browser`): A browser
+  - [Firefox](https://www.mozilla.org/de/firefox/new/) (`Linux`, `Windows`, `OpenSource-GPL+LGPL+MPL`, `GUI`, `web-browser`): A browser
     - Pacman: [`firefox`](https://www.archlinux.org/packages/?sort=&q=firefox)
+    - Pacman [AUR NIGHTLY]: [`firefox-nightly`](https://aur.archlinux.org/packages/?O=0&K=firefox-nightly)
 
 [//]: # (Best Programs end)
 
-*old*:
+*Old*: (The following content needs to be migrated to the JSON file)
 
-## `pacman`
-
-TODO Write JSON configuration and javascript md writer
-
-- Audio
-  - audacity (openSource audioEditor gui linux windows)
-  - playerctl (openSource audioController linux): [control audio playback via command line]
-  - noisetorch (openSource audio gui linux): [microphone ambient sound suppresser]
-- 3D Modelling
-  - blender (openSource 3D gui linux windows)
-- Web
-  - firefox (openSource browser gui linux windows nightly=firefox-nightly)
-- Video
-  - mpv (openSource videoPlayer gui linux windows)
-  - vlc (openSource videoPlayer gui linux windows)
-  - handbrake (openSource videoConverter gui linux windows): [backup DVDs and BluRays]
-  - shotcut (openSource videoEditor gui linux windows)
-  - youtube-dl
-  - obs (openSource screenRecorder gui linux windows)
 - Images
   - inkscape (openSource vectorGraphicsEditor gui linux windows)
   - paint.net (freeware imageEditor gui windows linux_alternative=pinta)
@@ -78,9 +88,6 @@ TODO Write JSON configuration and javascript md writer
   - pycharm-community-edition
   - qtcreator
   - vscode-insiders
-- CLI
-  - visidata[aur]: [visualize all kinds of data in the terminal]
-  - tldr: [get general PROGRAM usage information for popular cli commands with `tldr PROGRAM`]
 - Other
   - musescore
   - krita
@@ -90,5 +97,3 @@ TODO Write JSON configuration and javascript md writer
   - libre office (openSource)
   - system-config-printer: [cups desktop interface]
   - texlive-most (group)
-- SQL
-  - mysql-workbench

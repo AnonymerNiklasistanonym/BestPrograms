@@ -2,11 +2,11 @@
     "$schema": "./types/best_programs.schema.json",
     "programs": [
         {
-            "name": "Audacity",
+            "category": "Audio",
             "description": "Edit/Mix audio tracks",
-            "website": "https://www.audacityteam.org/",
             "gui": true,
-            "openSource": true,
+            "name": "Audacity",
+            "openSource": "CCPL+GPL2",
             "packageManagerInfo": {
                 "pacman": "audacity"
             },
@@ -14,19 +14,18 @@
                 "linux": true,
                 "windows": true
             },
-            "category": "Audio",
             "tags": [
                 "audio-editor"
-            ]
+            ],
+            "website": "https://www.audacityteam.org/"
         },
         {
-            "name": "Noisetorch",
-            "description": "Real-time microphone noise suppression",
             "bugs": "If a source changes or an output is changed everything needs to be initialized again",
-            "setup": "To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded",
-            "website": "https://github.com/lawl/NoiseTorch",
+            "category": "Audio",
+            "description": "Real-time microphone noise suppression",
             "gui": true,
-            "openSource": true,
+            "name": "Noisetorch",
+            "openSource": "GPL3",
             "packageManagerInfo": {
                 "pacmanAur": "noisetorch-bin"
             },
@@ -34,36 +33,37 @@
                 "linux": true,
                 "linuxSudoRightsNecessary": true
             },
-            "category": "Audio",
+            "setup": "To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded",
             "tags": [
                 "microphone",
                 "real-time",
                 "noise-suppression"
-            ]
+            ],
+            "website": "https://github.com/lawl/NoiseTorch"
         },
         {
-            "name": "Playerctl",
-            "description": "Control global media player playback",
-            "website": "https://github.com/altdesktop/playerctl",
+            "category": "Audio",
+            "description": "Control global media player playback via the command line",
             "gui": false,
-            "openSource": true,
+            "name": "Playerctl",
+            "openSource": "LGPL3",
             "packageManagerInfo": {
                 "pacman": "playerctl"
             },
             "platformInfo": {
                 "linux": true
             },
-            "category": "Audio",
             "tags": [
                 "media-player-control"
-            ]
+            ],
+            "website": "https://github.com/altdesktop/playerctl"
         },
         {
-            "name": "Blender",
+            "category": "3D Computer Graphics",
             "description": "A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games",
-            "website": "https://github.com/lawl/NoiseTorch",
             "gui": true,
-            "openSource": true,
+            "name": "Blender",
+            "openSource": "GPL",
             "packageManagerInfo": {
                 "pacman": "blender"
             },
@@ -71,29 +71,234 @@
                 "linux": true,
                 "windows": true
             },
-            "category": "3D Computer Graphics",
             "tags": [
                 "modelling",
                 "rendering"
-            ]
+            ],
+            "website": "https://github.com/lawl/NoiseTorch"
         },
         {
-            "name": "Firefox",
+            "category": "Web",
             "description": "A browser",
-            "website": "https://www.mozilla.org/de/firefox/new/",
             "gui": true,
-            "openSource": true,
+            "name": "Firefox",
+            "openSource": "GPL+LGPL+MPL",
             "packageManagerInfo": {
-                "pacman": "firefox"
+                "pacman": "firefox",
+                "pacmanAurNightly": "firefox-nightly"
             },
             "platformInfo": {
                 "linux": true,
                 "windows": true
             },
-            "category": "Web",
             "tags": [
                 "web-browser"
-            ]
+            ],
+            "website": "https://www.mozilla.org/de/firefox/new/"
+        },
+        {
+            "category": "Video",
+            "description": "A animalistic video player",
+            "gui": true,
+            "name": "MPV",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "mpv"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-player",
+                "video-player"
+            ],
+            "website": "https://mpv.io/"
+        },
+        {
+            "category": "Video",
+            "description": "A feature rich video player",
+            "gui": true,
+            "name": "VLC Media Player",
+            "openSource": "GPL2+LGPL2.1",
+            "packageManagerInfo": {
+                "pacman": "vlc"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "audio-player",
+                "video-player"
+            ],
+            "website": "https://mpv.io/"
+        },
+        {
+            "category": "Video",
+            "description": "A video converter",
+            "gui": true,
+            "name": "Handbrake",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "handbrake"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-compressor",
+                "video-converter"
+            ],
+            "website": "https://handbrake.fr"
+        },
+        {
+            "category": "Video",
+            "description": "A video editor",
+            "gui": true,
+            "name": "Shotcut",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "shotcut"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-compressor",
+                "video-converter"
+            ],
+            "website": "https://www.shotcut.org"
+        },
+        {
+            "category": "Video",
+            "description": "A command-line program to download videos from YouTube.com and a few more sites",
+            "gui": true,
+            "name": "youtube-dl",
+            "openSource": "The Unlicense",
+            "packageManagerInfo": {
+                "pacman": "youtube-dl"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-downloader"
+            ],
+            "website": "https://ytdl-org.github.io/youtube-dl/"
+        },
+        {
+            "category": "Video",
+            "description": "A live streaming toolbox (YouTube, Twitch, ...)",
+            "gui": true,
+            "name": "OBS",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "obs-studio"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-streaming",
+                "live-streaming"
+            ],
+            "website": "https://obsproject.com"
+        },
+        {
+            "category": "Office",
+            "description": "Free office suite",
+            "gui": true,
+            "name": "Libre Office",
+            "openSource": "LGPL3",
+            "packageManagerInfo": {
+                "pacman": "libreoffice-fresh"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "office-suit",
+                "document-editor",
+                "presentation-editor",
+                "table-editor"
+            ],
+            "website": "https://www.libreoffice.org/"
+        },
+        {
+            "category": "Command Line",
+            "description": "Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`",
+            "gui": false,
+            "name": "tldr",
+            "openSource": "MIT",
+            "packageManagerInfo": {
+                "pacman": "tldr"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "cli-helper"
+            ],
+            "website": "https://github.com/tldr-pages/tldr-python-client"
+        },
+        {
+            "category": "Command Line",
+            "description": "Display multiple data structures in the command line",
+            "gui": false,
+            "name": "visidata",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacmanAur": "visidata"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "cli-helper",
+                "data-visualizer"
+            ],
+            "website": "https://www.visidata.org"
+        },
+        {
+            "category": "Printing/Scanning",
+            "description": "A CUPS printer configuration tool and status applet",
+            "gui": true,
+            "name": "system-config-printer",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "system-config-printer"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "printer-manager",
+                "cups"
+            ],
+            "website": "https://github.com/OpenPrinting/system-config-printer"
+        },
+        {
+            "category": "Databases",
+            "description": "Manage/Read SQL databases",
+            "gui": true,
+            "name": "MySQL Workbench",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "mysql-workbench"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "sql"
+            ],
+            "website": "https://www.mysql.com/de/products/workbench/"
         }
     ]
 }

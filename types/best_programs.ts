@@ -7,7 +7,7 @@
  */
 
 /**
- * Pointer to the schema against which this document should be validated/Zeiger zu dem verwendeten Dokument welches nach diesem validiert werden soll
+ * Pointer to the schema against which this document should be validated
  */
 export type Schema = string;
 
@@ -26,33 +26,42 @@ export interface BestPrograms {
  */
 export interface Program {
   /**
-   * Program name
+   * Bug specific program descriptions
    */
-  name: string;
+  bugs?: string;
+  /**
+   * The main category this program belongs to
+   */
+  category: string;
   /**
    * Program description
    */
   description: string;
   /**
-   * Bug specific program descriptions
-   */
-  bugs?: string;
-  /**
-   * Setup specific program descriptions
-   */
-  setup?: string;
-  /**
-   * Program website
-   */
-  website: string;
-  /**
    * Program has a GUI
    */
   gui?: boolean;
   /**
+   * Program name
+   */
+  name: string;
+  /**
    * Program source code is publicly available
    */
-  openSource?: boolean;
+  openSource?:
+    | boolean
+    | (
+        | "MIT"
+        | "GPL"
+        | "GPL2"
+        | "GPL3"
+        | "LGPL2.1"
+        | "LGPL3"
+        | "GPL2+LGPL2.1"
+        | "GPL+LGPL+MPL"
+        | "CCPL+GPL2"
+        | "The Unlicense"
+      );
   /**
    * Package Manager information for this program
    */
@@ -65,6 +74,14 @@ export interface Program {
      * The pacman AUR ID
      */
     pacmanAur?: string;
+    /**
+     * The pacman AUR Git version ID
+     */
+    pacmanAurGit?: string;
+    /**
+     * The pacman AUR Nightly version ID
+     */
+    pacmanAurNightly?: string;
   };
   /**
    * The recommended semester/Das empfohlene Semester
@@ -75,26 +92,34 @@ export interface Program {
      */
     linux?: boolean;
     /**
-     * This program is available on Windows
-     */
-    windows?: boolean;
-    /**
      * Does the program need Linux sudo rights to run essential functions
      */
     linuxSudoRightsNecessary?: boolean;
+    /**
+     * This program is available on Windows
+     */
+    windows?: boolean;
     /**
      * Does the program need Windows admin rights to run essential functions
      */
     windowsAdminRightsNecessary?: boolean;
   };
   /**
-   * The main category this program belongs to
+   * The price of the program if it has one
    */
-  category: string;
+  price?: string;
+  /**
+   * Setup specific program descriptions
+   */
+  setup?: string;
   /**
    * Tags that explain this program better
    */
   tags?: string[];
+  /**
+   * Program website
+   */
+  website: string;
 }
 /**
  * Package Mangagers on which this program is available
@@ -111,6 +136,14 @@ export interface PackageManagerInfo {
    * The pacman AUR ID
    */
   pacmanAur?: string;
+  /**
+   * The pacman AUR Git version ID
+   */
+  pacmanAurGit?: string;
+  /**
+   * The pacman AUR Nightly version ID
+   */
+  pacmanAurNightly?: string;
 }
 /**
  * Platforms on which this program is available
@@ -124,13 +157,13 @@ export interface PlatformInfo {
    */
   linux?: boolean;
   /**
-   * This program is available on Windows
-   */
-  windows?: boolean;
-  /**
    * Does the program need Linux sudo rights to run essential functions
    */
   linuxSudoRightsNecessary?: boolean;
+  /**
+   * This program is available on Windows
+   */
+  windows?: boolean;
   /**
    * Does the program need Windows admin rights to run essential functions
    */

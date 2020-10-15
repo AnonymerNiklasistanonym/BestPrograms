@@ -36,13 +36,25 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
                 }
             }
             if (program.openSource) {
-                tags.push("OpenSource");
+                if (program.openSource !== true) {
+                    tags.push(`OpenSource-${program.openSource}`);
+                } else {
+                    tags.push("OpenSource");
+                }
+            } else if (program.openSource === false) {
+                tags.push("ClosedSource");
             }
+
             if (program.gui) {
                 tags.push("GUI");
             }
             if (program.tags) {
                 tags.push(...program.tags);
+            }
+
+            let setupString = "";
+            if (program.setup) {
+                setupString += `\n    - Setup: ${program.setup}`
             }
 
             let bugString = "";
@@ -58,9 +70,15 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
                 if (program.packageManagerInfo.pacmanAur) {
                     packageManagerString += `\n    - Pacman [AUR]: [\`${program.packageManagerInfo.pacmanAur}\`](https://aur.archlinux.org/packages/?O=0&K=${program.packageManagerInfo.pacmanAur})`;
                 }
+                if (program.packageManagerInfo.pacmanAurNightly) {
+                    packageManagerString += `\n    - Pacman [AUR NIGHTLY]: [\`${program.packageManagerInfo.pacmanAurNightly}\`](https://aur.archlinux.org/packages/?O=0&K=${program.packageManagerInfo.pacmanAurNightly})`;
+                }
+                if (program.packageManagerInfo.pacmanAurGit) {
+                    packageManagerString += `\n    - Pacman [AUR GIT]: [\`${program.packageManagerInfo.pacmanAurGit}\`](https://aur.archlinux.org/packages/?O=0&K=${program.packageManagerInfo.pacmanAurGit})`;
+                }
             }
 
-            return `  - ${nameString} (${tags.map(a => '`' + a + '`').join(", ")}): ${program.description}${bugString}${packageManagerString}`;
+            return `  - ${nameString} (${tags.map(a => '`' + a + '`').join(", ")}): ${program.description}${setupString}${bugString}${packageManagerString}`;
         }).join("\n")
     }).join("\n")
 }

@@ -2,67 +2,6 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "additionalProperties": false,
     "definitions": {
-        "program": {
-            "additionalProperties": false,
-            "description": "A program",
-            "properties": {
-                "name": {
-                    "description": "Program name",
-                    "type": "string"
-                },
-                "description": {
-                    "description": "Program description",
-                    "type": "string"
-                },
-                "bugs": {
-                    "description": "Bug specific program descriptions",
-                    "type": "string"
-                },
-                "setup": {
-                    "description": "Setup specific program descriptions",
-                    "type": "string"
-                },
-                "website": {
-                    "description": "Program website",
-                    "type": "string"
-                },
-                "gui": {
-                    "description": "Program has a GUI",
-                    "type": "boolean"
-                },
-                "openSource": {
-                    "description": "Program source code is publicly available",
-                    "type": "boolean"
-                },
-                "packageManagerInfo": {
-                    "description": "Package Manager information for this program",
-                    "$ref": "#/definitions/packageManagerInfo"
-                },
-                "platformInfo": {
-                    "description": "The recommended semester/Das empfohlene Semester",
-                    "$ref": "#/definitions/platformInfo"
-                },
-                "category": {
-                    "description": "The main category this program belongs to",
-                    "type": "string"
-                },
-                "tags": {
-                    "description": "Tags that explain this program better",
-                    "items": {
-                        "type": "string"
-                    },
-                    "uniqueItems": true,
-                    "type": "array"
-                }
-            },
-            "required": [
-                "category",
-                "description",
-                "name",
-                "website"
-            ],
-            "type": "object"
-        },
         "packageManagerInfo": {
             "additionalProperties": false,
             "description": "Package Mangagers on which this program is available",
@@ -73,6 +12,14 @@
                 },
                 "pacmanAur": {
                     "description": "The pacman AUR ID",
+                    "type": "string"
+                },
+                "pacmanAurGit": {
+                    "description": "The pacman AUR Git version ID",
+                    "type": "string"
+                },
+                "pacmanAurNightly": {
+                    "description": "The pacman AUR Nightly version ID",
                     "type": "string"
                 }
             },
@@ -86,12 +33,12 @@
                     "description": "This program is available on Linux",
                     "type": "boolean"
                 },
-                "windows": {
-                    "description": "This program is available on Windows",
-                    "type": "boolean"
-                },
                 "linuxSudoRightsNecessary": {
                     "description": "Does the program need Linux sudo rights to run essential functions",
+                    "type": "boolean"
+                },
+                "windows": {
+                    "description": "This program is available on Windows",
                     "type": "boolean"
                 },
                 "windowsAdminRightsNecessary": {
@@ -100,11 +47,94 @@
                 }
             },
             "type": "object"
+        },
+        "program": {
+            "additionalProperties": false,
+            "description": "A program",
+            "properties": {
+                "bugs": {
+                    "description": "Bug specific program descriptions",
+                    "type": "string"
+                },
+                "category": {
+                    "description": "The main category this program belongs to",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Program description",
+                    "type": "string"
+                },
+                "gui": {
+                    "description": "Program has a GUI",
+                    "type": "boolean"
+                },
+                "name": {
+                    "description": "Program name",
+                    "type": "string"
+                },
+                "openSource": {
+                    "anyOf": [
+                        {
+                            "type": "boolean"
+                        },
+                        {
+                            "enum": [
+                                "MIT",
+                                "GPL",
+                                "GPL2",
+                                "GPL3",
+                                "LGPL2.1",
+                                "LGPL3",
+                                "GPL2+LGPL2.1",
+                                "GPL+LGPL+MPL",
+                                "CCPL+GPL2",
+                                "The Unlicense"
+                            ]
+                        }
+                    ],
+                    "description": "Program source code is publicly available"
+                },
+                "packageManagerInfo": {
+                    "$ref": "#/definitions/packageManagerInfo",
+                    "description": "Package Manager information for this program"
+                },
+                "platformInfo": {
+                    "$ref": "#/definitions/platformInfo",
+                    "description": "The recommended semester/Das empfohlene Semester"
+                },
+                "price": {
+                    "description": "The price of the program if it has one",
+                    "type": "string"
+                },
+                "setup": {
+                    "description": "Setup specific program descriptions",
+                    "type": "string"
+                },
+                "tags": {
+                    "description": "Tags that explain this program better",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array",
+                    "uniqueItems": true
+                },
+                "website": {
+                    "description": "Program website",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "category",
+                "description",
+                "name",
+                "website"
+            ],
+            "type": "object"
         }
     },
     "properties": {
         "$schema": {
-            "description": "Pointer to the schema against which this document should be validated/Zeiger zu dem verwendeten Dokument welches nach diesem validiert werden soll",
+            "description": "Pointer to the schema against which this document should be validated",
             "title": "Schema",
             "type": "string"
         },
