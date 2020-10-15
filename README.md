@@ -1,5 +1,28 @@
 # BestPrograms
+
 Repo for a list of the best programs (Linux + Windows)
+
+*The following content needs to be migrated to the JSON file:*
+
+[//]: # (Best Programs begin)
+- 3D Computer Graphics
+  - [Blender](https://github.com/lawl/NoiseTorch) (`Linux`, `Windows`, `OpenSource`, `GUI`, `modelling`, `rendering`): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games
+    - Pacman: [`blender`](https://www.archlinux.org/packages/?sort=&q=blender)
+- Audio
+  - [Audacity](https://www.audacityteam.org/) (`Linux`, `Windows`, `OpenSource`, `GUI`, `audio-editor`): Edit/Mix audio tracks
+    - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
+  - [Noisetorch](https://github.com/lawl/NoiseTorch) (`Linux`, `sudo-rights-necessary`, `OpenSource`, `GUI`, `microphone`, `real-time`, `noise-suppression`): Real-time microphone noise suppression
+    - Bugs: If a source changes or an output is changed everything needs to be initialized again
+    - Pacman [AUR]: [`noisetorch-bin`](https://aur.archlinux.org/packages/?O=0&K=noisetorch-bin)
+  - [Playerctl](https://github.com/altdesktop/playerctl) (`Linux`, `OpenSource`, `media-player-control`): Control global media player playback
+    - Pacman: [`playerctl`](https://www.archlinux.org/packages/?sort=&q=playerctl)
+- Web
+  - [Firefox](https://www.mozilla.org/de/firefox/new/) (`Linux`, `Windows`, `OpenSource`, `GUI`, `web-browser`): A browser
+    - Pacman: [`firefox`](https://www.archlinux.org/packages/?sort=&q=firefox)
+
+[//]: # (Best Programs end)
+
+*old*:
 
 ## `pacman`
 

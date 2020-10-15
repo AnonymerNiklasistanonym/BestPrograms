@@ -1,0 +1,99 @@
+{
+    "$schema": "./types/best_programs.schema.json",
+    "programs": [
+        {
+            "name": "Audacity",
+            "description": "Edit/Mix audio tracks",
+            "website": "https://www.audacityteam.org/",
+            "gui": true,
+            "openSource": true,
+            "packageManagerInfo": {
+                "pacman": "audacity"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "category": "Audio",
+            "tags": [
+                "audio-editor"
+            ]
+        },
+        {
+            "name": "Noisetorch",
+            "description": "Real-time microphone noise suppression",
+            "bugs": "If a source changes or an output is changed everything needs to be initialized again",
+            "setup": "To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded",
+            "website": "https://github.com/lawl/NoiseTorch",
+            "gui": true,
+            "openSource": true,
+            "packageManagerInfo": {
+                "pacmanAur": "noisetorch-bin"
+            },
+            "platformInfo": {
+                "linux": true,
+                "linuxSudoRightsNecessary": true
+            },
+            "category": "Audio",
+            "tags": [
+                "microphone",
+                "real-time",
+                "noise-suppression"
+            ]
+        },
+        {
+            "name": "Playerctl",
+            "description": "Control global media player playback",
+            "website": "https://github.com/altdesktop/playerctl",
+            "gui": false,
+            "openSource": true,
+            "packageManagerInfo": {
+                "pacman": "playerctl"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "category": "Audio",
+            "tags": [
+                "media-player-control"
+            ]
+        },
+        {
+            "name": "Blender",
+            "description": "A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games",
+            "website": "https://github.com/lawl/NoiseTorch",
+            "gui": true,
+            "openSource": true,
+            "packageManagerInfo": {
+                "pacman": "blender"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "category": "3D Computer Graphics",
+            "tags": [
+                "modelling",
+                "rendering"
+            ]
+        },
+        {
+            "name": "Firefox",
+            "description": "A browser",
+            "website": "https://www.mozilla.org/de/firefox/new/",
+            "gui": true,
+            "openSource": true,
+            "packageManagerInfo": {
+                "pacman": "firefox"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "category": "Web",
+            "tags": [
+                "web-browser"
+            ]
+        }
+    ]
+}
