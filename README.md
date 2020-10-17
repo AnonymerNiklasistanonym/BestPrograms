@@ -61,7 +61,7 @@ Repo for a list of the best programs (Linux + Windows):
   - [sqlitestudio](http://sqlitestudio.pl): Manage/Read SQLite databases
 
     `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `database-manager`, `sqlite`
-    - Pacman: [`sqlitestudio`](https://www.archlinux.org/packages/?sort=&q=sqlitestudio)
+    - Pacman [AUR]: [`sqlitestudio`](https://aur.archlinux.org/packages/?O=0&K=sqlitestudio)
 - Desktop Environment
   - [xscreensaver](https://www.jwz.org/xscreensaver): Extended screensaver/locker for xserver environments
 
@@ -150,6 +150,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `OpenSource-GPL`, `GUI`, `cups`, `printer-manager`
     - Pacman: [`system-config-printer`](https://www.archlinux.org/packages/?sort=&q=system-config-printer)
+- Screenshare
+  - [scrcpy](https://github.com/Genymobile/scrcpy): Display and control a USB connected Android 5.0+ device
+
+    `Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `android`
+    - Pacman [AUR]: [`scrcpy`](https://aur.archlinux.org/packages/?O=0&K=scrcpy)
 - Storage
   - [Filezilla](https://filezilla-project.org): FTP, FTPS and SFTP client
 

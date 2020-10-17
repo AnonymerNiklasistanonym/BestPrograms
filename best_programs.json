@@ -636,6 +636,24 @@
             "website": "https://github.com/OpenPrinting/system-config-printer"
         },
         {
+            "category": "Screenshare",
+            "description": "Display and control a USB connected Android 5.0+ device",
+            "gui": true,
+            "name": "scrcpy",
+            "openSource": "APACHE",
+            "packageManagerInfo": {
+                "pacmanAur": "scrcpy"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "android"
+            ],
+            "website": "https://github.com/Genymobile/scrcpy"
+        },
+        {
             "category": "Storage",
             "description": "FTP, FTPS and SFTP client",
             "gui": true,
