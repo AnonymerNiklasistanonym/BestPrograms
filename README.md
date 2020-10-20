@@ -123,6 +123,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `image-editor`, `image-viewer`
     - Pacman: [`darktable`](https://www.archlinux.org/packages/?sort=&q=darktable)
+- Learning
+  - [Anki](https://ankisrs.net/): Index card based learning application with cloud synchronization
+
+    `Linux`, `Windows`, `OpenSource-AGPL3`, `GUI`, `cloud-synchronization`, `index-card-based`
+    - Pacman: [`anki`](https://www.archlinux.org/packages/?sort=&q=anki)
 - Music
   - [MuseScore](https://musescore.org): A scorewriter
 
@@ -168,6 +173,14 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `partition-manager`
     - Pacman: [`gnome-disk-utility`](https://www.archlinux.org/packages/?sort=&q=gnome-disk-utility)
+  - [grive](https://github.com/vitalif/grive2): Synchronize Google Drive data
+
+    `Linux`, `OpenSource-GPL2`, `google-drive-synchronization`
+    - Pacman [AUR GIT]: [`grive-git`](https://aur.archlinux.org/packages/?O=0&K=grive-git)
+  - [onedrive-abraunegg](https://github.com/abraunegg/onedrive): Synchronize Microsoft OneDrive data
+
+    `Linux`, `OpenSource-GPL`, `microsoft-onedrive-synchronization`
+    - Pacman [AUR]: [`onedrive-abraunegg`](https://aur.archlinux.org/packages/?O=0&K=onedrive-abraunegg)
   - [smartmontools](http://smartmontools.sourceforge.net): Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives
 
     `Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `ssd-health`
@@ -182,6 +195,10 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `OpenSource-MIT`, `hardware-monitor`, `task-manager`
     - Pacman: [`htop`](https://www.archlinux.org/packages/?sort=&q=htop)
+  - [timeshift](https://github.com/teejee2008/timeshift): A system restore utility that also allows file restoration
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `os-backup`
+    - Pacman [AUR]: [`timeshift`](https://aur.archlinux.org/packages/?O=0&K=timeshift)
 - Video
   - [Handbrake](https://handbrake.fr): A video converter
 

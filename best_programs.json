@@ -526,6 +526,25 @@
             "website": "https://darktable.org"
         },
         {
+            "category": "Learning",
+            "description": "Index card based learning application with cloud synchronization",
+            "gui": true,
+            "name": "Anki",
+            "openSource": "AGPL3",
+            "packageManagerInfo": {
+                "pacman": "anki"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "cloud-synchronization",
+                "index-card-based"
+            ],
+            "website": "https://ankisrs.net/"
+        },
+        {
             "category": "Music",
             "description": "A scorewriter",
             "gui": true,
@@ -708,6 +727,40 @@
         },
         {
             "category": "Storage",
+            "description": "Synchronize Google Drive data",
+            "gui": false,
+            "name": "grive",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacmanAurGit": "grive-git"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "google-drive-synchronization"
+            ],
+            "website": "https://github.com/vitalif/grive2"
+        },
+        {
+            "category": "Storage",
+            "description": "Synchronize Microsoft OneDrive data",
+            "gui": false,
+            "name": "onedrive-abraunegg",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacmanAur": "onedrive-abraunegg"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "microsoft-onedrive-synchronization"
+            ],
+            "website": "https://github.com/abraunegg/onedrive"
+        },
+        {
+            "category": "Storage",
             "description": "Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives",
             "gui": true,
             "name": "smartmontools",
@@ -760,6 +813,23 @@
                 "task-manager"
             ],
             "website": "https://htop.dev"
+        },
+        {
+            "category": "System",
+            "description": "A system restore utility that also allows file restoration",
+            "gui": true,
+            "name": "timeshift",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacmanAur": "timeshift"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "os-backup"
+            ],
+            "website": "https://github.com/teejee2008/timeshift"
         },
         {
             "category": "Video",
