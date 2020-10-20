@@ -97,6 +97,19 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `OpenSource-GPL`, `GUI`, `text-editor`
     - Pacman: [`gedit`](https://www.archlinux.org/packages/?sort=&q=gedit)
+- Fonts
+  - [Fira Code](https://github.com/tonsky/FiraCode): Font with nice ligatures for programmers
+
+    `Linux`, `Windows`, `OpenSource-OFL`, `ligatures`
+    - Pacman: [`ttf-fira-code`](https://www.archlinux.org/packages/?sort=&q=ttf-fira-code)
+  - [JetBrains Mono](https://www.jetbrains.com/lp/mono): Font with nice ligatures for programmers
+
+    `Linux`, `Windows`, `OpenSource-APACHE`, `ligatures`
+    - Pacman: [`ttf-jetbrains-mono`](https://www.archlinux.org/packages/?sort=&q=ttf-jetbrains-mono)
+  - [noto-fonts-emoji](https://www.google.com/get/noto): Get colour emojis on Linux (for Discord and more)
+
+    `Linux`, `OpenSource-OFL`, `emojis`
+    - Pacman: [`noto-fonts-emoji`](https://www.archlinux.org/packages/?sort=&q=noto-fonts-emoji)
 - Graphs
   - [dia](http://live.gnome.org/Dia): End of life graph creator for UML/ERM/... that also has a cli export interface
 

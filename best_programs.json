@@ -412,6 +412,59 @@
             "website": "https://wiki.gnome.org/Apps/Gedit"
         },
         {
+            "category": "Fonts",
+            "description": "Font with nice ligatures for programmers",
+            "gui": false,
+            "name": "Fira Code",
+            "openSource": "OFL",
+            "packageManagerInfo": {
+                "pacman": "ttf-fira-code"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "ligatures"
+            ],
+            "website": "https://github.com/tonsky/FiraCode"
+        },
+        {
+            "category": "Fonts",
+            "description": "Font with nice ligatures for programmers",
+            "gui": false,
+            "name": "JetBrains Mono",
+            "openSource": "APACHE",
+            "packageManagerInfo": {
+                "pacman": "ttf-jetbrains-mono"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "ligatures"
+            ],
+            "website": "https://www.jetbrains.com/lp/mono"
+        },
+        {
+            "category": "Fonts",
+            "description": "Get colour emojis on Linux (for Discord and more)",
+            "gui": false,
+            "name": "noto-fonts-emoji",
+            "openSource": "OFL",
+            "packageManagerInfo": {
+                "pacman": "noto-fonts-emoji"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "emojis"
+            ],
+            "website": "https://www.google.com/get/noto"
+        },
+        {
             "category": "Graphs",
             "description": "End of life graph creator for UML/ERM/... that also has a cli export interface",
             "gui": true,
