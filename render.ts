@@ -8,10 +8,10 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
 
     return Array.from(allCategoriesSet).sort().map(category => {
         const allProgramsOfCategory = data.programs.filter(a => a.category === category).sort((a, b) => {
-            if (a.name < b.name) {
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
                 return -1
             }
-            return a.name > b.name ? 1 : 0
+            return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : 0
         });
         return `- ${category}\n` + allProgramsOfCategory.map(program => {
 

@@ -69,10 +69,18 @@ Repo for a list of the best programs (Linux + Windows):
     - Bugs: The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown
     - Pacman: [`xscreensaver`](https://www.archlinux.org/packages/?sort=&q=xscreensaver)
 - Development
+  - [gedit](https://wiki.gnome.org/Apps/Gedit): Simple text editor
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `text-editor`
+    - Pacman: [`gedit`](https://www.archlinux.org/packages/?sort=&q=gedit)
   - [GitHub Desktop](https://desktop.github.com): GUI for git repository managing that is optimized for GitHub repositories
 
     `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `git`, `git-manager`, `github`
     - Pacman [AUR]: [`github-desktop`](https://aur.archlinux.org/packages/?O=0&K=github-desktop)
+  - [glogg](http://glogg.bonnefon.org/): Fast log file reader (text files)
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `log-reader`
+    - Pacman [AUR]: [`glogg`](https://aur.archlinux.org/packages/?O=0&K=glogg)
   - [Intellij Idea Community](https://www.jetbrains.com/idea): Java (Android) IDE
 
     `Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `android`, `debugging`, `java`, `text-editor`
@@ -93,14 +101,6 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `debugging`, `extensions`, `javascript`, `text-editor`, `typescript`, `web-development`
     - Pacman: [`code`](https://www.archlinux.org/packages/?sort=&q=code)
-  - [gedit](https://wiki.gnome.org/Apps/Gedit): Simple text editor
-
-    `Linux`, `OpenSource-GPL`, `GUI`, `text-editor`
-    - Pacman: [`gedit`](https://www.archlinux.org/packages/?sort=&q=gedit)
-  - [glogg](http://glogg.bonnefon.org/): Fast log file reader (text files)
-
-    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `log-reader`
-    - Pacman [AUR]: [`glogg`](https://aur.archlinux.org/packages/?O=0&K=glogg)
 - Fonts
   - [Fira Code](https://github.com/tonsky/FiraCode): Font with nice ligatures for programmers
 
@@ -120,6 +120,10 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `class-diagrams`, `erm`, `uml`
     - Pacman: [`dia`](https://www.archlinux.org/packages/?sort=&q=dia)
 - Images
+  - [darktable](https://darktable.org): Utility to organize images
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `image-editor`, `image-viewer`
+    - Pacman: [`darktable`](https://www.archlinux.org/packages/?sort=&q=darktable)
   - [Inkscape](https://inkscape.org): Vector graphics editor
 
     `Linux`, `Windows`, `OpenSource-GPL+LGPL`, `GUI`, `vector-graphics-editor`
@@ -136,10 +140,6 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `image-editor`
     - Pacman: [`pinta`](https://www.archlinux.org/packages/?sort=&q=pinta)
-  - [darktable](https://darktable.org): Utility to organize images
-
-    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `image-editor`, `image-viewer`
-    - Pacman: [`darktable`](https://www.archlinux.org/packages/?sort=&q=darktable)
 - Learning
   - [Anki](https://ankisrs.net/): Index card based learning application with cloud synchronization
 
@@ -182,14 +182,14 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `Windows`, `OpenSource-APACHE`, `GUI`, `android`
     - Pacman [AUR]: [`scrcpy`](https://aur.archlinux.org/packages/?O=0&K=scrcpy)
 - Storage
-  - [Filezilla](https://filezilla-project.org): FTP, FTPS and SFTP client
-
-    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`
-    - Pacman: [`filezilla`](https://www.archlinux.org/packages/?sort=&q=filezilla)
   - [baobab](https://wiki.gnome.org/Apps/DiskUsageAnalyzer): Visualize files and their sizes of a drive in a pie graph
 
     `Linux`, `OpenSource-GPL2`, `GUI`, `file-system-usage-monitor`
     - Pacman: [`baobab`](https://www.archlinux.org/packages/?sort=&q=baobab)
+  - [Filezilla](https://filezilla-project.org): FTP, FTPS and SFTP client
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`
+    - Pacman: [`filezilla`](https://www.archlinux.org/packages/?sort=&q=filezilla)
   - [gnome-disk-utility](https://gitlab.gnome.org/GNOME/gnome-disk-utility): Disk Management Utility to get connected drives, their partitions and more details
 
     `Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `partition-manager`
