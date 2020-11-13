@@ -59,15 +59,15 @@ const sortObject = <T>(unsorted: T): T => {
     if (orderBestProgramsJsonFile) {
         const newData: BestPrograms.BestPrograms = { ...data };
         newData.programs = data.programs.sort((a, b) => {
-            if (a.category < b.category) {
+            if (a.category.toLowerCase() < b.category.toLowerCase()) {
                 return -1;
-            } else if (a.category > b.category) {
+            } else if (a.category.toLowerCase() > b.category.toLowerCase()) {
                 return 1;
             } else {
-                if (a.name < b.name) {
+                if (a.name.toLowerCase() < b.name.toLowerCase()) {
                     return -1;
                 }
-                return a.name > b.name ? 1 : 0;
+                return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : 0;
             }
         }).map(unordered => {
             if (unordered.tags) {

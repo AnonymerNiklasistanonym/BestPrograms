@@ -272,6 +272,23 @@
         },
         {
             "category": "Development",
+            "description": "Simple text editor",
+            "gui": true,
+            "name": "gedit",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "gedit"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "text-editor"
+            ],
+            "website": "https://wiki.gnome.org/Apps/Gedit"
+        },
+        {
+            "category": "Development",
             "description": "GUI for git repository managing that is optimized for GitHub repositories",
             "gui": true,
             "name": "GitHub Desktop",
@@ -289,6 +306,24 @@
                 "github"
             ],
             "website": "https://desktop.github.com"
+        },
+        {
+            "category": "Development",
+            "description": "Fast log file reader (text files)",
+            "gui": true,
+            "name": "glogg",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacmanAur": "glogg"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "log-reader"
+            ],
+            "website": "http://glogg.bonnefon.org/"
         },
         {
             "category": "Development",
@@ -395,41 +430,6 @@
             "website": "https://github.com/microsoft/vscode"
         },
         {
-            "category": "Development",
-            "description": "Simple text editor",
-            "gui": true,
-            "name": "gedit",
-            "openSource": "GPL",
-            "packageManagerInfo": {
-                "pacman": "gedit"
-            },
-            "platformInfo": {
-                "linux": true
-            },
-            "tags": [
-                "text-editor"
-            ],
-            "website": "https://wiki.gnome.org/Apps/Gedit"
-        },
-        {
-            "category": "Development",
-            "description": "Fast log file reader (text files)",
-            "gui": true,
-            "name": "glogg",
-            "openSource": "GPL3",
-            "packageManagerInfo": {
-                "pacmanAur": "glogg"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "log-reader"
-            ],
-            "website": "http://glogg.bonnefon.org/"
-        },
-        {
             "category": "Fonts",
             "description": "Font with nice ligatures for programmers",
             "gui": false,
@@ -501,6 +501,25 @@
                 "uml"
             ],
             "website": "http://live.gnome.org/Dia"
+        },
+        {
+            "category": "Images",
+            "description": "Utility to organize images",
+            "gui": true,
+            "name": "darktable",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "darktable"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "image-editor",
+                "image-viewer"
+            ],
+            "website": "https://darktable.org"
         },
         {
             "category": "Images",
@@ -576,25 +595,6 @@
                 "image-editor"
             ],
             "website": "https://pinta-project.com"
-        },
-        {
-            "category": "Images",
-            "description": "Utility to organize images",
-            "gui": true,
-            "name": "darktable",
-            "openSource": "GPL3",
-            "packageManagerInfo": {
-                "pacman": "darktable"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "image-editor",
-                "image-viewer"
-            ],
-            "website": "https://darktable.org"
         },
         {
             "category": "Learning",
@@ -762,6 +762,23 @@
         },
         {
             "category": "Storage",
+            "description": "Visualize files and their sizes of a drive in a pie graph",
+            "gui": true,
+            "name": "baobab",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "baobab"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "file-system-usage-monitor"
+            ],
+            "website": "https://wiki.gnome.org/Apps/DiskUsageAnalyzer"
+        },
+        {
+            "category": "Storage",
             "description": "FTP, FTPS and SFTP client",
             "gui": true,
             "name": "Filezilla",
@@ -777,23 +794,6 @@
                 "file-system-usage-monitor"
             ],
             "website": "https://filezilla-project.org"
-        },
-        {
-            "category": "Storage",
-            "description": "Visualize files and their sizes of a drive in a pie graph",
-            "gui": true,
-            "name": "baobab",
-            "openSource": "GPL2",
-            "packageManagerInfo": {
-                "pacman": "baobab"
-            },
-            "platformInfo": {
-                "linux": true
-            },
-            "tags": [
-                "file-system-usage-monitor"
-            ],
-            "website": "https://wiki.gnome.org/Apps/DiskUsageAnalyzer"
         },
         {
             "category": "Storage",
