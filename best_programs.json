@@ -412,6 +412,24 @@
             "website": "https://wiki.gnome.org/Apps/Gedit"
         },
         {
+            "category": "Development",
+            "description": "Fast log file reader (text files)",
+            "gui": true,
+            "name": "glogg",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacmanAur": "glogg"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "log-reader"
+            ],
+            "website": "http://glogg.bonnefon.org/"
+        },
+        {
             "category": "Fonts",
             "description": "Font with nice ligatures for programmers",
             "gui": false,
@@ -614,6 +632,23 @@
                 "scorewriter"
             ],
             "website": "https://musescore.org"
+        },
+        {
+            "category": "Office",
+            "description": "Compare PDF files visually and find the differences on a page by page basis",
+            "gui": true,
+            "name": "DiffPDF",
+            "openSource": "GPL2",
+            "packageManagerInfo": {
+                "pacman": "diffpdf"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "pdf"
+            ],
+            "website": "https://gitlab.com/eang/diffpdf"
         },
         {
             "category": "Office",

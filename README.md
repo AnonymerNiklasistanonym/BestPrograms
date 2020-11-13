@@ -97,6 +97,10 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `OpenSource-GPL`, `GUI`, `text-editor`
     - Pacman: [`gedit`](https://www.archlinux.org/packages/?sort=&q=gedit)
+  - [glogg](http://glogg.bonnefon.org/): Fast log file reader (text files)
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `log-reader`
+    - Pacman [AUR]: [`glogg`](https://aur.archlinux.org/packages/?O=0&K=glogg)
 - Fonts
   - [Fira Code](https://github.com/tonsky/FiraCode): Font with nice ligatures for programmers
 
@@ -147,6 +151,10 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `scorewriter`
     - Pacman: [`musescore`](https://www.archlinux.org/packages/?sort=&q=musescore)
 - Office
+  - [DiffPDF](https://gitlab.com/eang/diffpdf): Compare PDF files visually and find the differences on a page by page basis
+
+    `Linux`, `OpenSource-GPL2`, `GUI`, `pdf`
+    - Pacman: [`diffpdf`](https://www.archlinux.org/packages/?sort=&q=diffpdf)
   - [Libre Office](https://www.libreoffice.org): Free office suite
 
     `Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`
