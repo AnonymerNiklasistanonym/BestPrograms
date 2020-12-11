@@ -597,6 +597,25 @@
             "website": "https://pinta-project.com"
         },
         {
+            "category": "Inputsharing",
+            "description": "Share keyboard and mouse across devices (even across operating systems) via client server relationship",
+            "gui": true,
+            "name": "Barrier",
+            "openSource": "GPL2WithOpeSSLException",
+            "packageManagerInfo": {
+                "pacman": "barrier"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "keyboard-sharing",
+                "mouse-sharing"
+            ],
+            "website": "https://github.com/debauchee/barrier"
+        },
+        {
             "category": "Learning",
             "description": "Index card based learning application with cloud synchronization",
             "gui": true,

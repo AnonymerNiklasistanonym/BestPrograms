@@ -140,6 +140,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `image-editor`
     - Pacman: [`pinta`](https://www.archlinux.org/packages/?sort=&q=pinta)
+- Inputsharing
+  - [Barrier](https://github.com/debauchee/barrier): Share keyboard and mouse across devices (even across operating systems) via client server relationship
+
+    `Linux`, `Windows`, `OpenSource-GPL2WithOpeSSLException`, `GUI`, `keyboard-sharing`, `mouse-sharing`
+    - Pacman: [`barrier`](https://www.archlinux.org/packages/?sort=&q=barrier)
 - Learning
   - [Anki](https://ankisrs.net/): Index card based learning application with cloud synchronization
 
