@@ -692,6 +692,19 @@
         },
         {
             "category": "Office",
+            "description": "Freeware to easily delete/pick/reorder pages in pdf files",
+            "gui": true,
+            "name": "pdf24",
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "pdf"
+            ],
+            "website": "https://en.pdf24.org/"
+        },
+        {
+            "category": "Office",
             "description": "TeX Live suite",
             "gui": true,
             "name": "TeX Live suite",

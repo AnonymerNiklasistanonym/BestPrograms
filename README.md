@@ -164,6 +164,9 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`
     - Pacman: [`libreoffice-fresh`](https://www.archlinux.org/packages/?sort=&q=libreoffice-fresh)
+  - [pdf24](https://en.pdf24.org/): Freeware to easily delete/pick/reorder pages in pdf files
+
+    `Windows`, `GUI`, `pdf`
   - [TeX Live suite](http://tug.org/texlive): TeX Live suite
 
     `Linux`, `OpenSource-GPL`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`
