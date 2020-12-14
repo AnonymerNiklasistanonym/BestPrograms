@@ -164,6 +164,10 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`
     - Pacman: [`libreoffice-fresh`](https://www.archlinux.org/packages/?sort=&q=libreoffice-fresh)
+  - [Pandoc](https://pandoc.org/): Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `document-export`, `html`, `pdf`, `presentation-export`
+    - Pacman: [`pandoc`](https://www.archlinux.org/packages/?sort=&q=pandoc)
   - [pdf24](https://en.pdf24.org/): Freeware to easily delete/pick/reorder pages in pdf files
 
     `Windows`, `GUI`, `pdf`

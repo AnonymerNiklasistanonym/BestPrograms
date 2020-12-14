@@ -692,6 +692,27 @@
         },
         {
             "category": "Office",
+            "description": "Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering",
+            "gui": false,
+            "name": "Pandoc",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "pandoc"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "document-export",
+                "html",
+                "pdf",
+                "presentation-export"
+            ],
+            "website": "https://pandoc.org/"
+        },
+        {
+            "category": "Office",
             "description": "Freeware to easily delete/pick/reorder pages in pdf files",
             "gui": true,
             "name": "pdf24",
