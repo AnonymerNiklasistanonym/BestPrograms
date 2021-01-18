@@ -42,7 +42,7 @@
             "website": "https://www.audacityteam.org"
         },
         {
-            "bugs": "If a source changes or an output is changed everything needs to be initialized again",
+            "bugs": "If a source changes or an output is changed everything needs to be initialized again; Discord and some other applications that use microphones need to be restarted after unloading because suddenly all microphone inputs are gone",
             "category": "Audio",
             "description": "Real-time microphone noise suppression",
             "gui": true,
@@ -665,6 +665,7 @@
                 "linux": true
             },
             "tags": [
+                "comparison",
                 "pdf"
             ],
             "website": "https://gitlab.com/eang/diffpdf"
@@ -689,6 +690,25 @@
                 "table-editor"
             ],
             "website": "https://www.libreoffice.org"
+        },
+        {
+            "category": "Office",
+            "description": "Compare text files visually and find the differences",
+            "gui": true,
+            "name": "Meld",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "meld"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "comparison",
+                "text"
+            ],
+            "website": "https://meldmerge.org/"
         },
         {
             "category": "Office",
@@ -1030,6 +1050,26 @@
             "website": "https://obsproject.com"
         },
         {
+            "bugs": "Many GPU accelerated options do not actually use the GPU or multiple threads which makes the program really slow and NVIDIA GPU accelerated video encoding crashes every time on export",
+            "category": "Video",
+            "description": "A video editor",
+            "gui": true,
+            "name": "OpenShot",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "openshot"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "video-creator",
+                "video-editor"
+            ],
+            "website": "https://www.openshot.org/"
+        },
+        {
             "category": "Video",
             "description": "A video editor",
             "gui": true,
@@ -1043,8 +1083,8 @@
                 "windows": true
             },
             "tags": [
-                "video-compressor",
-                "video-converter"
+                "video-creator",
+                "video-editor"
             ],
             "website": "https://www.shotcut.org"
         },

@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/AnonymerNiklasistanonym/BestPrograms#readme",
   "devDependencies": {
-    "@types/node": "^14.11.8",
-    "json-schema-to-typescript": "^9.1.1",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
+    "@types/node": "^14.14.21",
+    "json-schema-to-typescript": "^10.1.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
   }
 }

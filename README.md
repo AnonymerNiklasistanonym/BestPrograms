@@ -17,7 +17,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `noise-suppression`, `real-time`
     - Setup: To create a new microphone source based on an existing microphone input with ambient sounds suppressed like keyboard clicks or fan noises the gui needs to be started and an microphone input needs to be selected and loaded
-    - Bugs: If a source changes or an output is changed everything needs to be initialized again
+    - Bugs: If a source changes or an output is changed everything needs to be initialized again; Discord and some other applications that use microphones need to be restarted after unloading because suddenly all microphone inputs are gone
     - Pacman [AUR]: [`noisetorch-bin`](https://aur.archlinux.org/packages/?O=0&K=noisetorch-bin)
   - [Playerctl](https://github.com/altdesktop/playerctl): Control global media player playback via the command line
 
@@ -158,12 +158,16 @@ Repo for a list of the best programs (Linux + Windows):
 - Office
   - [DiffPDF](https://gitlab.com/eang/diffpdf): Compare PDF files visually and find the differences on a page by page basis
 
-    `Linux`, `OpenSource-GPL2`, `GUI`, `pdf`
+    `Linux`, `OpenSource-GPL2`, `GUI`, `comparison`, `pdf`
     - Pacman: [`diffpdf`](https://www.archlinux.org/packages/?sort=&q=diffpdf)
   - [Libre Office](https://www.libreoffice.org): Free office suite
 
     `Linux`, `Windows`, `OpenSource-LGPL3`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`, `table-editor`
     - Pacman: [`libreoffice-fresh`](https://www.archlinux.org/packages/?sort=&q=libreoffice-fresh)
+  - [Meld](https://meldmerge.org/): Compare text files visually and find the differences
+
+    `Linux`, `Windows`, `OpenSource-GPL`, `GUI`, `comparison`, `text`
+    - Pacman: [`meld`](https://www.archlinux.org/packages/?sort=&q=meld)
   - [Pandoc](https://pandoc.org/): Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering
 
     `Linux`, `Windows`, `OpenSource-GPL`, `document-export`, `html`, `pdf`, `presentation-export`
@@ -245,9 +249,14 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-GPL2`, `GUI`, `live-streaming`, `video-streaming`
     - Pacman: [`obs-studio`](https://www.archlinux.org/packages/?sort=&q=obs-studio)
+  - [OpenShot](https://www.openshot.org/): A video editor
+
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-creator`, `video-editor`
+    - Bugs: Many GPU accelerated options do not actually use the GPU or multiple threads which makes the program really slow and NVIDIA GPU accelerated video encoding crashes every time on export
+    - Pacman: [`openshot`](https://www.archlinux.org/packages/?sort=&q=openshot)
   - [Shotcut](https://www.shotcut.org): A video editor
 
-    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-compressor`, `video-converter`
+    `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `video-creator`, `video-editor`
     - Pacman: [`shotcut`](https://www.archlinux.org/packages/?sort=&q=shotcut)
   - [VLC Media Player](https://www.videolan.org/vlc): A feature rich video player
 
