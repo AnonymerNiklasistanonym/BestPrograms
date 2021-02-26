@@ -42,6 +42,23 @@
             "website": "https://www.audacityteam.org"
         },
         {
+            "category": "Audio",
+            "description": "A simple music player that automatically downloads cover/artist images and other information",
+            "gui": true,
+            "name": "Lollypop",
+            "openSource": "GPL",
+            "packageManagerInfo": {
+                "pacman": "lollypop"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "music-player"
+            ],
+            "website": "https://gitlab.gnome.org/World/lollypop"
+        },
+        {
             "bugs": "If a source changes or an output is changed everything needs to be initialized again; Discord and some other applications that use microphones need to be restarted after unloading because suddenly all microphone inputs are gone",
             "category": "Audio",
             "description": "Real-time microphone noise suppression",

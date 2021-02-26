@@ -13,6 +13,10 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
+  - [Lollypop](https://gitlab.gnome.org/World/lollypop): A simple music player that automatically downloads cover/artist images and other information
+
+    `Linux`, `OpenSource-GPL`, `GUI`, `music-player`
+    - Pacman: [`lollypop`](https://www.archlinux.org/packages/?sort=&q=lollypop)
   - [Noisetorch](https://github.com/lawl/NoiseTorch): Real-time microphone noise suppression
 
     `Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `noise-suppression`, `real-time`
