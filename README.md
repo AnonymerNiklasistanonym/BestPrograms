@@ -118,6 +118,23 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `OpenSource-OFL`, `emojis`
     - Pacman: [`noto-fonts-emoji`](https://www.archlinux.org/packages/?sort=&q=noto-fonts-emoji)
+- Gaming
+  - [Goverlay](https://github.com/benjamimgois/goverlay): Mangohud Configuration Editor
+
+    `Linux`, `OpenSource-GPL3`, `GUI`, `game-logging`, `game-overlay`
+    - Pacman [AUR]: [`goverlay-bin`](https://aur.archlinux.org/packages/?O=0&K=goverlay-bin)
+  - [Lutris](https://lutris.net): Game launcher
+
+    `Linux`, `OpenSource-GPL3`, `GUI`, `game-launcher`
+    - Pacman: [`lutris`](https://www.archlinux.org/packages/?sort=&q=lutris)
+  - [Mangohud](https://github.com/flightlessmango/MangoHud): Wine performance HUD and logging
+
+    `Linux`, `OpenSource-MIT`, `game-logging`, `game-overlay`
+    - Pacman [AUR]: [`mangohud`](https://aur.archlinux.org/packages/?O=0&K=mangohud)
+  - [Steam](https://steampowered.com): Steam game launcher
+
+    `Linux`, `Windows`, `ClosedSource`, `GUI`, `game-launcher`
+    - Pacman: [`steam`](https://www.archlinux.org/packages/?sort=&q=steam)
 - Graphs
   - [dia](http://live.gnome.org/Dia): End of life graph creator for UML/ERM/... that also has a cli export interface
 
@@ -278,3 +295,12 @@ Repo for a list of the best programs (Linux + Windows):
     - Pacman [AUR NIGHTLY]: [`firefox-nightly`](https://aur.archlinux.org/packages/?O=0&K=firefox-nightly)
 
 [//]: # (Best Programs end)
+
+---
+
+To update the list edit [`best_programs.json`](best_programs.json) and run:
+
+```sh
+npm install # this is only necessary once
+npm run start
+```

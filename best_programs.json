@@ -500,6 +500,77 @@
             "website": "https://www.google.com/get/noto"
         },
         {
+            "category": "Gaming",
+            "description": "Mangohud Configuration Editor",
+            "gui": true,
+            "name": "Goverlay",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacmanAur": "goverlay-bin"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "game-logging",
+                "game-overlay"
+            ],
+            "website": "https://github.com/benjamimgois/goverlay"
+        },
+        {
+            "category": "Gaming",
+            "description": "Game launcher",
+            "gui": true,
+            "name": "Lutris",
+            "openSource": "GPL3",
+            "packageManagerInfo": {
+                "pacman": "lutris"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "game-launcher"
+            ],
+            "website": "https://lutris.net"
+        },
+        {
+            "category": "Gaming",
+            "description": "Wine performance HUD and logging",
+            "gui": false,
+            "name": "Mangohud",
+            "openSource": "MIT",
+            "packageManagerInfo": {
+                "pacmanAur": "mangohud"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "game-logging",
+                "game-overlay"
+            ],
+            "website": "https://github.com/flightlessmango/MangoHud"
+        },
+        {
+            "category": "Gaming",
+            "description": "Steam game launcher",
+            "gui": true,
+            "name": "Steam",
+            "openSource": false,
+            "packageManagerInfo": {
+                "pacman": "steam"
+            },
+            "platformInfo": {
+                "windows": true,
+                "linux": true
+            },
+            "tags": [
+                "game-launcher"
+            ],
+            "website": "https://steampowered.com"
+        },
+        {
             "category": "Graphs",
             "description": "End of life graph creator for UML/ERM/... that also has a cli export interface",
             "gui": true,
