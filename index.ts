@@ -21,13 +21,16 @@ const readmeBestProgramsIndicators = {
 };
 
 /** Sort JSON object keys */
-const sortObject = <T>(unsorted: T): T => {
-    const sorted = {};
-    Object.keys(unsorted).sort().forEach(key => {
-      sorted[key] = unsorted[key];
-    });
-    return sorted as T;
+/*
+This method was removed because it cannot be linted in TypeScript since there
+are cases where this method would not work.
+const sortObject = <T extends {}>(unsortedObject: T): T => {
+    return Object.keys(unsortedObject).sort()
+        .reduce((sortedObject, sortedKey) => ({
+            ...sortedObject, [sortedKey]: unsortedObject[sortedKey]
+        }), {}) as T;
 }
+*/
 
 (async (): Promise<void> => {
 
@@ -73,8 +76,8 @@ const sortObject = <T>(unsorted: T): T => {
             if (unordered.tags) {
                 unordered.tags = unordered.tags.sort();
             }
-            return sortObject(unordered);
-        })
+            return unordered;
+        });
         await fs.writeFile(inputBestProgramsFilePath, JSON.stringify(newData, undefined, 4));
     }
 
