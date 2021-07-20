@@ -489,6 +489,36 @@
             "website": "https://github.com/microsoft/vscode"
         },
         {
+            "category": "Files",
+            "description": "Find files really fast (and with regular expressions) which is way better than the default Windows search",
+            "gui": true,
+            "name": "Everything",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "file-searching",
+                "regular-expressions"
+            ],
+            "website": "https://www.voidtools.com/"
+        },
+        {
+            "category": "Files",
+            "description": "A user-friendly graphical tool used to batch rename files using regular expressions",
+            "gui": true,
+            "name": "RegexRenamer",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "file-renaming",
+                "regular-expressions"
+            ],
+            "website": "http://regexrenamer.sourceforge.net/"
+        },
+        {
             "category": "Fonts",
             "description": "Font with nice ligatures for programmers",
             "gui": false,
@@ -1095,6 +1125,20 @@
                 "ssd-health"
             ],
             "website": "http://smartmontools.sourceforge.net"
+        },
+        {
+            "category": "Storage",
+            "description": "Shows the file structure and file sizes in an easy to read graphical window",
+            "gui": true,
+            "name": "SpaceSniffer",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "file-system-usage-monitor"
+            ],
+            "website": "http://www.uderzo.it/main_products/space_sniffer/"
         },
         {
             "category": "System",

@@ -114,6 +114,13 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `debugging`, `extensions`, `javascript`, `text-editor`, `typescript`, `web-development`
     - Pacman: [`code`](https://www.archlinux.org/packages/?sort=&q=code)
+- Files
+  - [Everything](https://www.voidtools.com/): Find files really fast (and with regular expressions) which is way better than the default Windows search
+
+    `Windows`, `ClosedSource`, `GUI`, `file-searching`, `regular-expressions`
+  - [RegexRenamer](http://regexrenamer.sourceforge.net/): A user-friendly graphical tool used to batch rename files using regular expressions
+
+    `Windows`, `ClosedSource`, `GUI`, `file-renaming`, `regular-expressions`
 - Fonts
   - [Fira Code](https://github.com/tonsky/FiraCode): Font with nice ligatures for programmers
 
@@ -259,6 +266,9 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `OpenSource-GPL`, `GUI`, `file-system-usage-monitor`, `ssd-health`
     - Setup: Get SSD drive health/stats via `sudo smartctl -t long -a /dev/nvme0n1`
     - Pacman: [`smartmontools`](https://www.archlinux.org/packages/?sort=&q=smartmontools)
+  - [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/): Shows the file structure and file sizes in an easy to read graphical window
+
+    `Windows`, `ClosedSource`, `GUI`, `file-system-usage-monitor`
 - System
   - [Balena Etcher](https://balena.io/etcher): Burn ISO files for operating systems to USB sticks
 
