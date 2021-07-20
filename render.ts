@@ -41,7 +41,7 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
                 } else {
                     tags.push("OpenSource");
                 }
-            } else if (program.openSource === false) {
+            } else if (program.openSource === false || program.openSource === undefined) {
                 tags.push("ClosedSource");
             }
 

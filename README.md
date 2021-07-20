@@ -13,10 +13,19 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-CCPL+GPL2`, `GUI`, `audio-editor`
     - Pacman: [`audacity`](https://www.archlinux.org/packages/?sort=&q=audacity)
+  - [foobar2000](https://www.foobar2000.org/download): An advanced freeware audio player for the Windows platform
+
+    `Windows`, `ClosedSource`, `GUI`, `audio-player`
   - [Lollypop](https://gitlab.gnome.org/World/lollypop): A simple music player that automatically downloads cover/artist images and other information
 
     `Linux`, `OpenSource-GPL`, `GUI`, `music-player`
     - Pacman: [`lollypop`](https://www.archlinux.org/packages/?sort=&q=lollypop)
+  - [mp3DirectCut](https://mpesch3.de/index.html): A fast and extensive audio editor for encoded MP3 and AAC
+
+    `Windows`, `ClosedSource`, `GUI`, `audio-editor`
+  - [MP3TAG](https://www.mp3tag.de/en/): A powerful and easy-to-use tool to edit metadata of audio files
+
+    `Windows`, `ClosedSource`, `GUI`, `audio-tag-editor`
   - [Noisetorch](https://github.com/lawl/NoiseTorch): Real-time microphone noise suppression
 
     `Linux`, `sudo-rights-necessary`, `OpenSource-GPL3`, `GUI`, `microphone`, `noise-suppression`, `real-time`
@@ -157,6 +166,9 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `OpenSource-GPL3`, `GUI`, `draw`
     - Pacman: [`krita`](https://www.archlinux.org/packages/?sort=&q=krita)
+  - [Paint.NET](https://www.getpaint.net/): Drawing/editing program (much easier to use than GIMP)
+
+    `Windows`, `ClosedSource`, `GUI`, `image-editor`
   - [Pinta](https://pinta-project.com): Drawing/editing program modeled after Paint.NET (much easier to use than GIMP)
 
     `Linux`, `Windows`, `OpenSource-MIT`, `GUI`, `image-editor`
@@ -195,7 +207,10 @@ Repo for a list of the best programs (Linux + Windows):
     - Pacman: [`pandoc`](https://www.archlinux.org/packages/?sort=&q=pandoc)
   - [pdf24](https://en.pdf24.org/): Freeware to easily delete/pick/reorder pages in pdf files
 
-    `Windows`, `GUI`, `pdf`
+    `Windows`, `ClosedSource`, `GUI`, `pdf-editor`
+  - [SumatraPDF](https://www.sumatrapdfreader.org/download-free-pdf-viewer): View pdf files
+
+    `Windows`, `ClosedSource`, `GUI`, `pdf-viewer`
   - [TeX Live suite](http://tug.org/texlive): TeX Live suite
 
     `Linux`, `OpenSource-GPL`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`

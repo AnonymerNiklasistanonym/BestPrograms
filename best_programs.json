@@ -43,6 +43,20 @@
         },
         {
             "category": "Audio",
+            "description": "An advanced freeware audio player for the Windows platform",
+            "gui": true,
+            "name": "foobar2000",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "audio-player"
+            ],
+            "website": "https://www.foobar2000.org/download"
+        },
+        {
+            "category": "Audio",
             "description": "A simple music player that automatically downloads cover/artist images and other information",
             "gui": true,
             "name": "Lollypop",
@@ -57,6 +71,34 @@
                 "music-player"
             ],
             "website": "https://gitlab.gnome.org/World/lollypop"
+        },
+        {
+            "category": "Audio",
+            "description": "A fast and extensive audio editor for encoded MP3 and AAC",
+            "gui": true,
+            "name": "mp3DirectCut",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "audio-editor"
+            ],
+            "website": "https://mpesch3.de/index.html"
+        },
+        {
+            "category": "Audio",
+            "description": "A powerful and easy-to-use tool to edit metadata of audio files",
+            "gui": true,
+            "name": "MP3TAG",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "audio-tag-editor"
+            ],
+            "website": "https://www.mp3tag.de/en/"
         },
         {
             "bugs": "If a source changes or an output is changed everything needs to be initialized again; Discord and some other applications that use microphones need to be restarted after unloading because suddenly all microphone inputs are gone",
@@ -668,6 +710,20 @@
         },
         {
             "category": "Images",
+            "description": "Drawing/editing program (much easier to use than GIMP)",
+            "gui": true,
+            "name": "Paint.NET",
+            "openSource": false,
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "image-editor"
+            ],
+            "website": "https://www.getpaint.net/"
+        },
+        {
+            "category": "Images",
             "description": "Drawing/editing program modeled after Paint.NET (much easier to use than GIMP)",
             "gui": true,
             "name": "Pinta",
@@ -828,9 +884,22 @@
                 "windows": true
             },
             "tags": [
-                "pdf"
+                "pdf-editor"
             ],
             "website": "https://en.pdf24.org/"
+        },
+        {
+            "category": "Office",
+            "description": "View pdf files",
+            "gui": true,
+            "name": "SumatraPDF",
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "pdf-viewer"
+            ],
+            "website": "https://www.sumatrapdfreader.org/download-free-pdf-viewer"
         },
         {
             "category": "Office",
