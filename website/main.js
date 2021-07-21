@@ -56,10 +56,10 @@ fetch("./best_programs.json")
         renderTable()
 
         const filterInput = document.getElementById("filter")
-        filterInput.addEventListener("keypress", () => {
-            renderTable(filterInput.value)
-        })
-
-
+        for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
+            filterInput.addEventListener(eventName, () => {
+                renderTable(filterInput.value)
+            })
+        }
     })
     .catch(err => console.error)
