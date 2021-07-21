@@ -48,6 +48,7 @@ fetch("./best_programs.json")
                     || program?.category.toLowerCase().includes(programFilter)
                     || program?.description.toLowerCase().includes(programFilter)
                     || program?.website.toLowerCase().includes(programFilter)
+                    || program?.tags.some(tag => tag.toLowerCase().includes(programFilter))
             }).map(program => {
                 return [ program.name, program.category, program.description, program.website ]
             })))
