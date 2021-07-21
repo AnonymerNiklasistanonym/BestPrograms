@@ -25,7 +25,7 @@ const createTable = (thead, tbody) => {
     return table
 }
 
-fetch("../best_programs.json")
+fetch("./best_programs.json")
     .then(response => response.json())
     .then(jsonResponse => {
         console.log(jsonResponse)

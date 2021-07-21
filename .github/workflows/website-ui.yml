@@ -1,0 +1,52 @@
+name: Website CI CD
+
+################################################################
+# Only do this when on the website-ui branch for now
+################################################################
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ website-ui ]
+  pull_request:
+    branches: [ website-ui ]
+
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Copy best programs data
+      run: cp ./best_programs.json ./website/best_programs.json
+    - name: Temporarily save created "website" files
+      uses: actions/upload-artifact@v2
+      with:
+        name: website-artifacts
+        path: ./website-ui
+        retention-days: 7
+
+  deploy:
+    needs:
+    - build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Retrieve temporarily saved "website" files from the build job
+      uses: actions/download-artifact@v2
+      with:
+        name: website-artifacts
+        path: ./website-ui
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: ./website-ui
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
