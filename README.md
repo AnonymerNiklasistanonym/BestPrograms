@@ -217,7 +217,7 @@ Repo for a list of the best programs (Linux + Windows):
     `Windows`, `ClosedSource`, `GUI`, `pdf-editor`
   - [SumatraPDF](https://www.sumatrapdfreader.org/download-free-pdf-viewer): View pdf files
 
-    `Windows`, `ClosedSource`, `GUI`, `pdf-viewer`
+    `Windows`, `OpenSource-GPL3`, `GUI`, `pdf-viewer`
   - [TeX Live suite](http://tug.org/texlive): TeX Live suite
 
     `Linux`, `OpenSource-GPL`, `GUI`, `document-editor`, `office-suit`, `presentation-editor`

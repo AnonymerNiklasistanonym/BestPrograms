@@ -923,6 +923,7 @@
             "description": "View pdf files",
             "gui": true,
             "name": "SumatraPDF",
+            "openSource": "GPL3",
             "platformInfo": {
                 "windows": true
             },
