@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: website-artifacts
-        path: ./website-ui
+        path: ./website
         retention-days: 7
 
   deploy:
@@ -42,11 +42,11 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: website-artifacts
-        path: ./website-ui
+        path: ./bin
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2
       with:
         target_branch: gh-pages
-        build_dir: ./website-ui
+        build_dir: ./bin
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
