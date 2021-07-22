@@ -1,4 +1,6 @@
-const createTable = (thead, tbody) => {
+import type { BestPrograms, Program } from "../types/best_programs";
+
+const createTable = (thead: string[], tbody: string[][]) => {
     const table = document.createElement("table")
     const tableHead = document.createElement("thead")
     const tableBody = document.createElement("tbody")
@@ -32,10 +34,10 @@ fetch("./best_programs.json")
         const contentDiv = document.getElementById("content")
         contentDiv.innerText = JSON.stringify(jsonResponse, undefined, 4)
 
-        const jsonData = jsonResponse
+        const jsonData = jsonResponse as BestPrograms;
         const tableDiv = document.getElementById("table")
 
-        const renderTable = (filter) => {
+        const renderTable = (filter?: string) => {
             for (const childNode of tableDiv.childNodes) {
                 tableDiv.removeChild(childNode)
             }
@@ -56,11 +58,11 @@ fetch("./best_programs.json")
 
         renderTable()
 
-        const filterInput = document.getElementById("filter")
+        const filterInput = document.getElementById("filter") as HTMLInputElement
         for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
             filterInput.addEventListener(eventName, () => {
                 renderTable(filterInput.value)
             })
         }
     })
-    .catch(err => console.error)
+    .catch(console.error)
