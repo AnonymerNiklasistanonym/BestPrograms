@@ -27,6 +27,52 @@ const createTable = (thead: string[], tbody: string[][]) => {
     return table
 }
 
+const filterProgram2 = (program: Program, openSourceStrings: string[], filter?: string) => {
+    return filter === "" || filter === undefined
+            || program.name.toLowerCase().includes(filter)
+            || program.category.toLowerCase().includes(filter)
+            || program.description.toLowerCase().includes(filter)
+            || program.website.toLowerCase().includes(filter)
+            || program?.tags.some(tag => tag.toLowerCase().includes(filter))
+            || openSourceStrings.some(openSourceString => openSourceString.toLowerCase().includes(filter))
+}
+
+const filterProgram = (program: Program, filter?: string) => {
+    // Initially only find all the filter words split by a space
+    const programFilters: (string|string[])[] = filter === undefined
+        ? [] : filter.toLowerCase().split(" ").map(a => a.trim()).filter(b => b !== "")
+    // Find words that should be combined
+    for (const programFilter of programFilters) {
+        if (typeof programFilter === "string") {
+            const andFilter = programFilter.split("+").map(a => a.trim()).filter(b => b !== "")
+            if (andFilter.length > 1) {
+                programFilters.splice(programFilters.indexOf(programFilter), 1)
+                programFilters.push(andFilter)
+            }
+        }
+    }
+    console.log(`filter program (programFilters="${programFilters}")`)
+
+    const openSourceStrings = ["ClosedSource"]
+    if (typeof program?.openSource === "string") {
+        openSourceStrings.pop()
+        openSourceStrings.push(program.openSource)
+    }
+    if (Array.isArray(program?.openSource)) {
+        openSourceStrings.pop()
+        openSourceStrings.push(...program?.openSource)
+    }
+    console.log(`filter program (programFilters="${programFilters}")`)
+
+    return programFilters.some(programFilter => {
+        if (typeof programFilter === "string") {
+            return filterProgram2(program, openSourceStrings, programFilter)
+        } else {
+            return programFilter.every(a => filterProgram2(program, openSourceStrings, a))
+        }
+    })
+}
+
 fetch("./best_programs.json")
     .then(response => response.json())
     .then(jsonResponse => {
@@ -38,27 +84,23 @@ fetch("./best_programs.json")
         const tableDiv = document.getElementById("table")
 
         const renderTable = (filter?: string) => {
+            console.log(`render table (filter="${filter}")`)
             for (const childNode of tableDiv.childNodes) {
                 tableDiv.removeChild(childNode)
             }
             tableDiv.appendChild(createTable([
                 "name", "category", "description", "website"
             ], jsonData.programs.filter(program => {
-                const programFilter = filter?.toLowerCase().trim()
-                return programFilter === "" || programFilter === undefined
-                    || program?.name.toLowerCase().includes(programFilter)
-                    || program?.category.toLowerCase().includes(programFilter)
-                    || program?.description.toLowerCase().includes(programFilter)
-                    || program?.website.toLowerCase().includes(programFilter)
-                    || program?.tags.some(tag => tag.toLowerCase().includes(programFilter))
+                return filterProgram(program, filter)
             }).map(program => {
                 return [ program.name, program.category, program.description, program.website ]
             })))
         }
 
-        renderTable()
-
         const filterInput = document.getElementById("filter") as HTMLInputElement
+
+        renderTable(filterInput.value)
+
         for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
             filterInput.addEventListener(eventName, () => {
                 renderTable(filterInput.value)
