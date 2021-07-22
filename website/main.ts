@@ -51,7 +51,6 @@ const filterProgram = (program: Program, filter?: string) => {
             }
         }
     }
-    console.log(`filter program (programFilters="${programFilters}")`)
 
     const openSourceStrings = ["ClosedSource"]
     if (typeof program?.openSource === "string") {
@@ -62,9 +61,8 @@ const filterProgram = (program: Program, filter?: string) => {
         openSourceStrings.pop()
         openSourceStrings.push(...program?.openSource)
     }
-    console.log(`filter program (programFilters="${programFilters}")`)
 
-    return programFilters.some(programFilter => {
+    return programFilters.length === 0 || programFilters.some(programFilter => {
         if (typeof programFilter === "string") {
             return filterProgram2(program, openSourceStrings, programFilter)
         } else {
@@ -84,7 +82,6 @@ fetch("./best_programs.json")
         const tableDiv = document.getElementById("table")
 
         const renderTable = (filter?: string) => {
-            console.log(`render table (filter="${filter}")`)
             for (const childNode of tableDiv.childNodes) {
                 tableDiv.removeChild(childNode)
             }
