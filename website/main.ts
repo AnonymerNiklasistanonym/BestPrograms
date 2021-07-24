@@ -71,37 +71,38 @@ const filterProgram = (program: Program, filter?: string) => {
     })
 }
 
-fetch("./best_programs.json")
-    .then(response => response.json())
-    .then(jsonResponse => {
-        console.log(jsonResponse)
-        const contentDiv = document.getElementById("content")
-        contentDiv.innerText = JSON.stringify(jsonResponse, undefined, 4)
+try {
+    const response = await fetch("./best_programs.json")
+    if (!response.ok) {
+        throw `File (${response.url}) could not be fetched (${response.status}=${response.statusText})`
+    }
+    const jsonData = await response.json() as BestPrograms;
+    console.log(jsonData)
 
-        const jsonData = jsonResponse as BestPrograms;
-        const tableDiv = document.getElementById("table")
+    const contentDiv = document.getElementById("content")
+    contentDiv.innerText = JSON.stringify(jsonData, undefined, 4)
 
-        const renderTable = (filter?: string) => {
-            for (const childNode of tableDiv.childNodes) {
-                tableDiv.removeChild(childNode)
-            }
-            tableDiv.appendChild(createTable([
-                "name", "category", "description", "website"
-            ], jsonData.programs.filter(program => {
-                return filterProgram(program, filter)
-            }).map(program => {
-                return [ program.name, program.category, program.description, program.website ]
-            })))
+    const tableDiv = document.getElementById("table")
+    const renderTable = (filter?: string) => {
+        for (const childNode of tableDiv.childNodes) {
+            tableDiv.removeChild(childNode)
         }
+        tableDiv.appendChild(createTable([
+            "name", "category", "description", "website"
+        ], jsonData.programs.filter(program => {
+            return filterProgram(program, filter)
+        }).map(program => {
+            return [ program.name, program.category, program.description, program.website ]
+        })))
+    }
 
-        const filterInput = document.getElementById("filter") as HTMLInputElement
-
-        renderTable(filterInput.value)
-
-        for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
-            filterInput.addEventListener(eventName, () => {
-                renderTable(filterInput.value)
-            })
-        }
-    })
-    .catch(console.error)
+    const filterInput = document.getElementById("filter") as HTMLInputElement
+    renderTable(filterInput.value)
+    for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
+        filterInput.addEventListener(eventName, () => {
+            renderTable(filterInput.value)
+        })
+    }
+} catch(err) {
+    console.error(err)
+}
