@@ -1,5 +1,6 @@
 import type { BestPrograms, Program } from "../types/best_programs"
 
+// See also: https://github.com/handlebars-lang/handlebars.js/issues/1528#issue-449727984
 import * as Handlebars from 'handlebars/runtime'
 import "./handlebars/precompiled"
 
