@@ -31,6 +31,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install node modules
       run: npm ci
+    - name: Precompile Handlebars files
+      run: npm run handlebars
     - name: Create JavaScript file
       run: npm run webpack
     - name: Copy the created JavaScript file
@@ -39,6 +41,8 @@ jobs:
       run: cp ./best_programs.json ./website/best_programs.json
     - name: Remove the TypeScript source file
       run: rm ./website/main.ts
+    - name: Remove the Handlebars source files
+      run: rm -rf ./website/handlebars
     - name: Temporarily save created "website" files
       uses: actions/upload-artifact@v2
       with:

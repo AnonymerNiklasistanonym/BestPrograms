@@ -1,30 +1,16 @@
-import type { BestPrograms, Program } from "../types/best_programs";
+import type { BestPrograms, Program } from "../types/best_programs"
+
+import * as Handlebars from 'handlebars/runtime'
+import "./handlebars/precompiled"
+
 
 const createTable = (thead: string[], tbody: string[][]) => {
-    const table = document.createElement("table")
-    const tableHead = document.createElement("thead")
-    const tableBody = document.createElement("tbody")
-
-    const tableHeadRow = document.createElement("tr")
-    for (const theadColumn of thead) {
-        const theadColumnElement = document.createElement("th")
-        theadColumnElement.innerText = theadColumn
-        tableHeadRow.appendChild(theadColumnElement)
-    }
-    tableHead.appendChild(tableHeadRow)
-    table.appendChild(tableHead)
-
-    for (const tbodyColumns of tbody) {
-        const tableBodyRow = document.createElement("tr")
-        for (const tbodyColumn of tbodyColumns) {
-            const tbodyColumnElement = document.createElement("th")
-            tbodyColumnElement.innerText = tbodyColumn
-            tableBodyRow.appendChild(tbodyColumnElement)
-        }
-        tableBody.appendChild(tableBodyRow)
-    }
-    table.appendChild(tableBody)
-    return table
+    const div = document.createElement("div")
+    div.innerHTML = Handlebars.templates["simple_table"]({
+        theadColumns: thead,
+        tbodyColumns: tbody,
+    })
+    return div.firstChild
 }
 
 const filterProgram2 = (program: Program, openSourceStrings: string[], filter?: string) => {

@@ -1,4 +1,5 @@
 node_modules
 website/best_programs.json
 website/main.js
+website/**/*.js
 dist

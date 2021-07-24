@@ -7,9 +7,13 @@ module.exports = {
       rules: [
         {
           test: /\.tsx?$/,
-          use: 'ts-loader',
+          use: "ts-loader",
           exclude: /node_modules/,
         },
+        {
+          test: /\.handlebars$/,
+          loader: "handlebars-loader",
+        }
       ],
     },
     resolve: {

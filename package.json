@@ -4,6 +4,7 @@
   "description": "Repo for a list of the best programs (Linux + Windows)",
   "scripts": {
     "createTsTypeFromJsonSchema": "ts-node types/createTsTypeFromJsonSchema.ts",
+    "handlebars": "handlebars website/handlebars/*.handlebars -f website/handlebars/precompiled.js -c handlebars/runtime",
     "render_markdown": "ts-node index.ts",
     "webpack": "webpack --config webpack.config.js"
   },
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/AnonymerNiklasistanonym/BestPrograms#readme",
   "devDependencies": {
     "@types/node": "^16.3.2",
+    "handlebars-loader": "^1.7.1",
     "json-schema-to-typescript": "^10.1.4",
     "ts-loader": "^9.2.3",
     "ts-node": "^10.1.0",
