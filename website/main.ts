@@ -21,6 +21,20 @@ const filterProgram2 = (program: Program, openSourceStrings: string[], filter?: 
             || program.website.toLowerCase().includes(filter)
             || program?.tags.some(tag => tag.toLowerCase().includes(filter))
             || openSourceStrings.some(openSourceString => openSourceString.toLowerCase().includes(filter))
+            || (program?.platformInfo.linux ? "linux".includes(filter) : false)
+            || (program?.platformInfo.windows ? "windows".includes(filter) : false)
+            || (program?.gui ? "gui".includes(filter) : false)
+            || (program?.packageManagerInfo?.pacman ? "pacman".includes(filter) : false)
+            || (program?.packageManagerInfo?.pacmanAur ? (
+                "pacman".includes(filter) || "aur".includes(filter)) : false)
+            || (program?.packageManagerInfo?.pacmanAurGit ? (
+                "pacman".includes(filter) || "aur".includes(filter)) : false)
+            || (program?.packageManagerInfo?.pacmanAurNightly ? (
+                "pacman".includes(filter) || "aur".includes(filter)) : false)
+            || program?.packageManagerInfo?.pacman?.includes(filter)
+            || program?.packageManagerInfo?.pacmanAur?.includes(filter)
+            || program?.packageManagerInfo?.pacmanAurGit?.includes(filter)
+            || program?.packageManagerInfo?.pacmanAurNightly?.includes(filter)
 }
 
 const filterProgram = (program: Program, filter?: string) => {
