@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-    entry: "./website/main.ts",
+    entry: path.resolve(__dirname, "website", "main.ts"),
     experiments: {
       topLevelAwait: true,
     },
@@ -10,7 +10,12 @@ module.exports = {
       rules: [
         {
           test: /\.tsx?$/,
-          use: "ts-loader",
+          use: [{
+            loader: "ts-loader",
+            options: {
+                configFile: path.resolve(__dirname, "tsconfig.webpack.json"),
+            }
+        }],
           exclude: /node_modules/,
         },
         {
