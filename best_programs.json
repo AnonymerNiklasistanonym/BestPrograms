@@ -331,6 +331,25 @@
         },
         {
             "category": "Development",
+            "description": "Very fast and minimal text editor",
+            "gui": true,
+            "name": "CudaText",
+            "openSource": "MPL2",
+            "packageManagerInfo": {
+                "pacmanAur": "cudatext-qt5-bin"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "code-syntax-highlighting",
+                "text-editor"
+            ],
+            "website": "https://cudatext.github.io/"
+        },
+        {
+            "category": "Development",
             "description": "Simple text editor",
             "gui": true,
             "name": "gedit",
@@ -342,6 +361,7 @@
                 "linux": true
             },
             "tags": [
+                "code-syntax-highlighting",
                 "text-editor"
             ],
             "website": "https://wiki.gnome.org/Apps/Gedit"

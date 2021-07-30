@@ -82,9 +82,13 @@ Repo for a list of the best programs (Linux + Windows):
     - Bugs: The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown
     - Pacman: [`xscreensaver`](https://www.archlinux.org/packages/?sort=&q=xscreensaver)
 - Development
+  - [CudaText](https://cudatext.github.io/): Very fast and minimal text editor
+
+    `Linux`, `Windows`, `OpenSource-MPL2`, `GUI`, `code-syntax-highlighting`, `text-editor`
+    - Pacman [AUR]: [`cudatext-qt5-bin`](https://aur.archlinux.org/packages/?O=0&K=cudatext-qt5-bin)
   - [gedit](https://wiki.gnome.org/Apps/Gedit): Simple text editor
 
-    `Linux`, `OpenSource-GPL`, `GUI`, `text-editor`
+    `Linux`, `OpenSource-GPL`, `GUI`, `code-syntax-highlighting`, `text-editor`
     - Pacman: [`gedit`](https://www.archlinux.org/packages/?sort=&q=gedit)
   - [GitHub Desktop](https://desktop.github.com): GUI for git repository managing that is optimized for GitHub repositories
 
