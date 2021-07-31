@@ -9,18 +9,21 @@
 </head>
 
 <body>
-	<form autocomplete="off">
-		<div class="autocomplete" style="width:300px;">
-			<label for="text-input-filter">Filter input: (<code>" "</code>=OR, <code>"+"</code>=AND)</label>
-			<input name="text-input-filter" id="filter" placeholder="Filter programs...">
-		</div>
-	</form>
+	<div class="container">
+		<section id="filter-input">
+			<form id="filter" autocomplete="off">
+				<div class="autocomplete">
+					<div class="grid">
+						<input name="text-input-filter" id="filter-text-input" placeholder="Filter programs... ['a+b' (AND) | 'a b' (OR)]">
+					</div>
+				</div>
+			</form>
+		</section>
 
-	<p>best_programs.json table:</p>
-	<div id="table"></div>
-
-	<p>best_programs.json file content:</p>
-	<div id="content"></div>
+		<section id="program-list">
+			<div id="table"></div>
+		</section>
+	</div>
 </body>
 
 </html>

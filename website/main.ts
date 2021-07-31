@@ -14,9 +14,6 @@ try {
     const jsonData = await response.json() as BestPrograms;
     console.log(jsonData)
 
-    const contentDiv = document.getElementById("content")
-    contentDiv.innerText = JSON.stringify(jsonData, undefined, 4)
-
     const tableDiv = document.getElementById("table")
     const renderTable = (filter?: string) => {
         for (const childNode of tableDiv.childNodes) {
@@ -30,7 +27,7 @@ try {
         )))
     }
 
-    const filterInput = document.getElementById("filter") as HTMLInputElement
+    const filterInput = document.getElementById("filter-text-input") as HTMLInputElement
     renderTable(filterInput.value)
     for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
         filterInput.addEventListener(eventName, () => {
@@ -56,7 +53,10 @@ try {
     ).map(keyword => keyword.trim().toLowerCase()))], {
         customValueToSearch: textInput => textInput.split(/\+| /).slice(-1).pop(),
         customValueToSetAfterClick: (textInput, searchedValue, clickedKeyword) => {
-            return textInput.toLowerCase().replace(new RegExp(escapeStringRegexp(searchedValue) + "\s*$"), clickedKeyword.replace(" ", "+"))
+            return textInput.toLowerCase().replace(
+                new RegExp(escapeStringRegexp(searchedValue) + "\s*$"),
+                clickedKeyword.replace(" ", "+")
+            )
         }
     })
 

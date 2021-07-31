@@ -29,7 +29,7 @@ export const autocompleteTextInput = (
         currentFocus = -1
         /*create a DIV element that will contain the items (values):*/
         const a = document.createElement("div")
-        a.setAttribute("id", textInput.id + "autocomplete-list")
+        a.setAttribute("id", textInput.id + "-autocomplete-list")
         a.setAttribute("class", "autocomplete-items")
         /*append the DIV element as a child of the autocomplete container:*/
         textInput.parentNode.appendChild(a)
@@ -67,9 +67,11 @@ export const autocompleteTextInput = (
     });
     /*execute a function presses a key on the keyboard:*/
     textInput.addEventListener("keydown", e => {
-        let x = [document.getElementById(textInput.id + "autocomplete-list")]
+        const currentAutoCompleteList = document.getElementById(textInput.id + "-autocomplete-list");
+        let x = [currentAutoCompleteList]
         if (x[0]) {
             x = [].slice.call(x[0].getElementsByTagName("div"))
+            x = x.filter(a => a.parentElement === currentAutoCompleteList)
         }
         if (e.key == "ArrowDown") {
             /*If the arrow DOWN key is pressed,
@@ -92,6 +94,8 @@ export const autocompleteTextInput = (
                     x[currentFocus].click()
                 }
             }
+        } else if (e.key == "Escape") {
+            closeAutocompleteList(e.target)
         }
     });
     function addActive(x: HTMLElement[]) {
@@ -115,15 +119,14 @@ export const autocompleteTextInput = (
     function closeAutocompleteList(elmnt?: EventTarget) {
         /*close all autocomplete lists in the document,
         except the one passed as an argument:*/
-        var x = document.getElementsByClassName("autocomplete-items")
-        for (var i = 0; i < x.length; i++) {
-            if (elmnt != x[i] && elmnt != textInput) {
-                x[i].parentNode.removeChild(x[i])
+        for (const autoCompleteElement of document.getElementsByClassName("autocomplete-items")) {
+            if (elmnt != autoCompleteElement && elmnt != textInput) {
+                autoCompleteElement.parentNode.removeChild(autoCompleteElement)
             }
         }
     }
     /*execute a function when someone clicks in the document:*/
-    document.addEventListener("click", function (e) {
+    document.addEventListener("click", e => {
         closeAutocompleteList(e.target)
     })
 }
