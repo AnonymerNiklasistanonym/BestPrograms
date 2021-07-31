@@ -42,8 +42,6 @@ export const filterProgram = (program: Program, filter?: string) => {
         }
     }
 
-    console.log(programFilters)
-
     const openSourceStrings = ["ClosedSource"]
     if (typeof program?.openSource === "string") {
         openSourceStrings.pop()

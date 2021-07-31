@@ -1,5 +1,7 @@
 import type { BestPrograms } from "../types/best_programs"
 
+import escapeStringRegexp from "escape-string-regexp"
+
 import { autocompleteTextInput } from "./src/autocompleteTextInput"
 import { createTable } from "./src/createTable"
 import { filterProgram } from "./src/filterProgram"
@@ -54,7 +56,7 @@ try {
     ).map(keyword => keyword.trim().toLowerCase()))], {
         customValueToSearch: textInput => textInput.split(/\+| /).slice(-1).pop(),
         customValueToSetAfterClick: (textInput, searchedValue, clickedKeyword) => {
-            return textInput.replace(searchedValue, "") + clickedKeyword.replace(" ", "+")
+            return textInput.toLowerCase().replace(new RegExp(escapeStringRegexp(searchedValue) + "\s*$"), clickedKeyword.replace(" ", "+"))
         }
     })
 

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/AnonymerNiklasistanonym/BestPrograms#readme",
   "devDependencies": {
     "@types/node": "^16.4.7",
+    "escape-string-regexp": "^5.0.0",
     "handlebars-loader": "^1.7.1",
     "json-schema-to-typescript": "^10.1.4",
     "ts-loader": "^9.2.4",
