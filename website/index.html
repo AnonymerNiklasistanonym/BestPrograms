@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script defer src="main.js"></script>
-    </head>
-    <body>
-        <p>filter input: (<code>" "</code>=OR, <code>"+"</code>=AND)</p>
-        <input type="text" id="filter" placeholder="Filter programs...">
 
-        <p>best_programs.json table:</p>
-        <div id="table"></div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<script defer src="./main.js"></script>
+</head>
 
-        <p>best_programs.json file content:</p>
-        <div id="content"></div>
-    </body>
+<body>
+	<form autocomplete="off">
+		<div class="autocomplete" style="width:300px;">
+			<label for="text-input-filter">Filter input: (<code>" "</code>=OR, <code>"+"</code>=AND)</label>
+			<input name="text-input-filter" id="filter" placeholder="Filter programs...">
+		</div>
+	</form>
+
+	<p>best_programs.json table:</p>
+	<div id="table"></div>
+
+	<p>best_programs.json file content:</p>
+	<div id="content"></div>
+</body>
+
 </html>

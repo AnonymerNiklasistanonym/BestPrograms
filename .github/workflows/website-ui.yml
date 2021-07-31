@@ -39,8 +39,10 @@ jobs:
       run: cp ./dist/main.js ./website/main.js
     - name: Copy best programs data
       run: cp ./best_programs.json ./website/best_programs.json
-    - name: Remove the TypeScript source file
-      run: rm ./website/main.ts
+    - name: Remove the TypeScript source files
+      run: |
+        rm ./website/main.ts
+        rm -rf ./website/src/
     - name: Remove the Handlebars source files
       run: rm -rf ./website/handlebars
     - name: Temporarily save created "website" files
