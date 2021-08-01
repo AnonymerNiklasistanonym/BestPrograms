@@ -56,14 +56,16 @@ try {
             return keywords.concat(
                 program.name,
                 program.category,
-                program?.openSource ? program.openSource.license : [],
-                program?.packageManagerInfo?.pacman ? program.packageManagerInfo.pacman : [],
-                program?.packageManagerInfo?.pacmanAur ? program.packageManagerInfo.pacmanAur : [],
-                program?.packageManagerInfo?.pacmanAurGit ? program.packageManagerInfo.pacmanAurGit : [],
-                program?.packageManagerInfo?.pacmanAurNightly ? program.packageManagerInfo.pacmanAurNightly : [],
-                program?.platformInfo && program?.platformInfo?.linux ? "linux" : [],
-                program?.platformInfo && program?.platformInfo?.windows ? "windows" : [],
-                program?.tags ? program.tags : []
+                program.openSource ? program.openSource.license : [],
+                program.packageManagerInfo?.pacman ? program.packageManagerInfo.pacman : [],
+                program.packageManagerInfo?.pacmanAur ? program.packageManagerInfo.pacmanAur : [],
+                program.packageManagerInfo?.pacmanAurGit ? program.packageManagerInfo.pacmanAurGit : [],
+                program.packageManagerInfo?.pacmanAurNightly ? program.packageManagerInfo.pacmanAurNightly : [],
+                program.platformInfo?.linux ? "linux" : [],
+                program.platformInfo?.windows ? "windows" : [],
+                program.cli ? "cli" : [],
+                program.gui ? "gui" : [],
+                program.tags ? program.tags : []
             )
         }, [] as string[]
     ).map(keyword => keyword.trim().toLowerCase()))], {
