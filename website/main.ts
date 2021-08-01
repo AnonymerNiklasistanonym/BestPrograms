@@ -1,9 +1,10 @@
 import type { BestPrograms } from "../types/best_programs"
 
 import escapeStringRegexp from "escape-string-regexp"
+import * as queryString from "query-string"
 
 import { autocompleteTextInput } from "./src/autocompleteTextInput"
-import { createTable } from "./src/createTable"
+import { createProgramList } from "./src/createProgramList"
 import { filterProgram } from "./src/filterProgram"
 
 try {
@@ -14,24 +15,39 @@ try {
     const jsonData = await response.json() as BestPrograms;
     console.log(jsonData)
 
-    const tableDiv = document.getElementById("table")
-    const renderTable = (filter?: string) => {
-        for (const childNode of tableDiv.childNodes) {
-            tableDiv.removeChild(childNode)
+    const programList = document.getElementById("program-list")
+    programList.appendChild(createProgramList(jsonData.programs))
+    const filterList = (filter?: string) => {
+        const filteredPrograms = jsonData.programs.filter(program => filterProgram(program, filter))
+        const programListList = document.getElementById("program-list-list")
+        for (const childNode of programListList.childNodes) {
+            const element = childNode as HTMLElement;
+            const elementName = element?.dataset?.name.toLocaleLowerCase()
+            if (elementName && childNode.nodeType === Node.ELEMENT_NODE) {
+                if (filteredPrograms.some(a => a.name.toLocaleLowerCase() === elementName)) {
+                    element?.classList.remove("hide");
+                    element?.classList.add("show");
+                } else {
+                    element?.classList.remove("show");
+                    element?.classList.add("hide");
+                }
+            }
         }
-        tableDiv.appendChild(createTable([
-            "name", "category", "description", "website"
-        ], jsonData.programs
-            .filter(program => filterProgram(program, filter))
-            .map(program => [program.name, program.category, program.description, program.website]
-        )))
     }
 
     const filterInput = document.getElementById("filter-text-input") as HTMLInputElement
-    renderTable(filterInput.value)
+
+    const parsedQueryArgs = queryString.parse(location.search)
+    if (typeof parsedQueryArgs.q === "string") {
+        filterInput.value = parsedQueryArgs.q
+    }
+
+    filterList(filterInput.value)
     for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
         filterInput.addEventListener(eventName, () => {
-            renderTable(filterInput.value)
+            const stringifiedQueryArgs = queryString.stringify({ q: filterInput.value })
+            window.history.replaceState(null, null, stringifiedQueryArgs);
+            filterList(filterInput.value)
         })
     }
 

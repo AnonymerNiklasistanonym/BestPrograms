@@ -1,4 +1,3 @@
-
 import type { Program } from "../../types/best_programs"
 
 const filterProgram2 = (program: Program, openSourceStrings: string[], filter?: string) => {

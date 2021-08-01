@@ -1,15 +1,13 @@
 :root {
 	--color-accent: #1e8fff;
+	--color-attention: #fbab00;
+	--color-positive: #40c900;
 
-	--bg-color: #ffffff;
-	--text-color: #000000;
-	--filter-text-autocomplete-border: #d4d4d4;
-	--filter-text-autocomplete-bg: #ffffff;
-	--filter-text-autocomplete-bg-hover: #f1f1f1;
-	--filter-text-autocomplete-bg-select: var(--color-accent);
-	--filter-text-input-bg: #f1f1f1;
-	--filter-text-autocomplete-hover: #000000;
-	--filter-text-autocomplete-select: #000000;
+	--color-neutral-base: #ffffff;
+	--color-neutral-base-second: #f1f1f1;
+	--color-neutral-base-third: #d4d4d4;
+	--color-neutral-base-border: #616161;
+	--color-neutral-base-contrast: #000000;
 
 	--font-family: Helvetica;
 	--font-size: 1em;
@@ -23,16 +21,34 @@
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg-color: #000000;
-		--text-color: #ffffff;
-		--filter-text-autocomplete-border: #ffffff;
-		--filter-text-autocomplete-bg: #000000;
-		--filter-text-autocomplete-bg-hover: #333333;
-		--filter-text-autocomplete-bg-select: var(--color-accent);
-		--filter-text-autocomplete-hover: #ffffff;
-		--filter-text-autocomplete-select: #ffffff;
-		--filter-text-input-bg: #333333;
+		--color-neutral-base: #000000;
+		--color-neutral-base-second: #181818;
+		--color-neutral-base-third: #272727;
+		--color-neutral-base-border: #505050;
+		--color-neutral-base-contrast: #ffffff;
 	}
+}
+
+:root {
+	--bg-color: var(--color-neutral-base);
+	--text-color: var(--color-neutral-base-contrast);
+
+	--list-element-border-color: var(--color-neutral-base-border);
+
+	--filter-text-autocomplete-border: var(--color-neutral-base-third);
+	--filter-text-autocomplete-bg: var(--color-neutral-base);
+	--filter-text-autocomplete-bg-hover: var(--color-neutral-base-second);
+	--filter-text-autocomplete-bg-select: var(--color-accent);
+	--filter-text-input-bg: var(--color-neutral-base-second);
+	--filter-text-autocomplete-hover: var(--color-neutral-base-contrast);
+	--filter-text-autocomplete-select: var(--color-neutral-base-contrast);
+
+	--program-tag-bg-color: var(--color-neutral-base-second);
+	--program-tag-color: var(--color-neutral-base-contrast);
+	--program-tag-bg-color-attention: var(--color-attention);
+	--program-tag-color-attention: var(--color-neutral-base-contrast);
+	--program-tag-bg-color-positive: var(--color-positive);
+	--program-tag-color-positive: var(--color-neutral-base-contrast);
 }
 
 body {
@@ -57,10 +73,7 @@ body {
 
 section {
 	padding: 0;
-
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 1em;
+	margin: 0;
 	margin-bottom: 1em;
 }
 
@@ -142,4 +155,89 @@ input {
 	/*when navigating through the items using the arrow keys:*/
 	background-color: var(--filter-text-autocomplete-bg-select) !important;
 	color: var(--filter-text-autocomplete-select);
+}
+
+ul.program-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.program-list > li.program-element {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	border-bottom: var(--list-element-border-color) 1px solid;
+}
+
+ul.program-list > li.program-element.show {
+	display: block;
+}
+
+ul.program-list > li.program-element.hide {
+	display: none;
+}
+
+div.program-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 0.5em;
+
+	margin: 1em;
+}
+
+div.program-container > div.program-name {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 1;
+}
+
+div.program-container > div.program-name > a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+div.program-container > div.program-category {
+	grid-column: 3 / span 2;
+	grid-row: 1 / span 1;
+}
+
+div.program-container > div.program-description {
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 1;
+}
+
+div.program-container > div.program-tags {
+	grid-column: 1 / span 4;
+	grid-row: 3 / span 1;
+	padding: 0.25em;
+}
+
+div.program-container > div.program-tags > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.program-container > div.program-tags > ul > li.program-tag {
+	display: inline-block;
+	border-radius: 0.5em;
+	margin: 0.25em;
+	padding: 0.5em;
+	background-color: var(--program-tag-bg-color);
+	color: var(--program-tag-color);
+}
+
+div.program-container > div.program-tags > ul > li.program-tag > a {
+	text-decoration: none;
+	color: var(--program-tag-color);
+}
+
+div.program-container > div.program-tags > ul > li.program-tag-attention {
+	background-color: var(--program-tag-bg-color-attention);
+	color: var(--program-tag-color-attention);
+}
+
+div.program-container > div.program-tags > ul > li.program-tag-positive {
+	background-color: var(--program-tag-bg-color-positive);
+	color: var(--program-tag-color-positive);
 }

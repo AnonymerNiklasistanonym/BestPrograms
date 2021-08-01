@@ -1,0 +1,82 @@
+<ul class="program-list" id="program-list-list">
+    {{#each programs}}
+    <li class="program-element" data-name="{{this.name}}">
+        <div class="program-container">
+            <div class="program-name"><a href="{{this.website}}">{{this.name}}</a></div>
+            <div class="program-category">{{this.category}}</div>
+            <div class="program-description">{{this.description}}</div>
+            <div class="program-tags">
+                <ul>
+                    {{#if this.platformInfo}}
+                        {{#if this.platformInfo.windows}}
+                            <li class="program-tag{{#if this.platformInfo.windowsAdminRightsNecessary}} program-tag-attention{{/if}}">
+                                Windows{{#if this.platformInfo.windowsAdminRightsNecessary}} (admin-rights){{/if}}
+                            </li>
+                        {{/if}}
+                        {{#if this.platformInfo.linux}}
+                            <li class="program-tag{{#if this.platformInfo.linuxSudoRightsNecessary}} program-tag-attention{{/if}}">
+                                Linux{{#if this.platformInfo.linuxSudoRightsNecessary}} (sudo-rights){{/if}}
+                            </li>
+                        {{/if}}
+                    {{/if}}
+                    {{#if this.gui}}
+                        <li class="program-tag program-tag-positive">GUI</li>
+                    {{/if}}
+                    {{#if this.openSource}}
+                        {{#isString this.openSource}}
+                            <li class="program-tag program-tag-positive">OpenSource-{{this.openSource}}</li>
+                        {{/isString}}
+                        {{#isArray this.openSource}}
+                            <li class="program-tag program-tag-positive">OpenSource{{#each this.openSource}}-{{this}}{{/each}}</li>
+                        {{/isArray}}
+                    {{else}}
+                        <li class="program-tag program-tag-attention">ClosedSource</li>
+                    {{/if}}
+                    {{#if this.packageManagerInfo}}
+                        {{#if this.packageManagerInfo.pacman}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="https://www.archlinux.org/packages/?q={{this.packageManagerInfo.pacman}}">
+                                    pacman-{{this.packageManagerInfo.pacman}}
+                                </a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanGroup}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="https://www.archlinux.org/groups/x86_64/{{this.packageManagerInfo.pacmanGroup}}">
+                                    pacman-group-{{this.packageManagerInfo.pacmanGroup}}
+                                </a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanAur}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAur}}">
+                                    pacman-aur-{{this.packageManagerInfo.pacmanAur}}
+                                </a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanAurNightly}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAurNightly}}">
+                                    pacman-aur-nightly{{this.packageManagerInfo.pacmanAurNightly}}
+                                </a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanAurGit}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAurGit}}">
+                                    pacman-aur-git-{{this.packageManagerInfo.pacmanAurGit}}
+                                </a>
+                            </li>
+                        {{/if}}
+                    {{/if}}
+                    {{#if this.tags}}
+                        {{#each this.tags}}
+                        <li class="program-tag">{{this}}</li>
+                        {{/each}}
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>
