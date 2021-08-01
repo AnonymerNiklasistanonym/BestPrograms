@@ -16,7 +16,9 @@ try {
     console.log(jsonData)
 
     const programList = document.getElementById("program-list")
-    programList.appendChild(createProgramList(jsonData.programs))
+    const programListElement = createProgramList(jsonData.programs)
+    programList.removeChild(programList.querySelector("div.loading"))
+    programList.appendChild(programListElement)
     const filterList = (filter?: string) => {
         const filteredPrograms = jsonData.programs.filter(program => filterProgram(program, filter))
         const programListList = document.getElementById("program-list-list")

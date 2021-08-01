@@ -241,3 +241,28 @@ div.program-container > div.program-tags > ul > li.program-tag-positive {
 	background-color: var(--program-tag-bg-color-positive);
 	color: var(--program-tag-color-positive);
 }
+
+div.loading {
+	margin: 1em;
+	width: 100%;
+	text-align: center;
+}
+
+div.loading > span.blinkin-point::after {
+	animation: blinker 1s linear infinite;
+	content: ".";
+}
+
+div.loading > span.blinkin-point.delay0-3s::after {
+	animation-delay: 0.3s;
+}
+
+div.loading > span.blinkin-point.delay0-6s::after {
+	animation-delay: 0.6s;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
