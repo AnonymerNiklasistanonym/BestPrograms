@@ -5,6 +5,12 @@
             <div class="program-name"><a href="{{this.website}}">{{this.name}}</a></div>
             <div class="program-category">{{this.category}}</div>
             <div class="program-description">{{this.description}}</div>
+            {{#if this.setup}}
+            <div class="program-setup">Setup: {{this.setup}}</div>
+            {{/if}}
+            {{#if this.bugs}}
+            <div class="program-bugs">Bugs: {{this.bugs}}</div>
+            {{/if}}
             <div class="program-tags">
                 <ul>
                     {{#if this.platformInfo}}
@@ -42,6 +48,9 @@
                         {{/isArray}}
                     {{else}}
                         <li class="program-tag program-tag-attention">ClosedSource</li>
+                    {{/if}}
+                    {{#if this.price}}
+                        <li class="program-tag program-tag-attention">Price-{{this.price}}</li>
                     {{/if}}
                     {{#if this.packageManagerInfo}}
                         {{#if this.packageManagerInfo.pacman}}

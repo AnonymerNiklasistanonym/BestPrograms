@@ -5,7 +5,7 @@
 
 	--color-neutral-base: #ffffff;
 	--color-neutral-base-second: #f1f1f1;
-	--color-neutral-base-third: #d4d4d4;
+	--color-neutral-base-third: #b3b3b3;
 	--color-neutral-base-border: #616161;
 	--color-neutral-base-contrast: #000000;
 
@@ -13,7 +13,7 @@
 	--font-size: 1em;
 	--line-height: 1.25em;
 
-	--content-max-width: 800px;
+	--content-max-width: 1000px;
 }
 
 /* Light mode */
@@ -23,8 +23,8 @@
 	:root {
 		--color-neutral-base: #000000;
 		--color-neutral-base-second: #181818;
-		--color-neutral-base-third: #272727;
-		--color-neutral-base-border: #505050;
+		--color-neutral-base-third: #2b2b2b;
+		--color-neutral-base-border: #555555;
 		--color-neutral-base-contrast: #ffffff;
 	}
 }
@@ -71,13 +71,21 @@ body {
 	max-width: var(--content-max-width);
 }
 
+*:focus {
+	/* Remove all outlines (don't forget to implement a custom outline function for accessibility!) */
+	outline: none;
+}
+
 section {
+	/* Remove all padding and margins */
 	padding: 0;
 	margin: 0;
+
+	/* Add a bottom margin */
 	margin-bottom: 1em;
 }
 
-div.grid {
+div.filter-text-grid {
 	display: grid;
 	width: 100%;
 	grid-template: "filter-text-input"
@@ -88,18 +96,14 @@ div.grid {
 	position: relative;
 }
 
-*:focus {
-	outline: none;
-}
-
-#filter-label {
-	grid-area: filter-label;
-}
+/* Grid area elements */
 #filter-text-input {
 	grid-area: filter-text-input;
 }
 #filter-text-input-autocomplete-list {
 	grid-area: filter-text-input-autocomplete-list;
+
+	/* Add a shadow for the autocomplete overlay */
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px 20px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px 0 5px;
 }
 
@@ -189,7 +193,7 @@ div.program-container {
 
 div.program-container > div.program-name {
 	grid-column: 1 / span 2;
-	grid-row: 1 / span 1;
+	font-weight: bold;
 }
 
 div.program-container > div.program-name > a{
@@ -199,17 +203,26 @@ div.program-container > div.program-name > a{
 
 div.program-container > div.program-category {
 	grid-column: 3 / span 2;
-	grid-row: 1 / span 1;
+	font-weight: bolder;
 }
 
 div.program-container > div.program-description {
 	grid-column: 1 / span 4;
-	grid-row: 2 / span 1;
+	font-weight: normal;
+}
+
+div.program-container > div.program-setup {
+	grid-column: 1 / span 4;
+	font-weight: lighter;
+}
+
+div.program-container > div.program-bugs {
+	grid-column: 1 / span 4;
+	font-weight: lighter;
 }
 
 div.program-container > div.program-tags {
 	grid-column: 1 / span 4;
-	grid-row: 3 / span 1;
 	padding: 0.25em;
 }
 
