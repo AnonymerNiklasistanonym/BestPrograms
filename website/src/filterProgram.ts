@@ -1,16 +1,22 @@
 import type { Program } from "../../types/best_programs"
 
-const filterProgram2 = (program: Program, openSourceStrings: string[], filter?: string) => {
+const filterProgram2 = (program: Program, filter?: string) => {
     return filter === "" || filter === undefined
             || program.name.toLowerCase().includes(filter)
             || program.category.toLowerCase().includes(filter)
             || program.description.toLowerCase().includes(filter)
             || program.website.toLowerCase().includes(filter)
             || program?.tags.some(tag => tag.toLowerCase().includes(filter))
-            || openSourceStrings.some(openSourceString => openSourceString.toLowerCase().includes(filter))
+            || (program?.openSource ? (
+                Array.isArray(program.openSource.license)
+                    ? program.openSource.license.map(a => a.toString().toLowerCase()).includes(filter)
+                    : program.openSource.license.toString().toLowerCase().includes(filter)
+                ) : false)
+            || program?.openSource?.url.toLowerCase().includes(filter)
             || (program?.platformInfo.linux ? "linux".includes(filter) : false)
             || (program?.platformInfo.windows ? "windows".includes(filter) : false)
             || (program?.gui ? "gui".includes(filter) : false)
+            || (program?.cli ? "cli".includes(filter) : false)
             || (program?.packageManagerInfo?.pacman ? "pacman".includes(filter) : false)
             || (program?.packageManagerInfo?.pacmanAur ? (
                 "pacman".includes(filter) || "aur".includes(filter)) : false)
@@ -41,21 +47,11 @@ export const filterProgram = (program: Program, filter?: string) => {
         }
     }
 
-    const openSourceStrings = ["ClosedSource"]
-    if (typeof program?.openSource === "string") {
-        openSourceStrings.pop()
-        openSourceStrings.push(program.openSource)
-    }
-    if (Array.isArray(program?.openSource)) {
-        openSourceStrings.pop()
-        openSourceStrings.push(...program?.openSource)
-    }
-
     return programFilters.length === 0 || programFilters.some(programFilter => {
         if (typeof programFilter === "string") {
-            return filterProgram2(program, openSourceStrings, programFilter)
+            return filterProgram2(program, programFilter)
         } else {
-            return programFilter.every(a => filterProgram2(program, openSourceStrings, a))
+            return programFilter.every(a => filterProgram2(program, a))
         }
     })
 }
