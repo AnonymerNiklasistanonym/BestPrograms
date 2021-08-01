@@ -38,7 +38,7 @@ export const autocompleteTextInput = (
             /*check if the item starts with the same letters as the text field value:*/
             if (keyword.substr(0, currentKeyword.length).toUpperCase() == currentKeyword.toUpperCase()) {
                 /*create a DIV element for each matching element:*/
-                const b = document.createElement("div");
+                const b = document.createElement("div")
                 /*make the matching letters bold:*/
                 b.innerHTML = Handlebars.templates["text_input_autocomplete_div"]({
                     keyword,
@@ -56,18 +56,18 @@ export const autocompleteTextInput = (
                     textInput.value = options.customValueToSetAfterClick !== undefined
                         ? options.customValueToSetAfterClick(fullInput, currentKeyword, clickedKeyword)
                         : clickedKeyword
-                    textInput.dispatchEvent(new Event('change'));
+                    textInput.dispatchEvent(new Event('change'))
                     /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
                     closeAutocompleteList()
-                });
+                })
                 a.appendChild(b)
             }
         }
-    });
+    })
     /*execute a function presses a key on the keyboard:*/
     textInput.addEventListener("keydown", e => {
-        const currentAutoCompleteList = document.getElementById(textInput.id + "-autocomplete-list");
+        const currentAutoCompleteList = document.getElementById(textInput.id + "-autocomplete-list")
         let x = [currentAutoCompleteList]
         if (x[0]) {
             x = [].slice.call(x[0].getElementsByTagName("div"))
@@ -76,13 +76,13 @@ export const autocompleteTextInput = (
         if (e.key == "ArrowDown") {
             /*If the arrow DOWN key is pressed,
             increase the currentFocus variable:*/
-            currentFocus++;
+            currentFocus++
             /*and and make the current item more visible:*/
             addActive(x)
         } else if (e.key == "ArrowUp") { //up
             /*If the arrow UP key is pressed,
             decrease the currentFocus variable:*/
-            currentFocus--;
+            currentFocus--
             /*and and make the current item more visible:*/
             addActive(x)
         } else if (e.key == "Enter") {
@@ -97,7 +97,7 @@ export const autocompleteTextInput = (
         } else if (e.key == "Escape") {
             closeAutocompleteList(e.target)
         }
-    });
+    })
     function addActive(x: HTMLElement[]) {
         /*a function to classify an item as "active":*/
         if (!x) {

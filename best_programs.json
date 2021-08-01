@@ -6,7 +6,10 @@
             "description": "A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games",
             "gui": true,
             "name": "Blender",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/blender/blender"
+            },
             "packageManagerInfo": {
                 "pacman": "blender"
             },
@@ -25,10 +28,13 @@
             "description": "Edit/Mix audio tracks",
             "gui": true,
             "name": "Audacity",
-            "openSource": [
-                "CCPL",
-                "GPL2"
-            ],
+            "openSource": {
+                "license": [
+                    "CCPL",
+                    "GPL2"
+                ],
+                "url": "https://github.com/audacity/audacity"
+            },
             "packageManagerInfo": {
                 "pacman": "audacity"
             },
@@ -46,7 +52,6 @@
             "description": "An advanced freeware audio player for the Windows platform",
             "gui": true,
             "name": "foobar2000",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -60,7 +65,10 @@
             "description": "A simple music player that automatically downloads cover/artist images and other information",
             "gui": true,
             "name": "Lollypop",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://gitlab.gnome.org/World/lollypop"
+            },
             "packageManagerInfo": {
                 "pacman": "lollypop"
             },
@@ -77,7 +85,6 @@
             "description": "A fast and extensive audio editor for encoded MP3 and AAC",
             "gui": true,
             "name": "mp3DirectCut",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -91,7 +98,6 @@
             "description": "A powerful and easy-to-use tool to edit metadata of audio files",
             "gui": true,
             "name": "MP3TAG",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -106,7 +112,10 @@
             "description": "Real-time microphone noise suppression",
             "gui": true,
             "name": "Noisetorch",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/lawl/NoiseTorch"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "noisetorch-bin"
             },
@@ -125,9 +134,11 @@
         {
             "category": "Audio",
             "description": "Control global media player playback via the command line",
-            "gui": false,
             "name": "Playerctl",
-            "openSource": "LGPL3",
+            "openSource": {
+                "license": "LGPL3",
+                "url": "https://github.com/altdesktop/playerctl"
+            },
             "packageManagerInfo": {
                 "pacman": "playerctl"
             },
@@ -142,9 +153,11 @@
         {
             "category": "Command Line",
             "description": "Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`",
-            "gui": false,
             "name": "tldr",
-            "openSource": "MIT",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/tldr-pages/tldr-python-client"
+            },
             "packageManagerInfo": {
                 "pacman": "tldr"
             },
@@ -159,9 +172,11 @@
         {
             "category": "Command Line",
             "description": "Display multiple data structures in the command line",
-            "gui": false,
             "name": "visidata",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/saulpw/visidata"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "visidata"
             },
@@ -179,7 +194,6 @@
             "description": "Video/Audio/Text messaging service that can share your screen",
             "gui": true,
             "name": "Discord",
-            "openSource": false,
             "packageManagerInfo": {
                 "pacman": "discord"
             },
@@ -200,7 +214,10 @@
             "description": "Discord overlay for linux",
             "gui": true,
             "name": "Discord Overlay 'Discover'",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/trigg/Discover"
+            },
             "packageManagerInfo": {
                 "pacmanAurGit": "discover-overlay-git"
             },
@@ -217,7 +234,6 @@
             "description": "Video/Audio/Text messaging service that can share your screen from Microsoft",
             "gui": true,
             "name": "Skype",
-            "openSource": false,
             "packageManagerInfo": {
                 "pacmanAur": "skype-preview"
             },
@@ -238,7 +254,6 @@
             "description": "Video/Audio/Text messaging service that can share your screen",
             "gui": true,
             "name": "Slack",
-            "openSource": false,
             "packageManagerInfo": {
                 "pacmanAur": "slack-desktop"
             },
@@ -259,7 +274,6 @@
             "description": "Audio/Text messaging service",
             "gui": true,
             "name": "Teamspeak",
-            "openSource": false,
             "packageManagerInfo": {
                 "pacman": "teamspeak3"
             },
@@ -278,7 +292,10 @@
             "description": "Manage/Read SQL databases",
             "gui": true,
             "name": "MySQL Workbench",
-            "openSource": "GPL2",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://github.com/mysql/mysql-workbench"
+            },
             "packageManagerInfo": {
                 "pacman": "mysql-workbench"
             },
@@ -296,7 +313,10 @@
             "description": "Manage/Read SQLite databases",
             "gui": true,
             "name": "sqlitestudio",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/pawelsalawa/sqlitestudio"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "sqlitestudio"
             },
@@ -316,7 +336,10 @@
             "description": "Extended screensaver/locker for xserver environments",
             "gui": true,
             "name": "xscreensaver",
-            "openSource": "BSD",
+            "openSource": {
+                "license": "BSD",
+                "url": "https://github.com/Zygo/xscreensaver"
+            },
             "packageManagerInfo": {
                 "pacman": "xscreensaver"
             },
@@ -334,7 +357,10 @@
             "description": "Very fast and minimal text editor",
             "gui": true,
             "name": "CudaText",
-            "openSource": "MPL2",
+            "openSource": {
+                "license": "MPL2",
+                "url": "https://github.com/Alexey-T/CudaText"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "cudatext-qt5-bin"
             },
@@ -353,7 +379,10 @@
             "description": "Simple text editor",
             "gui": true,
             "name": "gedit",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://gitlab.gnome.org/GNOME/gedit"
+            },
             "packageManagerInfo": {
                 "pacman": "gedit"
             },
@@ -371,7 +400,10 @@
             "description": "GUI for git repository managing that is optimized for GitHub repositories",
             "gui": true,
             "name": "GitHub Desktop",
-            "openSource": "MIT",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/desktop/desktop"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "github-desktop"
             },
@@ -391,7 +423,10 @@
             "description": "Fast log file reader (text files)",
             "gui": true,
             "name": "glogg",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/nickbnf/glogg"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "glogg"
             },
@@ -409,7 +444,10 @@
             "description": "Java (Android) IDE",
             "gui": true,
             "name": "Intellij Idea Community",
-            "openSource": "APACHE",
+            "openSource": {
+                "license": "APACHE",
+                "url": "https://github.com/JetBrains/intellij-community"
+            },
             "packageManagerInfo": {
                 "pacman": "intellij-idea-community-edition"
             },
@@ -430,7 +468,10 @@
             "description": "Python IDE",
             "gui": true,
             "name": "Pycharm Community",
-            "openSource": "APACHE",
+            "openSource": {
+                "license": "APACHE",
+                "url": "https://github.com/JetBrains/intellij-community/"
+            },
             "packageManagerInfo": {
                 "pacman": "pycharm-community-edition"
             },
@@ -450,7 +491,10 @@
             "description": "C++ (Qt) development environment",
             "gui": true,
             "name": "QtCreator",
-            "openSource": "LGPL",
+            "openSource": {
+                "license": "LGPL",
+                "url": "https://github.com/qt-creator/qt-creator"
+            },
             "packageManagerInfo": {
                 "pacman": "qtcreator"
             },
@@ -471,7 +515,6 @@
             "description": "Markdown text editor with PDF/HTML export and LaTeX Math support",
             "gui": true,
             "name": "Typora",
-            "openSource": false,
             "packageManagerInfo": {
                 "pacmanAur": "typora"
             },
@@ -490,7 +533,10 @@
             "description": "Open Source build of Visual Studio Code (vscode) editor that is able to provide development environments for many languages",
             "gui": true,
             "name": "VSCode",
-            "openSource": "MIT",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/microsoft/vscode"
+            },
             "packageManagerInfo": {
                 "pacman": "code"
             },
@@ -513,7 +559,6 @@
             "description": "Find files really fast (and with regular expressions) which is way better than the default Windows search",
             "gui": true,
             "name": "Everything",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -528,7 +573,6 @@
             "description": "A user-friendly graphical tool used to batch rename files using regular expressions",
             "gui": true,
             "name": "RegexRenamer",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -541,9 +585,11 @@
         {
             "category": "Fonts",
             "description": "Font with nice ligatures for programmers",
-            "gui": false,
             "name": "Fira Code",
-            "openSource": "OFL",
+            "openSource": {
+                "license": "OFL",
+                "url": "https://github.com/tonsky/FiraCode"
+            },
             "packageManagerInfo": {
                 "pacman": "ttf-fira-code"
             },
@@ -559,9 +605,11 @@
         {
             "category": "Fonts",
             "description": "Font with nice ligatures for programmers",
-            "gui": false,
             "name": "JetBrains Mono",
-            "openSource": "APACHE",
+            "openSource": {
+                "license": "APACHE",
+                "url": "https://github.com/JetBrains/JetBrainsMono"
+            },
             "packageManagerInfo": {
                 "pacman": "ttf-jetbrains-mono"
             },
@@ -577,9 +625,11 @@
         {
             "category": "Fonts",
             "description": "Get colour emojis on Linux (for Discord and more)",
-            "gui": false,
             "name": "noto-fonts-emoji",
-            "openSource": "OFL",
+            "openSource": {
+                "license": "OFL",
+                "url": "https://github.com/googlefonts/noto-emoji"
+            },
             "packageManagerInfo": {
                 "pacman": "noto-fonts-emoji"
             },
@@ -596,7 +646,10 @@
             "description": "Mangohud Configuration Editor",
             "gui": true,
             "name": "Goverlay",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/benjamimgois/goverlay"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "goverlay-bin"
             },
@@ -614,7 +667,10 @@
             "description": "Game launcher",
             "gui": true,
             "name": "Lutris",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/lutris/lutris"
+            },
             "packageManagerInfo": {
                 "pacman": "lutris"
             },
@@ -629,9 +685,11 @@
         {
             "category": "Gaming",
             "description": "Wine performance HUD and logging",
-            "gui": false,
             "name": "Mangohud",
-            "openSource": "MIT",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/flightlessmango/MangoHud"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "mangohud"
             },
@@ -649,7 +707,6 @@
             "description": "Steam game launcher",
             "gui": true,
             "name": "Steam",
-            "openSource": false,
             "packageManagerInfo": {
                 "pacman": "steam"
             },
@@ -667,7 +724,10 @@
             "description": "End of life graph creator for UML/ERM/... that also has a cli export interface",
             "gui": true,
             "name": "dia",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://gitlab.gnome.org/GNOME/dia"
+            },
             "packageManagerInfo": {
                 "pacman": "dia"
             },
@@ -687,7 +747,10 @@
             "description": "Utility to organize images",
             "gui": true,
             "name": "darktable",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/darktable-org/darktable"
+            },
             "packageManagerInfo": {
                 "pacman": "darktable"
             },
@@ -703,31 +766,13 @@
         },
         {
             "category": "Images",
-            "description": "Vector graphics editor",
-            "gui": true,
-            "name": "Inkscape",
-            "openSource": [
-                "GPL",
-                "LGPL"
-            ],
-            "packageManagerInfo": {
-                "pacman": "inkscape"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "vector-graphics-editor"
-            ],
-            "website": "https://inkscape.org"
-        },
-        {
-            "category": "Images",
             "description": "Image browser and viewer",
             "gui": true,
-            "name": "Inkscape",
-            "openSource": "GPL",
+            "name": "gthumb",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://gitlab.gnome.org/GNOME/gthumb"
+            },
             "packageManagerInfo": {
                 "pacman": "gThumb"
             },
@@ -742,10 +787,37 @@
         },
         {
             "category": "Images",
+            "description": "Vector graphics editor",
+            "gui": true,
+            "name": "Inkscape",
+            "openSource": {
+                "license": [
+                    "GPL",
+                    "LGPL"
+                ],
+                "url": "https://gitlab.com/inkscape/inkscape"
+            },
+            "packageManagerInfo": {
+                "pacman": "inkscape"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "vector-graphics-editor"
+            ],
+            "website": "https://inkscape.org"
+        },
+        {
+            "category": "Images",
             "description": "Edit and paint images",
             "gui": true,
             "name": "Krita",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/KDE/krita"
+            },
             "packageManagerInfo": {
                 "pacman": "krita"
             },
@@ -763,7 +835,6 @@
             "description": "Drawing/editing program (much easier to use than GIMP)",
             "gui": true,
             "name": "Paint.NET",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -777,7 +848,10 @@
             "description": "Drawing/editing program modeled after Paint.NET (much easier to use than GIMP)",
             "gui": true,
             "name": "Pinta",
-            "openSource": "MIT",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/PintaProject/Pinta"
+            },
             "packageManagerInfo": {
                 "pacman": "pinta"
             },
@@ -795,7 +869,10 @@
             "description": "Share keyboard and mouse across devices (even across operating systems) via client server relationship",
             "gui": true,
             "name": "Barrier",
-            "openSource": "GPL2WithOpeSSLException",
+            "openSource": {
+                "license": "GPL2WithOpeSSLException",
+                "url": "https://github.com/debauchee/barrier"
+            },
             "packageManagerInfo": {
                 "pacman": "barrier"
             },
@@ -814,7 +891,10 @@
             "description": "Index card based learning application with cloud synchronization",
             "gui": true,
             "name": "Anki",
-            "openSource": "AGPL3",
+            "openSource": {
+                "license": "AGPL3",
+                "url": "https://github.com/ankitects/anki"
+            },
             "packageManagerInfo": {
                 "pacman": "anki"
             },
@@ -833,7 +913,10 @@
             "description": "A scorewriter",
             "gui": true,
             "name": "MuseScore",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/musescore/MuseScore"
+            },
             "packageManagerInfo": {
                 "pacman": "musescore"
             },
@@ -851,7 +934,10 @@
             "description": "Compare PDF files visually and find the differences on a page by page basis",
             "gui": true,
             "name": "DiffPDF",
-            "openSource": "GPL2",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://gitlab.com/eang/diffpdf"
+            },
             "packageManagerInfo": {
                 "pacman": "diffpdf"
             },
@@ -869,7 +955,10 @@
             "description": "Free office suite",
             "gui": true,
             "name": "Libre Office",
-            "openSource": "LGPL3",
+            "openSource": {
+                "license": "LGPL3",
+                "url": "https://www.libreoffice.org/about-us/source-code/"
+            },
             "packageManagerInfo": {
                 "pacman": "libreoffice-fresh"
             },
@@ -890,7 +979,10 @@
             "description": "Compare text files visually and find the differences",
             "gui": true,
             "name": "Meld",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://gitlab.gnome.org/GNOME/meld"
+            },
             "packageManagerInfo": {
                 "pacman": "meld"
             },
@@ -907,9 +999,11 @@
         {
             "category": "Office",
             "description": "Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering",
-            "gui": false,
             "name": "Pandoc",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/jgm/pandoc"
+            },
             "packageManagerInfo": {
                 "pacman": "pandoc"
             },
@@ -943,7 +1037,10 @@
             "description": "View pdf files",
             "gui": true,
             "name": "SumatraPDF",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/sumatrapdfreader/sumatrapdf"
+            },
             "platformInfo": {
                 "windows": true
             },
@@ -957,7 +1054,10 @@
             "description": "TeX Live suite",
             "gui": true,
             "name": "TeX Live suite",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/TeX-Live/texlive-source"
+            },
             "packageManagerInfo": {
                 "pacmanGroup": "texlive-most"
             },
@@ -976,7 +1076,10 @@
             "description": "A GUI with OCR capability to produce PDFs or DjVus from scanned documents",
             "gui": true,
             "name": "gscan2pdf",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://sourceforge.net/projects/gscan2pdf/"
+            },
             "packageManagerInfo": {
                 "pacman": "gscan2pdf"
             },
@@ -993,7 +1096,10 @@
             "description": "Provides drivers for HP printers and manages them",
             "gui": true,
             "name": "hplip",
-            "openSource": "GPL2",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://sourceforge.net/projects/hplip/"
+            },
             "packageManagerInfo": {
                 "pacman": "hplip"
             },
@@ -1010,7 +1116,10 @@
             "description": "A CUPS printer configuration tool and status applet",
             "gui": true,
             "name": "system-config-printer",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/OpenPrinting/system-config-printer"
+            },
             "packageManagerInfo": {
                 "pacman": "system-config-printer"
             },
@@ -1028,7 +1137,10 @@
             "description": "Display and control a USB connected Android 5.0+ device",
             "gui": true,
             "name": "scrcpy",
-            "openSource": "APACHE",
+            "openSource": {
+                "license": "APACHE",
+                "url": "https://github.com/Genymobile/scrcpy"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "scrcpy"
             },
@@ -1046,7 +1158,10 @@
             "description": "Visualize files and their sizes of a drive in a pie graph",
             "gui": true,
             "name": "baobab",
-            "openSource": "GPL2",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://wiki.gnome.org/Apps/DiskUsageAnalyzer"
+            },
             "packageManagerInfo": {
                 "pacman": "baobab"
             },
@@ -1063,7 +1178,10 @@
             "description": "FTP, FTPS and SFTP client",
             "gui": true,
             "name": "Filezilla",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://filezilla-project.org/sourcecode.php"
+            },
             "packageManagerInfo": {
                 "pacman": "filezilla"
             },
@@ -1081,7 +1199,10 @@
             "description": "Disk Management Utility to get connected drives, their partitions and more details",
             "gui": true,
             "name": "gnome-disk-utility",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://gitlab.gnome.org/GNOME/gnome-disk-utility"
+            },
             "packageManagerInfo": {
                 "pacman": "gnome-disk-utility"
             },
@@ -1097,9 +1218,11 @@
         {
             "category": "Storage",
             "description": "Synchronize Google Drive data",
-            "gui": false,
             "name": "grive",
-            "openSource": "GPL2",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://github.com/vitalif/grive2"
+            },
             "packageManagerInfo": {
                 "pacmanAurGit": "grive-git"
             },
@@ -1114,9 +1237,11 @@
         {
             "category": "Storage",
             "description": "Synchronize Microsoft OneDrive data",
-            "gui": false,
             "name": "onedrive-abraunegg",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/abraunegg/onedrive"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "onedrive-abraunegg"
             },
@@ -1133,7 +1258,10 @@
             "description": "Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives",
             "gui": true,
             "name": "smartmontools",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/smartmontools/smartmontools"
+            },
             "packageManagerInfo": {
                 "pacman": "smartmontools"
             },
@@ -1152,7 +1280,6 @@
             "description": "Shows the file structure and file sizes in an easy to read graphical window",
             "gui": true,
             "name": "SpaceSniffer",
-            "openSource": false,
             "platformInfo": {
                 "windows": true
             },
@@ -1166,7 +1293,10 @@
             "description": "Burn ISO files for operating systems to USB sticks",
             "gui": true,
             "name": "Balena Etcher",
-            "openSource": "APACHE",
+            "openSource": {
+                "license": "APACHE",
+                "url": "https://github.com/balena-io/etcher"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "balena-etcher"
             },
@@ -1182,9 +1312,11 @@
         {
             "category": "System",
             "description": "Task Manager",
-            "gui": false,
             "name": "htop",
-            "openSource": "MIT",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/htop-dev/htop"
+            },
             "packageManagerInfo": {
                 "pacman": "htop"
             },
@@ -1202,7 +1334,10 @@
             "description": "A system restore utility that also allows file restoration",
             "gui": true,
             "name": "timeshift",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/teejee2008/timeshift"
+            },
             "packageManagerInfo": {
                 "pacmanAur": "timeshift"
             },
@@ -1219,7 +1354,10 @@
             "description": "A video converter",
             "gui": true,
             "name": "Handbrake",
-            "openSource": "GPL",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/HandBrake/HandBrake"
+            },
             "packageManagerInfo": {
                 "pacman": "handbrake"
             },
@@ -1238,7 +1376,10 @@
             "description": "A animalistic video player",
             "gui": true,
             "name": "MPV",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/mpv-player/mpv"
+            },
             "packageManagerInfo": {
                 "pacman": "mpv"
             },
@@ -1257,7 +1398,10 @@
             "description": "A live streaming toolbox (YouTube, Twitch, ...)",
             "gui": true,
             "name": "OBS",
-            "openSource": "GPL2",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://github.com/obsproject/obs-studio"
+            },
             "packageManagerInfo": {
                 "pacman": "obs-studio"
             },
@@ -1277,7 +1421,10 @@
             "description": "A video editor",
             "gui": true,
             "name": "OpenShot",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/OpenShot/openshot-qt"
+            },
             "packageManagerInfo": {
                 "pacman": "openshot"
             },
@@ -1296,7 +1443,10 @@
             "description": "A video editor",
             "gui": true,
             "name": "Shotcut",
-            "openSource": "GPL3",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/mltframework/shotcut"
+            },
             "packageManagerInfo": {
                 "pacman": "shotcut"
             },
@@ -1315,10 +1465,13 @@
             "description": "A feature rich video player",
             "gui": true,
             "name": "VLC Media Player",
-            "openSource": [
-                "GPL2",
-                "LGPL2.1"
-            ],
+            "openSource": {
+                "license": [
+                    "GPL2",
+                    "LGPL2.1"
+                ],
+                "url": "https://code.videolan.org/videolan/vlc"
+            },
             "packageManagerInfo": {
                 "pacman": "vlc"
             },
@@ -1335,9 +1488,11 @@
         {
             "category": "Video",
             "description": "A command-line program to download videos from YouTube.com and a few more sites",
-            "gui": true,
             "name": "youtube-dl",
-            "openSource": "Unlicense",
+            "openSource": {
+                "license": "Unlicense",
+                "url": "https://github.com/ytdl-org/youtube-dl"
+            },
             "packageManagerInfo": {
                 "pacman": "youtube-dl"
             },
@@ -1355,11 +1510,14 @@
             "description": "A browser",
             "gui": true,
             "name": "Firefox",
-            "openSource": [
-                "GPL",
-                "LGPL",
-                "MPL"
-            ],
+            "openSource": {
+                "license": [
+                    "GPL",
+                    "LGPL",
+                    "MPL"
+                ],
+                "url": "https://searchfox.org/mozilla-central/source/"
+            },
             "packageManagerInfo": {
                 "pacman": "firefox",
                 "pacmanAurNightly": "firefox-nightly"

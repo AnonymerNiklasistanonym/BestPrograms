@@ -77,54 +77,64 @@
                     "type": "string"
                 },
                 "openSource": {
-                    "anyOf": [
-                        {
-                            "type": "boolean"
+                    "additionalProperties": false,
+                    "type": "object",
+                    "required": [
+                        "license",
+                        "url"
+                    ],
+                    "properties": {
+                        "url": {
+                            "type": "string"
                         },
-                        {
-                            "type": "array",
-                            "items": {
-                                "enum": [
-                                    "APACHE",
-                                    "AGPL3",
-                                    "BSD",
-                                    "MIT",
-                                    "GPL",
-                                    "GPL2",
-                                    "GPL2WithOpeSSLException",
-                                    "GPL3",
-                                    "LGPL",
-                                    "LGPL2.1",
-                                    "LGPL3",
-                                    "MPL",
-                                    "MPL2",
-                                    "OFL",
-                                    "CCPL",
-                                    "Unlicense"
-                                ]
-                            }
-                        },
-                        {
-                            "enum": [
-                                "APACHE",
-                                "AGPL3",
-                                "BSD",
-                                "MIT",
-                                "GPL",
-                                "GPL2",
-                                "GPL2WithOpeSSLException",
-                                "GPL3",
-                                "LGPL",
-                                "LGPL2.1",
-                                "LGPL3",
-                                "MPL",
-                                "MPL2",
-                                "OFL",
-                                "CCPL",
-                                "Unlicense"
+                        "license": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "enum": [
+                                            "APACHE",
+                                            "AGPL3",
+                                            "BSD",
+                                            "MIT",
+                                            "GPL",
+                                            "GPL2",
+                                            "GPL2WithOpeSSLException",
+                                            "GPL3",
+                                            "LGPL",
+                                            "LGPL2.1",
+                                            "LGPL3",
+                                            "MPL",
+                                            "MPL2",
+                                            "OFL",
+                                            "CCPL",
+                                            "Unlicense"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "enum": [
+                                        "APACHE",
+                                        "AGPL3",
+                                        "BSD",
+                                        "MIT",
+                                        "GPL",
+                                        "GPL2",
+                                        "GPL2WithOpeSSLException",
+                                        "GPL3",
+                                        "LGPL",
+                                        "LGPL2.1",
+                                        "LGPL3",
+                                        "MPL",
+                                        "MPL2",
+                                        "OFL",
+                                        "CCPL",
+                                        "Unlicense"
+                                    ]
+                                }
                             ]
                         }
-                    ],
+                    },
                     "description": "Program source code is publicly available"
                 },
                 "packageManagerInfo": {

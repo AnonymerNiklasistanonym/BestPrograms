@@ -5,10 +5,10 @@ import * as Handlebars from 'handlebars/runtime'
 import "../handlebars/precompiled"
 
 Handlebars.registerHelper('isString', function (arg, options) {
-    return (typeof arg === "string") ? options.fn(this) : options.inverse(this);
+    return (typeof arg === "string") ? options.fn(this) : options.inverse(this)
 })
 Handlebars.registerHelper('isArray', function (arg, options) {
-    return Array.isArray(arg) ? options.fn(this) : options.inverse(this);
+    return Array.isArray(arg) ? options.fn(this) : options.inverse(this)
 })
 
 export const createProgramList = (programs: Program[]) => {

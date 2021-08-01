@@ -48,44 +48,46 @@ export interface Program {
   /**
    * Program source code is publicly available
    */
-  openSource?:
-    | boolean
-    | (
-        | "APACHE"
-        | "AGPL3"
-        | "BSD"
-        | "MIT"
-        | "GPL"
-        | "GPL2"
-        | "GPL2WithOpeSSLException"
-        | "GPL3"
-        | "LGPL"
-        | "LGPL2.1"
-        | "LGPL3"
-        | "MPL"
-        | "MPL2"
-        | "OFL"
-        | "CCPL"
-        | "Unlicense"
-      )[]
-    | (
-        | "APACHE"
-        | "AGPL3"
-        | "BSD"
-        | "MIT"
-        | "GPL"
-        | "GPL2"
-        | "GPL2WithOpeSSLException"
-        | "GPL3"
-        | "LGPL"
-        | "LGPL2.1"
-        | "LGPL3"
-        | "MPL"
-        | "MPL2"
-        | "OFL"
-        | "CCPL"
-        | "Unlicense"
-      );
+  openSource?: {
+    url: string;
+    license:
+      | (
+          | "APACHE"
+          | "AGPL3"
+          | "BSD"
+          | "MIT"
+          | "GPL"
+          | "GPL2"
+          | "GPL2WithOpeSSLException"
+          | "GPL3"
+          | "LGPL"
+          | "LGPL2.1"
+          | "LGPL3"
+          | "MPL"
+          | "MPL2"
+          | "OFL"
+          | "CCPL"
+          | "Unlicense"
+        )[]
+      | (
+          | "APACHE"
+          | "AGPL3"
+          | "BSD"
+          | "MIT"
+          | "GPL"
+          | "GPL2"
+          | "GPL2WithOpeSSLException"
+          | "GPL3"
+          | "LGPL"
+          | "LGPL2.1"
+          | "LGPL3"
+          | "MPL"
+          | "MPL2"
+          | "OFL"
+          | "CCPL"
+          | "Unlicense"
+        );
+  };
   /**
    * Package Manager information for this program
    */

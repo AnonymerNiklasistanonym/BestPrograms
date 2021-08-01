@@ -23,11 +23,19 @@
                         <li class="program-tag program-tag-positive">GUI</li>
                     {{/if}}
                     {{#if this.openSource}}
-                        {{#isString this.openSource}}
-                            <li class="program-tag program-tag-positive">OpenSource-{{this.openSource}}</li>
+                        {{#isString this.openSource.license}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="{{this.openSource.url}}">
+                                    OpenSource-{{this.openSource.license}}
+                                </a>
+                            </li>
                         {{/isString}}
-                        {{#isArray this.openSource}}
-                            <li class="program-tag program-tag-positive">OpenSource{{#each this.openSource}}-{{this}}{{/each}}</li>
+                        {{#isArray this.openSource.license}}
+                            <li class="program-tag program-tag-positive">
+                                <a href="{{this.openSource.url}}">
+                                    OpenSource{{#each this.openSource.license}}-{{this}}{{/each}}
+                                </a>
+                            </li>
                         {{/isArray}}
                     {{else}}
                         <li class="program-tag program-tag-attention">ClosedSource</li>
