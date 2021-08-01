@@ -23,13 +23,13 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
             const tags = []
             if (program.platformInfo) {
                 if (program.platformInfo.linux) {
-                    tags.push("`Linux")
+                    tags.push("`Linux`")
                     if (program.platformInfo.linuxSudoRightsNecessary) {
                         tags.push("`sudo-rights-necessary`")
                     }
                 }
                 if (program.platformInfo.windows) {
-                    tags.push("`Windows")
+                    tags.push("`Windows`")
                     if (program.platformInfo.windowsAdminRightsNecessary) {
                         tags.push("`admin-rights-necessary`")
                     }
