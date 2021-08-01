@@ -128,15 +128,15 @@ Repo for a list of the best programs (Linux + Windows):
 - Fonts
   - [Fira Code](https://github.com/tonsky/FiraCode): Font with nice ligatures for programmers
 
-    `Linux`, `Windows`, [`OpenSource-OFL`](https://github.com/tonsky/FiraCode), `CLI`, `ligatures`
+    `Linux`, `Windows`, [`OpenSource-OFL`](https://github.com/tonsky/FiraCode), `ligatures`
     - Pacman: [`ttf-fira-code`](https://www.archlinux.org/packages/?q=ttf-fira-code)
   - [JetBrains Mono](https://www.jetbrains.com/lp/mono): Font with nice ligatures for programmers
 
-    `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/JetBrains/JetBrainsMono), `CLI`, `ligatures`
+    `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/JetBrains/JetBrainsMono), `ligatures`
     - Pacman: [`ttf-jetbrains-mono`](https://www.archlinux.org/packages/?q=ttf-jetbrains-mono)
   - [noto-fonts-emoji](https://www.google.com/get/noto): Get colour emojis on Linux (for Discord and more)
 
-    `Linux`, [`OpenSource-OFL`](https://github.com/googlefonts/noto-emoji), `CLI`, `emojis`
+    `Linux`, [`OpenSource-OFL`](https://github.com/googlefonts/noto-emoji), `emojis`
     - Pacman: [`noto-fonts-emoji`](https://www.archlinux.org/packages/?q=noto-fonts-emoji)
 - Gaming
   - [Goverlay](https://github.com/benjamimgois/goverlay): Mangohud Configuration Editor
@@ -158,7 +158,7 @@ Repo for a list of the best programs (Linux + Windows):
 - Graphs
   - [dia](http://live.gnome.org/Dia): End of life graph creator for UML/ERM/... that also has a cli export interface
 
-    `Linux`, `Windows`, [`OpenSource-GPL`](https://gitlab.gnome.org/GNOME/dia), `GUI`, `class-diagrams`, `erm`, `uml`
+    `Linux`, `Windows`, [`OpenSource-GPL`](https://gitlab.gnome.org/GNOME/dia), `GUI`, `CLI`, `class-diagrams`, `erm`, `uml`
     - Pacman: [`dia`](https://www.archlinux.org/packages/?q=dia)
 - Images
   - [darktable](https://darktable.org): Utility to organize images
@@ -171,7 +171,7 @@ Repo for a list of the best programs (Linux + Windows):
     - Pacman: [`gThumb`](https://www.archlinux.org/packages/?q=gThumb)
   - [Inkscape](https://inkscape.org): Vector graphics editor
 
-    `Linux`, `Windows`, [`OpenSource-GPL+LGPL`](https://gitlab.com/inkscape/inkscape), `GUI`, `vector-graphics-editor`
+    `Linux`, `Windows`, [`OpenSource-GPL+LGPL`](https://gitlab.com/inkscape/inkscape), `GUI`, `CLI`, `vector-graphics-editor`
     - Pacman: [`inkscape`](https://www.archlinux.org/packages/?q=inkscape)
   - [Krita](https://krita.org): Edit and paint images
 
@@ -242,7 +242,7 @@ Repo for a list of the best programs (Linux + Windows):
 - Screenshare
   - [scrcpy](https://github.com/Genymobile/scrcpy): Display and control a USB connected Android 5.0+ device
 
-    `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/Genymobile/scrcpy), `GUI`, `android`
+    `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/Genymobile/scrcpy), `CLI`, `android`
     - Pacman [AUR]: [`scrcpy`](https://aur.archlinux.org/packages/?K=scrcpy)
 - Storage
   - [baobab](https://wiki.gnome.org/Apps/DiskUsageAnalyzer): Visualize files and their sizes of a drive in a pie graph

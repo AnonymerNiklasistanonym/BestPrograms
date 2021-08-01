@@ -34,6 +34,10 @@ export interface Program {
    */
   category: string;
   /**
+   * Program has a CLI
+   */
+  cli?: boolean;
+  /**
    * Program description
    */
   description: string;

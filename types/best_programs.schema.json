@@ -64,6 +64,10 @@
                     "description": "The main category this program belongs to",
                     "type": "string"
                 },
+                "cli": {
+                    "description": "Program has a CLI",
+                    "type": "boolean"
+                },
                 "description": {
                     "description": "Program description",
                     "type": "string"

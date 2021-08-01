@@ -22,6 +22,9 @@
                     {{#if this.gui}}
                         <li class="program-tag program-tag-positive">GUI</li>
                     {{/if}}
+                    {{#if this.cli}}
+                        <li class="program-tag">CLI</li>
+                    {{/if}}
                     {{#if this.openSource}}
                         {{#isString this.openSource.license}}
                             <li class="program-tag program-tag-positive">

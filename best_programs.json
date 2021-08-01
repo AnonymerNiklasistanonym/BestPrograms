@@ -133,6 +133,7 @@
         },
         {
             "category": "Audio",
+            "cli": true,
             "description": "Control global media player playback via the command line",
             "name": "Playerctl",
             "openSource": {
@@ -152,6 +153,7 @@
         },
         {
             "category": "Command Line",
+            "cli": true,
             "description": "Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`",
             "name": "tldr",
             "openSource": {
@@ -171,6 +173,7 @@
         },
         {
             "category": "Command Line",
+            "cli": true,
             "description": "Display multiple data structures in the command line",
             "name": "visidata",
             "openSource": {
@@ -684,6 +687,7 @@
         },
         {
             "category": "Gaming",
+            "cli": true,
             "description": "Wine performance HUD and logging",
             "name": "Mangohud",
             "openSource": {
@@ -711,8 +715,8 @@
                 "pacman": "steam"
             },
             "platformInfo": {
-                "windows": true,
-                "linux": true
+                "linux": true,
+                "windows": true
             },
             "tags": [
                 "game-launcher"
@@ -721,6 +725,7 @@
         },
         {
             "category": "Graphs",
+            "cli": true,
             "description": "End of life graph creator for UML/ERM/... that also has a cli export interface",
             "gui": true,
             "name": "dia",
@@ -787,6 +792,7 @@
         },
         {
             "category": "Images",
+            "cli": true,
             "description": "Vector graphics editor",
             "gui": true,
             "name": "Inkscape",
@@ -998,6 +1004,7 @@
         },
         {
             "category": "Office",
+            "cli": true,
             "description": "Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering",
             "name": "Pandoc",
             "openSource": {
@@ -1134,8 +1141,8 @@
         },
         {
             "category": "Screenshare",
+            "cli": true,
             "description": "Display and control a USB connected Android 5.0+ device",
-            "gui": true,
             "name": "scrcpy",
             "openSource": {
                 "license": "APACHE",
@@ -1217,6 +1224,7 @@
         },
         {
             "category": "Storage",
+            "cli": true,
             "description": "Synchronize Google Drive data",
             "name": "grive",
             "openSource": {
@@ -1236,6 +1244,7 @@
         },
         {
             "category": "Storage",
+            "cli": true,
             "description": "Synchronize Microsoft OneDrive data",
             "name": "onedrive-abraunegg",
             "openSource": {
@@ -1311,6 +1320,7 @@
         },
         {
             "category": "System",
+            "cli": true,
             "description": "Task Manager",
             "name": "htop",
             "openSource": {
@@ -1487,6 +1497,7 @@
         },
         {
             "category": "Video",
+            "cli": true,
             "description": "A command-line program to download videos from YouTube.com and a few more sites",
             "name": "youtube-dl",
             "openSource": {

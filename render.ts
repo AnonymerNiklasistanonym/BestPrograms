@@ -44,7 +44,8 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
 
             if (program.gui) {
                 tags.push("`GUI`")
-            } else {
+            }
+            if (program.cli) {
                 tags.push("`CLI`")
             }
             if (program.tags) {
