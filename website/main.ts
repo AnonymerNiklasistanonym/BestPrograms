@@ -48,7 +48,7 @@ try {
     for (const eventName of ["keyup", "input", "propertychange", "paste", "change"]) {
         filterInput.addEventListener(eventName, () => {
             const stringifiedQueryArgs = queryString.stringify({ q: filterInput.value })
-            window.history.replaceState(null, null, stringifiedQueryArgs)
+            window.history.replaceState(null, null, `?${stringifiedQueryArgs}`)
             filterList(filterInput.value)
         })
     }
