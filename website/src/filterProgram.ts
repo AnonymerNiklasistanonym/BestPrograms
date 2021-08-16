@@ -1,101 +1,155 @@
 import type { Program } from "../../types/best_programs"
+import type { ElementFilterInformation } from "simple-generic-object-array-search-bar-filter/lib/filterElement"
 
-const filterProgram2 = (program: Program, filter?: string) => {
-    return filter === "" || filter === undefined
-        || program.name.toLowerCase().includes(filter)
-        || program.category.toLowerCase().includes(filter)
-        || program.description.toLowerCase().includes(filter)
-        || program.website.toLowerCase().includes(filter)
-        || program.tags?.some(tag => tag.toLowerCase().includes(filter))
-        || (program.openSource ? (
-            Array.isArray(program.openSource.license)
-                ? program.openSource.license.some(license => license.toLowerCase().includes(filter))
-                : program.openSource.license.toString().toLowerCase().includes(filter)
-        ) : false)
-        || program.openSource?.url.toLowerCase().includes(filter)
-        || (program.platformInfo?.linux ? "linux".includes(filter) : false)
-        || (program.platformInfo?.linuxSudoRightsNecessary ? ["admin","sudo"].some(a => a.toLowerCase().includes(filter)) : false)
-        || (program.platformInfo?.windows ? "windows".includes(filter) : false)
-        || (program.platformInfo?.windowsAdminRightsNecessary ? "admin".includes(filter) : false)
-        || (program.gui ? "gui".includes(filter) : false)
-        || (program.cli ? "cli".includes(filter) : false)
-        || (program.packageManagerInfo?.pacman ? "pacman".includes(filter) : false)
-        || (program.packageManagerInfo?.pacmanAur ? (
-            "pacman".includes(filter) || "aur".includes(filter)) : false)
-        || (program.packageManagerInfo?.pacmanAurGit ? (
-            "pacman".includes(filter) || "aur".includes(filter)) : false)
-        || (program.packageManagerInfo?.pacmanAurNightly ? (
-            "pacman".includes(filter) || "aur".includes(filter)) : false)
-        || program.packageManagerInfo?.pacman?.includes(filter)
-        || program.packageManagerInfo?.pacmanAur?.includes(filter)
-        || program.packageManagerInfo?.pacmanAurGit?.includes(filter)
-        || program.packageManagerInfo?.pacmanAurNightly?.includes(filter)
-}
-
-export interface ParseFilterOutput {
-    /**
-     * Any hits with these filters should be added to the results
-     * (all hits should be OR but an array element is AND)
-     */
-    programFilters: (string | string[])[]
-    /**
-     * Any hits with these filters should be excluded from the results
-     * (all hits should be OR but an array element is AND)
-     */
-    programFiltersExclude: (string | string[])[]
-}
-
-export const parseFilter = (filter?: string): ParseFilterOutput => {
-    // Initially only find all the filter words split by a space
-    const programFilters: (string | string[])[] = filter === undefined
-        ? [] : filter.toLowerCase().split(" ").map(a => a.trim()).filter(b => b !== "")
-    const programFiltersFinal: (string | string[])[] = []
-    const programFiltersExclude: (string | string[])[] = []
-    // Find words that should be combined
-    for (const programFilter of programFilters) {
-        if (typeof programFilter === "string") {
-            const andFilter = programFilter.split("+").map(a => a.trim()).filter(b => b !== "")
-            // If the filter starts with a "-" add it to the exclude list
-            if (andFilter.length > 1) {
-                if (andFilter[0]?.startsWith("-")) {
-                    andFilter[0] = andFilter[0].substring(1)
-                    programFiltersExclude.push(andFilter.filter(a => a !== ""))
-                } else {
-                    programFiltersFinal.push(andFilter)
-                }
-            } else if (andFilter.length === 1) {
-                if (andFilter[0]?.length > 1 && andFilter[0]?.startsWith("-")) {
-                    programFiltersExclude.push(andFilter[0].substring(1))
-                } else {
-                    programFiltersFinal.push(andFilter[0])
-                }
-            }
+export const elementFilter = (element: Program): ElementFilterInformation[] => {
+    const information: ElementFilterInformation[] = [
+        {
+            propertyName: "category",
+            stringValue: element.category,
+            type: "string",
+        },
+        {
+            propertyName: "description",
+            stringValue: element.description,
+            type: "string",
+        },
+        {
+            propertyName: "name",
+            stringValue: element.name,
+            type: "string",
+        },
+        {
+            propertyName: "website",
+            stringValue: element.website,
+            type: "string",
+        },
+    ]
+    if (element.bugs) {
+        information.push({
+            propertyName: "bugs",
+            stringValue: element.bugs,
+            type: "string",
+        })
+    }
+    if (element.cli) {
+        information.push({
+            stringValue: "cli",
+            type: "string",
+        })
+    }
+    if (element.gui) {
+        information.push({
+            stringValue: "gui",
+            type: "string",
+        })
+    }
+    if (element.openSource) {
+        information.push({
+            stringValue: "openSource",
+            type: "string",
+        })
+        if (element.openSource.license) {
+            information.push({
+                propertyName: "openSourceLicense",
+                stringValue: Array.isArray(element.openSource.license)
+                    ? element.openSource.license.join(" ") : element.openSource.license,
+                type: "string",
+            })
+        }
+    } else {
+        information.push({
+            stringValue: "closedSource",
+            type: "string",
+        })
+    }
+    if (element.packageManagerInfo) {
+        if (element.packageManagerInfo.pacman) {
+            information.push({
+                stringValue: "pacman",
+                type: "string",
+            }, {
+                propertyName: "pacman",
+                stringValue: element.packageManagerInfo.pacman,
+                type: "string",
+            })
+        }
+        if (element.packageManagerInfo.pacmanAur) {
+            information.push({
+                stringValue: "pacmanAur",
+                type: "string",
+            }, {
+                propertyName: "pacmanAur",
+                stringValue: element.packageManagerInfo.pacmanAur,
+                type: "string",
+            })
+        }
+        if (element.packageManagerInfo.pacmanAurGit) {
+            information.push({
+                stringValue: "pacmanAurGit",
+                type: "string",
+            }, {
+                propertyName: "pacmanAurGit",
+                stringValue: element.packageManagerInfo.pacmanAurGit,
+                type: "string",
+            })
+        }
+        if (element.packageManagerInfo.pacmanAurNightly) {
+            information.push({
+                stringValue: "pacmanAurNightly",
+                type: "string",
+            }, {
+                propertyName: "pacmanAurNightly",
+                stringValue: element.packageManagerInfo.pacmanAurNightly,
+                type: "string",
+            })
         }
     }
-
-    return {
-        programFilters: programFiltersFinal,
-        programFiltersExclude
+    if (element.platformInfo) {
+        if (element.platformInfo.linux) {
+            information.push({
+                stringValue: "linux",
+                type: "string",
+            })
+        }
+        if (element.platformInfo.linuxSudoRightsNecessary) {
+            information.push({
+                stringValue: "sudo",
+                type: "string",
+            })
+        }
+        if (element.platformInfo.windows) {
+            information.push({
+                stringValue: "windows",
+                type: "string",
+            })
+        }
+        if (element.platformInfo.windowsAdminRightsNecessary) {
+            information.push({
+                stringValue: "admin",
+                type: "string",
+            })
+        }
     }
-}
-
-export const filterProgram = (program: Program, filter?: string) => {
-
-    const parsedFilter = parseFilter(filter)
-
-    return (
-        parsedFilter.programFilters.length === 0
-        || parsedFilter.programFilters.some(programFilter => {
-            if (typeof programFilter === "string") {
-                return filterProgram2(program, programFilter)
-            } else {
-                return programFilter.every(a => filterProgram2(program, a))
-            }
-        })) && !parsedFilter.programFiltersExclude.some(programFilter => {
-            if (typeof programFilter === "string") {
-                return filterProgram2(program, programFilter)
-            } else {
-                return programFilter.every(a => filterProgram2(program, a))
-            }
+    if (element.price) {
+        information.push({
+            propertyName: "price",
+            stringValue: element.price,
+            type: "string",
         })
+    }
+    if (element.setup) {
+        information.push({
+            propertyName: "setup",
+            stringValue: element.setup,
+            type: "string",
+        })
+    }
+    if (element.tags) {
+        information.push({
+            propertyName: "tags",
+            stringValue: element.tags.join(" "),
+            type: "string",
+        })
+    }
+    return information
 }

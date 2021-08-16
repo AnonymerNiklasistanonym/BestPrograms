@@ -23,11 +23,12 @@
     "escape-string-regexp": "^5.0.0",
     "handlebars-loader": "^1.7.1",
     "json-schema-to-typescript": "^10.1.4",
+    "query-string": "^7.0.1",
+    "simple-generic-object-array-search-bar-filter": "^0.0.4",
     "ts-loader": "^9.2.4",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5",
     "webpack": "^5.47.1",
-    "webpack-cli": "^4.7.2",
-    "query-string": "^7.0.1"
+    "webpack-cli": "^4.7.2"
   }
 }

@@ -1,11 +1,12 @@
 import type { BestPrograms } from "../types/best_programs"
 
 import escapeStringRegexp from "escape-string-regexp"
+import sgoasbf from "simple-generic-object-array-search-bar-filter"
 import * as queryString from "query-string"
 
 import { autocompleteTextInput } from "./src/autocompleteTextInput"
 import { createProgramList } from "./src/createProgramList"
-import { filterProgram } from "./src/filterProgram"
+import { elementFilter } from "./src/filterProgram"
 
 try {
     const response = await fetch("./best_programs.json")
@@ -20,7 +21,12 @@ try {
     programList.removeChild(programList.querySelector("div.loading"))
     programList.appendChild(programListElement)
     const filterList = (filter?: string) => {
-        const filteredPrograms = jsonData.programs.filter(program => filterProgram(program, filter))
+        const parsedFilter = sgoasbf.parseFilter(filter)
+        const filteredPrograms = jsonData.programs.filter(program => sgoasbf.filterElement(
+            program,
+            elementFilter,
+            parsedFilter
+        ).match)
         const programListList = document.getElementById("program-list-list")
         for (const childNode of programListList.childNodes) {
             const element = childNode as HTMLElement

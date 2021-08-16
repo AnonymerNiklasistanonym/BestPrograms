@@ -45,10 +45,6 @@ export const autocompleteTextInput = (
                     typedKeyword: keyword.substr(0, currentKeyword.length),
                     autocompletedKeyword: keyword.substr(currentKeyword.length),
                 })
-                //b.innerHTML = "<strong>" + keyword.substr(0, currentKeyword.length) + "</strong>"
-                //b.innerHTML += keyword.substr(currentKeyword.length)
-                ///*insert a input field that will hold the current array item's value:*/
-                //b.innerHTML += "<input type='hidden' value='" + keyword + "'>"
                 /*execute a function when someone clicks on the item value (DIV element):*/
                 b.addEventListener("click", e => {
                     /*insert the value for the autocomplete text field:*/
