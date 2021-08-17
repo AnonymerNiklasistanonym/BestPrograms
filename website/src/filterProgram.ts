@@ -49,12 +49,19 @@ export const elementFilter = (element: Program): ElementFilterInformation[] => {
             type: "string",
         })
         if (element.openSource.license) {
-            information.push({
-                propertyName: "openSourceLicense",
-                stringValue: Array.isArray(element.openSource.license)
-                    ? element.openSource.license.join(" ") : element.openSource.license,
-                type: "string",
-            })
+            if (Array.isArray(element.openSource.license)) {
+                information.push({
+                    propertyName: "openSourceLicense",
+                    stringArrayValue: element.openSource.license,
+                    type: "string-array",
+                })
+            } else {
+                information.push({
+                    propertyName: "openSourceLicense",
+                    stringValue: element.openSource.license,
+                    type: "string",
+                })
+            }
         }
     } else {
         information.push({
@@ -147,8 +154,8 @@ export const elementFilter = (element: Program): ElementFilterInformation[] => {
     if (element.tags) {
         information.push({
             propertyName: "tags",
-            stringValue: element.tags.join(" "),
-            type: "string",
+            stringArrayValue: element.tags,
+            type: "string-array",
         })
     }
     return information

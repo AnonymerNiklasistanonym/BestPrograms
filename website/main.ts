@@ -62,18 +62,73 @@ try {
     autocompleteTextInput(filterInput, [...new Set(jsonData.programs.reduce(
         (keywords, program) => {
             return keywords.concat(
-                program.name,
-                program.category,
-                program.openSource ? program.openSource.license : [],
-                program.packageManagerInfo?.pacman ? program.packageManagerInfo.pacman : [],
-                program.packageManagerInfo?.pacmanAur ? program.packageManagerInfo.pacmanAur : [],
-                program.packageManagerInfo?.pacmanAurGit ? program.packageManagerInfo.pacmanAurGit : [],
-                program.packageManagerInfo?.pacmanAurNightly ? program.packageManagerInfo.pacmanAurNightly : [],
-                program.platformInfo?.linux ? "linux" : [],
-                program.platformInfo?.windows ? "windows" : [],
-                program.cli ? "cli" : [],
-                program.gui ? "gui" : [],
-                program.tags ? program.tags : []
+                elementFilter(program).reduce(
+                    (_keywords, _program) => {
+                        if (_program.propertyName) {
+                            _keywords.push(
+                                `${_program.propertyName}=`,
+                            )
+                            if (
+                                _program.type === "number" ||
+                                _program.type === "number-array" ||
+                                ((_program.type === "string" ||
+                                    _program.type ===
+                                        "string-array") &&
+                                    _program.stringValueToNumberValueMapper !==
+                                        undefined)
+                            ) {
+                                _keywords.push(
+                                    `${_program.propertyName}>=`,
+                                )
+                                _keywords.push(
+                                    `${_program.propertyName}<=`,
+                                )
+                                _keywords.push(
+                                    `${_program.propertyName}>`,
+                                )
+                                _keywords.push(
+                                    `${_program.propertyName}<`,
+                                )
+                                _keywords.push(
+                                    `${_program.propertyName}<=>`,
+                                )
+                            }
+                        }
+                        if (_program.stringValue) {
+                            _keywords.push(
+                                _program.stringValue.replace(
+                                    / /g,
+                                    "+",
+                                ),
+                            )
+                            _keywords.push(
+                                ..._program.stringValue.split(/ /g),
+                            )
+                        }
+                        if (_program.stringArrayValue) {
+                            _keywords.push(
+                                ..._program.stringArrayValue.map(
+                                    (a) => a.replace(/ /g, "+"),
+                                ),
+                            )
+                            _keywords.push(
+                                ..._program.stringArrayValue.reduce(
+                                    (prev, curr) =>
+                                        prev.concat(
+                                            curr.split(/ /g),
+                                        ),
+                                    [],
+                                ),
+                            )
+                        }
+                        // Integrating numbers as auto completion doesn't add any value
+                        //if (_beatmap.numberValue) {
+                        //    _keywords.push(`${_beatmap.numberValue}`)
+                        //}
+                        return _keywords
+                    },
+                    [] as string[],
+                ),
             )
         }, [] as string[]
     ).map(keyword => keyword.trim().toLowerCase()))], {
