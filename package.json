@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/node": "^16.6.1",
     "escape-string-regexp": "^5.0.0",
-    "handlebars-loader": "^1.7.1",
+    "handlebars-loader": "^1.7.3",
     "json-schema-to-typescript": "^10.1.4",
     "query-string": "^7.0.1",
     "simple-generic-object-array-search-bar-filter": "^0.0.5",
