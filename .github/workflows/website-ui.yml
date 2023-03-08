@@ -19,16 +19,17 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - name: Install node modules
       run: npm ci
     - name: Precompile Handlebars files
@@ -53,19 +54,22 @@ jobs:
         retention-days: 7
 
   deploy:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    if: github.event_name != 'pull_request'
     needs:
     - build
-    runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Retrieve temporarily saved "website" files from the build job
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: website-artifacts
         path: ./bin
     - name: Deploy to GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2
+      uses: crazy-max/ghaction-github-pages@v3
       with:
         target_branch: gh-pages
         build_dir: ./bin
