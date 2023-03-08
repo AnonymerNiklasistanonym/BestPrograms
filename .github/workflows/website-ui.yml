@@ -15,6 +15,12 @@ on:
   # Allows to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 
 jobs:
 
@@ -47,7 +53,7 @@ jobs:
     - name: Remove the Handlebars source files
       run: rm -rf ./website/handlebars
     - name: Temporarily save created "website" files
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: website-artifacts
         path: ./website
@@ -63,15 +69,14 @@ jobs:
     - build
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/configure-pages@v3
     - name: Retrieve temporarily saved "website" files from the build job
       uses: actions/download-artifact@v3
       with:
         name: website-artifacts
-        path: ./bin
-    - name: Deploy to GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v3
+        path: bin
+    - uses: actions/upload-pages-artifact@v1
       with:
-        target_branch: gh-pages
-        build_dir: ./bin
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        path: bin
+    - uses: actions/deploy-pages@v1
+      id: deployment
