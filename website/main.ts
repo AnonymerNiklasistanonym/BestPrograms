@@ -2,7 +2,7 @@ import type { BestPrograms } from "../types/best_programs"
 
 import escapeStringRegexp from "escape-string-regexp"
 import sgoasbf from "simple-generic-object-array-search-bar-filter"
-import * as queryString from "query-string"
+import queryString from "query-string"
 
 import { autocompleteTextInput } from "./src/autocompleteTextInput"
 import { createProgramList } from "./src/createProgramList"

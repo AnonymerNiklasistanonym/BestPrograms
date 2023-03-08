@@ -4,7 +4,7 @@ Repo for a list of the best programs (Linux + Windows):
 
 [//]: # (Best Programs begin)
 - 3D Computer Graphics
-  - [Blender](https://github.com/lawl/NoiseTorch): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games
+  - [Blender](https://www.blender.org/): A 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D models, motion graphics, interactive 3D applications, virtual reality and computer games
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://github.com/blender/blender), `GUI`, `modelling`, `rendering`
     - Pacman: [`blender`](https://www.archlinux.org/packages/?q=blender)

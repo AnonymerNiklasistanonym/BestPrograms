@@ -4,7 +4,7 @@
     "definitions": {
         "packageManagerInfo": {
             "additionalProperties": false,
-            "description": "Package Mangagers on which this program is available",
+            "description": "Package Managers on which this program is available",
             "properties": {
                 "pacman": {
                     "description": "The pacman ID",
@@ -147,7 +147,7 @@
                 },
                 "platformInfo": {
                     "$ref": "#/definitions/platformInfo",
-                    "description": "The recommended semester/Das empfohlene Semester"
+                    "description": "Platform information for this program"
                 },
                 "price": {
                     "description": "The price of the program if it has one",
