@@ -748,6 +748,29 @@
             "website": "http://live.gnome.org/Dia"
         },
         {
+            "category": "Heroic Games Launcher",
+            "description": "Epic, GOG and Amazon Prime Games launcher",
+            "gui": true,
+            "name": "Steam",
+            "packageManagerInfo": {
+                "pacman": "heroic-games-launcher"
+            },
+            "openSource": {
+                "license": [
+                    "GPL3"
+                ],
+                "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "game-launcher"
+            ],
+            "website": "https://heroicgameslauncher.com/downloads"
+        },
+        {
             "category": "Images",
             "description": "Utility to organize images",
             "gui": true,
@@ -1405,7 +1428,7 @@
         },
         {
             "category": "Video",
-            "description": "A live streaming toolbox (YouTube, Twitch, ...)",
+            "description": "Record or live stream the desktop",
             "gui": true,
             "name": "OBS",
             "openSource": {

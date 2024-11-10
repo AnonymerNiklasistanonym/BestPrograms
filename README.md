@@ -160,6 +160,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://gitlab.gnome.org/GNOME/dia), `GUI`, `CLI`, `class-diagrams`, `erm`, `uml`
     - Pacman: [`dia`](https://www.archlinux.org/packages/?q=dia)
+- Heroic Games Launcher
+  - [Steam](https://heroicgameslauncher.com/downloads): Epic, GOG and Amazon Prime Games launcher
+
+    `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher), `GUI`, `game-launcher`
+    - Pacman: [`heroic-games-launcher`](https://www.archlinux.org/packages/?q=heroic-games-launcher)
 - Images
   - [darktable](https://darktable.org): Utility to organize images
 
@@ -295,7 +300,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/mpv-player/mpv), `GUI`, `audio-player`, `video-player`
     - Pacman: [`mpv`](https://www.archlinux.org/packages/?q=mpv)
-  - [OBS](https://obsproject.com): A live streaming toolbox (YouTube, Twitch, ...)
+  - [OBS](https://obsproject.com): Record or live stream the desktop
 
     `Linux`, `Windows`, [`OpenSource-GPL2`](https://github.com/obsproject/obs-studio), `GUI`, `live-streaming`, `video-streaming`
     - Pacman: [`obs-studio`](https://www.archlinux.org/packages/?q=obs-studio)
