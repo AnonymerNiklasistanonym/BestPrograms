@@ -90,7 +90,7 @@
                         {{/if}}
                         {{#if this.packageManagerInfo.winget}}
                             <li class="program-tag program-tag-positive">
-                                <a href="https://winget.run/pkg/{{program.packageManagerInfo.winget.replace '.' '/'}}">
+                                <a href="https://winget.run/pkg/{{replaceWinget program.packageManagerInfo.winget '.' '/'}}">
                                     winget-{{this.packageManagerInfo.winget}}
                                 </a>
                             </li>
