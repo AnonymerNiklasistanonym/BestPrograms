@@ -431,7 +431,8 @@
                 "url": "https://github.com/nickbnf/glogg"
             },
             "packageManagerInfo": {
-                "pacmanAur": "glogg"
+                "pacmanAur": "glogg",
+                "winget": "Bonnefon.glogg"
             },
             "platformInfo": {
                 "linux": true,
@@ -519,7 +520,8 @@
             "gui": true,
             "name": "Typora",
             "packageManagerInfo": {
-                "pacmanAur": "typora"
+                "pacmanAur": "typora",
+                "winget": "appmakes.Typora"
             },
             "platformInfo": {
                 "linux": true,
@@ -827,7 +829,8 @@
                 "url": "https://gitlab.com/inkscape/inkscape"
             },
             "packageManagerInfo": {
-                "pacman": "inkscape"
+                "pacman": "inkscape",
+                "winget": "Inkscape.Inkscape"
             },
             "platformInfo": {
                 "linux": true,
@@ -925,7 +928,8 @@
                 "url": "https://github.com/ankitects/anki"
             },
             "packageManagerInfo": {
-                "pacman": "anki"
+                "pacman": "anki",
+                "winget": "Anki.Anki"
             },
             "platformInfo": {
                 "linux": true,
@@ -957,6 +961,28 @@
                 "scorewriter"
             ],
             "website": "https://musescore.org"
+        },
+        {
+            "category": "Office",
+            "description": "Xournal++",
+            "gui": true,
+            "name": "A handwriting notetaking software with PDF annotation support",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://github.com/xournalpp/xournalpp/"
+            },
+            "packageManagerInfo": {
+                "pacman": "xournalpp",
+                "winget": "Xournal++.Xournal++"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "notetaking",
+                "pdf-annotation"
+            ],
+            "website": "https://xournalpp.github.io/"
         },
         {
             "category": "Office",
@@ -1013,7 +1039,8 @@
                 "url": "https://gitlab.gnome.org/GNOME/meld"
             },
             "packageManagerInfo": {
-                "pacman": "meld"
+                "pacman": "meld",
+                "winget": "Meld.Meld"
             },
             "platformInfo": {
                 "linux": true,
@@ -1035,7 +1062,8 @@
                 "url": "https://github.com/jgm/pandoc"
             },
             "packageManagerInfo": {
-                "pacman": "pandoc"
+                "pacman": "pandoc",
+                "winget": "JohnMacFarlane.Pandoc"
             },
             "platformInfo": {
                 "linux": true,
@@ -1070,6 +1098,9 @@
             "openSource": {
                 "license": "GPL3",
                 "url": "https://github.com/sumatrapdfreader/sumatrapdf"
+            },
+            "packageManagerInfo": {
+                "winget": "SumatraPDF.SumatraPDF"
             },
             "platformInfo": {
                 "windows": true
@@ -1287,6 +1318,27 @@
         },
         {
             "category": "Storage",
+            "gui": true,
+            "description": "Synchronize Microsoft OneDrive GUI",
+            "name": "onedrivegui",
+            "openSource": {
+                "license": "GPL",
+                "url": "https://github.com/bpozdena/OneDriveGUI"
+            },
+            "packageManagerInfo": {
+                "pacmanAur": "onedrivegui",
+                "pacmanAurGit": "onedrivegui-git"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "microsoft-onedrive-synchronization"
+            ],
+            "website": "https://github.com/bpozdena/OneDriveGUI"
+        },
+        {
+            "category": "Storage",
             "description": "Control and monitor S.M.A.R.T. enabled ATA and SCSI Hard Drives",
             "gui": true,
             "name": "smartmontools",
@@ -1436,7 +1488,8 @@
                 "url": "https://github.com/obsproject/obs-studio"
             },
             "packageManagerInfo": {
-                "pacman": "obs-studio"
+                "pacman": "obs-studio",
+                "winget": "OBSProject.OBSStudio"
             },
             "platformInfo": {
                 "linux": true,
