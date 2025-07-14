@@ -131,6 +131,10 @@ export interface PackageManagerInfo {
    * The pacman AUR Nightly version ID
    */
   pacmanAurNightly?: string;
+  /**
+   * The winget ID
+   */
+  winget?: string;
 }
 /**
  * Platform information for this program

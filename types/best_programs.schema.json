@@ -25,6 +25,10 @@
                 "pacmanAurNightly": {
                     "description": "The pacman AUR Nightly version ID",
                     "type": "string"
+                },
+                "winget": {
+                    "description": "The winget ID",
+                    "type": "string"
                 }
             },
             "type": "object"
