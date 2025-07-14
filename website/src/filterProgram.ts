@@ -110,6 +110,16 @@ export const elementFilter = (element: Program): ElementFilterInformation[] => {
                 type: "string",
             })
         }
+        if (element.packageManagerInfo.winget) {
+            information.push({
+                stringValue: "winget",
+                type: "string",
+            }, {
+                propertyName: "winget",
+                stringValue: element.packageManagerInfo.winget,
+                type: "string",
+            })
+        }
     }
     if (element.platformInfo) {
         if (element.platformInfo.linux) {
