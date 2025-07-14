@@ -75,8 +75,8 @@ jobs:
       with:
         name: website-artifacts
         path: bin
-    - uses: actions/upload-pages-artifact@v1
+    - uses: actions/upload-pages-artifact@v3
       with:
         path: bin
-    - uses: actions/deploy-pages@v1
+    - uses: actions/deploy-pages@v4
       id: deployment
