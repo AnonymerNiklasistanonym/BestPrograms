@@ -8,6 +8,12 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://github.com/blender/blender), `GUI`, `modelling`, `rendering`
     - Pacman: [`blender`](https://www.archlinux.org/packages/?q=blender) (`sudo pacman -S blender`)
+- AI
+  - [Ollama](https://ollama.com): Local LLM runner for chat and inference
+
+    `Linux`, `Windows`, [`OpenSource-MIT`](https://github.com/ollama/ollama), `ai`, `chat`, `llm`
+    - Pacman: [`ollama`](https://www.archlinux.org/packages/?q=ollama) (`sudo pacman -S ollama`)
+    - Winget: [`Ollama.Ollama`](https://winget.run/pkg/Ollama/Ollama) (`winget install -e --id Ollama.Ollama`)
 - Audio
   - [Audacity](https://www.audacityteam.org): Edit/Mix audio tracks
 
@@ -103,7 +109,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/JetBrains/intellij-community), `GUI`, `android`, `debugging`, `java`, `text-editor`
     - Pacman: [`intellij-idea-community-edition`](https://www.archlinux.org/packages/?q=intellij-idea-community-edition) (`sudo pacman -S intellij-idea-community-edition`)
-  - [Pycharm Community](https://www.jetbrains.com/pycharm): Python IDE
+  - [Intellij Pycharm Community](https://www.jetbrains.com/pycharm): Python IDE
 
     `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/JetBrains/intellij-community/), `GUI`, `debugging`, `python`, `text-editor`
     - Pacman: [`pycharm-community-edition`](https://www.archlinux.org/packages/?q=pycharm-community-edition) (`sudo pacman -S pycharm-community-edition`)
@@ -204,16 +210,15 @@ Repo for a list of the best programs (Linux + Windows):
     - Pacman: [`anki`](https://www.archlinux.org/packages/?q=anki) (`sudo pacman -S anki`)
     - Winget: [`Anki.Anki`](https://winget.run/pkg/Anki/Anki) (`winget install -e --id Anki.Anki`)
 - Music
+  - [Elisa](https://elisa.kde.org): Music player by KDE
+
+    `Linux`, `Windows`, [`OpenSource-GPL3`](https://invent.kde.org/multimedia/elisa), `GUI`, `kde`, `music-player`
+    - Pacman: [`elisa`](https://www.archlinux.org/packages/?q=elisa) (`sudo pacman -S elisa`)
   - [MuseScore](https://musescore.org): A scorewriter
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://github.com/musescore/MuseScore), `GUI`, `scorewriter`
     - Pacman: [`musescore`](https://www.archlinux.org/packages/?q=musescore) (`sudo pacman -S musescore`)
 - Office
-  - [A handwriting notetaking software with PDF annotation support](https://xournalpp.github.io/): Xournal++
-
-    `Linux`, [`OpenSource-GPL2`](https://github.com/xournalpp/xournalpp/), `GUI`, `notetaking`, `pdf-annotation`
-    - Pacman: [`xournalpp`](https://www.archlinux.org/packages/?q=xournalpp) (`sudo pacman -S xournalpp`)
-    - Winget: [`Xournal++.Xournal++`](https://winget.run/pkg/Xournal++/Xournal++) (`winget install -e --id Xournal++.Xournal++`)
   - [DiffPDF](https://gitlab.com/eang/diffpdf): Compare PDF files visually and find the differences on a page by page basis
 
     `Linux`, [`OpenSource-GPL2`](https://gitlab.com/eang/diffpdf), `GUI`, `comparison`, `pdf`
@@ -227,6 +232,10 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `Windows`, [`OpenSource-GPL`](https://gitlab.gnome.org/GNOME/meld), `GUI`, `comparison`, `text`
     - Pacman: [`meld`](https://www.archlinux.org/packages/?q=meld) (`sudo pacman -S meld`)
     - Winget: [`Meld.Meld`](https://winget.run/pkg/Meld/Meld) (`winget install -e --id Meld.Meld`)
+  - [MiKTeX](https://miktex.org): TeX/LaTeX distribution for Windows
+
+    `Windows`, [`OpenSource-MIT`](https://github.com/MiKTeX/miktex), `GUI`, `latex`
+    - Winget: [`MiKTeX.MiKTeX`](https://winget.run/pkg/MiKTeX/MiKTeX) (`winget install -e --id MiKTeX.MiKTeX`)
   - [Pandoc](https://pandoc.org/): Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://github.com/jgm/pandoc), `CLI`, `document-export`, `html`, `pdf`, `presentation-export`
@@ -243,6 +252,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, [`OpenSource-GPL`](https://github.com/TeX-Live/texlive-source), `GUI`, `document-editor`, `office-suit`, `presentation-editor`
     - Pacman [GROUP]: [`texlive-most`](https://www.archlinux.org/groups/x86_64/texlive-most) (`sudo pacman -S texlive-most`)
+  - [Xournal++](https://xournalpp.github.io/): A handwriting notetaking software with PDF annotation support
+
+    `Linux`, [`OpenSource-GPL2`](https://github.com/xournalpp/xournalpp/), `GUI`, `notetaking`, `pdf-annotation`
+    - Pacman: [`xournalpp`](https://www.archlinux.org/packages/?q=xournalpp) (`sudo pacman -S xournalpp`)
+    - Winget: [`Xournal++.Xournal++`](https://winget.run/pkg/Xournal++/Xournal++) (`winget install -e --id Xournal++.Xournal++`)
 - Printing/Scanning
   - [gscan2pdf](http://gscan2pdf.sourceforge.net): A GUI with OCR capability to produce PDFs or DjVus from scanned documents
 
@@ -278,6 +292,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, [`OpenSource-GPL2`](https://github.com/vitalif/grive2), `CLI`, `google-drive-synchronization`
     - Pacman [AUR GIT]: [`grive-git`](https://aur.archlinux.org/packages/?K=grive-git) (`yay -S grive-git`)
+  - [Nextcloud](https://nextcloud.com): Desktop client for Nextcloud
+
+    `Linux`, `Windows`, [`OpenSource-AGPL3`](https://github.com/nextcloud/desktop), `GUI`, `cloud`, `sync`
+    - Pacman: [`nextcloud-client`](https://www.archlinux.org/packages/?q=nextcloud-client) (`sudo pacman -S nextcloud-client`)
+    - Winget: [`Nextcloud.NextcloudDesktop`](https://winget.run/pkg/Nextcloud/NextcloudDesktop) (`winget install -e --id Nextcloud.NextcloudDesktop`)
   - [onedrive-abraunegg](https://github.com/abraunegg/onedrive): Synchronize Microsoft OneDrive data
 
     `Linux`, [`OpenSource-GPL`](https://github.com/abraunegg/onedrive), `CLI`, `microsoft-onedrive-synchronization`
@@ -308,6 +327,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, [`OpenSource-GPL`](https://github.com/teejee2008/timeshift), `GUI`, `os-backup`
     - Pacman [AUR]: [`timeshift`](https://aur.archlinux.org/packages/?K=timeshift) (`yay -S timeshift`)
+  - [Ventoy](https://www.ventoy.net): Tool to create multiboot USB drives
+
+    `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/ventoy/Ventoy), `GUI`, `boot`, `iso`, `usb`
+    - Pacman: [`ventoy`](https://www.archlinux.org/packages/?q=ventoy) (`sudo pacman -S ventoy`)
+    - Winget: [`Ventoy.Ventoy`](https://winget.run/pkg/Ventoy/Ventoy) (`winget install -e --id Ventoy.Ventoy`)
 - Video
   - [Handbrake](https://handbrake.fr): A video converter
 

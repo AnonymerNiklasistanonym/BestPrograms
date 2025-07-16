@@ -24,6 +24,30 @@
             "website": "https://www.blender.org/"
         },
         {
+            "category": "AI",
+            "description": "Local LLM runner for chat and inference",
+            "gui": false,
+            "name": "Ollama",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/ollama/ollama"
+            },
+            "packageManagerInfo": {
+                "pacman": "ollama",
+                "winget": "Ollama.Ollama"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "ai",
+                "chat",
+                "llm"
+            ],
+            "website": "https://ollama.com"
+        },
+        {
             "category": "Audio",
             "description": "Edit/Mix audio tracks",
             "gui": true,
@@ -471,7 +495,7 @@
             "category": "Development",
             "description": "Python IDE",
             "gui": true,
-            "name": "Pycharm Community",
+            "name": "Intellij Pycharm Community",
             "openSource": {
                 "license": "APACHE",
                 "url": "https://github.com/JetBrains/intellij-community/"
@@ -943,6 +967,28 @@
         },
         {
             "category": "Music",
+            "description": "Music player by KDE",
+            "gui": true,
+            "name": "Elisa",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://invent.kde.org/multimedia/elisa"
+            },
+            "packageManagerInfo": {
+                "pacman": "elisa"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "kde",
+                "music-player"
+            ],
+            "website": "https://elisa.kde.org"
+        },
+        {
+            "category": "Music",
             "description": "A scorewriter",
             "gui": true,
             "name": "MuseScore",
@@ -961,28 +1007,6 @@
                 "scorewriter"
             ],
             "website": "https://musescore.org"
-        },
-        {
-            "category": "Office",
-            "description": "Xournal++",
-            "gui": true,
-            "name": "A handwriting notetaking software with PDF annotation support",
-            "openSource": {
-                "license": "GPL2",
-                "url": "https://github.com/xournalpp/xournalpp/"
-            },
-            "packageManagerInfo": {
-                "pacman": "xournalpp",
-                "winget": "Xournal++.Xournal++"
-            },
-            "platformInfo": {
-                "linux": true
-            },
-            "tags": [
-                "notetaking",
-                "pdf-annotation"
-            ],
-            "website": "https://xournalpp.github.io/"
         },
         {
             "category": "Office",
@@ -1051,6 +1075,26 @@
                 "text"
             ],
             "website": "https://meldmerge.org/"
+        },
+        {
+            "category": "Office",
+            "description": "TeX/LaTeX distribution for Windows",
+            "gui": true,
+            "name": "MiKTeX",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/MiKTeX/miktex"
+            },
+            "packageManagerInfo": {
+                "winget": "MiKTeX.MiKTeX"
+            },
+            "platformInfo": {
+                "windows": true
+            },
+            "tags": [
+                "latex"
+            ],
+            "website": "https://miktex.org"
         },
         {
             "category": "Office",
@@ -1131,6 +1175,28 @@
                 "presentation-editor"
             ],
             "website": "http://tug.org/texlive"
+        },
+        {
+            "category": "Office",
+            "description": "A handwriting notetaking software with PDF annotation support",
+            "gui": true,
+            "name": "Xournal++",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://github.com/xournalpp/xournalpp/"
+            },
+            "packageManagerInfo": {
+                "pacman": "xournalpp",
+                "winget": "Xournal++.Xournal++"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "notetaking",
+                "pdf-annotation"
+            ],
+            "website": "https://xournalpp.github.io/"
         },
         {
             "category": "Printing/Scanning",
@@ -1298,6 +1364,31 @@
         },
         {
             "category": "Storage",
+            "description": "Desktop client for Nextcloud",
+            "gui": true,
+            "name": "Nextcloud",
+            "openSource": {
+                "license": [
+                    "AGPL3"
+                ],
+                "url": "https://github.com/nextcloud/desktop"
+            },
+            "packageManagerInfo": {
+                "pacman": "nextcloud-client",
+                "winget": "Nextcloud.NextcloudDesktop"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "cloud",
+                "sync"
+            ],
+            "website": "https://nextcloud.com"
+        },
+        {
+            "category": "Storage",
             "cli": true,
             "description": "Synchronize Microsoft OneDrive data",
             "name": "onedrive-abraunegg",
@@ -1433,6 +1524,30 @@
                 "os-backup"
             ],
             "website": "https://github.com/teejee2008/timeshift"
+        },
+        {
+            "category": "System",
+            "description": "Tool to create multiboot USB drives",
+            "gui": true,
+            "name": "Ventoy",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/ventoy/Ventoy"
+            },
+            "packageManagerInfo": {
+                "pacman": "ventoy",
+                "winget": "Ventoy.Ventoy"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "boot",
+                "iso",
+                "usb"
+            ],
+            "website": "https://www.ventoy.net"
         },
         {
             "category": "Video",
