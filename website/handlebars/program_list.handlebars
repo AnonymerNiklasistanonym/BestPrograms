@@ -20,8 +20,8 @@
                             </li>
                         {{/if}}
                         {{#if this.platformInfo.linux}}
-                            <li class="program-tag{{#if this.platformInfo.linuxSudoRightsNecessary}} program-tag-attention{{/if}}">
-                                Linux{{#if this.platformInfo.linuxSudoRightsNecessary}} (sudo-rights){{/if}}
+                            <li class="program-tag{{#if this.platformInfo.linuxSudoRightsNecessary}} program-tag-attention{{/if}}" data-filter="Linux{{#if this.platformInfo.linuxSudoRightsNecessary}};sudo{{/if}}">
+                                Linux{{#if this.platformInfo.linuxSudoRightsNecessary}} (sudo){{/if}}
                             </li>
                         {{/if}}
                     {{/if}}
@@ -33,17 +33,15 @@
                     {{/if}}
                     {{#if this.openSource}}
                         {{#isString this.openSource.license}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="{{this.openSource.url}}">
-                                    OpenSource-{{this.openSource.license}}
-                                </a>
+                            <li class="program-tag program-tag-positive" data-filter="{{this.openSource.license}}">
+                                OpenSource-{{this.openSource.license}}
+                                <a href="{{this.openSource.url}}" class="info-button" alt="OpenSource-{{this.openSource.license}}"></a>
                             </li>
                         {{/isString}}
                         {{#isArray this.openSource.license}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="{{this.openSource.url}}">
-                                    OpenSource{{#each this.openSource.license}}-{{this}}{{/each}}
-                                </a>
+                            <li class="program-tag program-tag-positive" data-filter="{{#each this.openSource.license}}{{this}};{{/each}}">
+                                OpenSource{{#each this.openSource.license}}-{{this}}{{/each}}
+                                <a href="{{this.openSource.url}}" class="info-button" alt="OpenSource{{#each this.openSource.license}}-{{this}}{{/each}}"></a>
                             </li>
                         {{/isArray}}
                     {{else}}
@@ -52,54 +50,64 @@
                     {{#if this.price}}
                         <li class="program-tag program-tag-attention">Price-{{this.price}}</li>
                     {{/if}}
-                    {{#if this.packageManagerInfo}}
-                        {{#if this.packageManagerInfo.pacman}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="https://www.archlinux.org/packages/?q={{this.packageManagerInfo.pacman}}">
-                                    pacman-{{this.packageManagerInfo.pacman}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        {{#if this.packageManagerInfo.pacmanGroup}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="https://www.archlinux.org/groups/x86_64/{{this.packageManagerInfo.pacmanGroup}}">
-                                    pacman-group-{{this.packageManagerInfo.pacmanGroup}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        {{#if this.packageManagerInfo.pacmanAur}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAur}}">
-                                    pacman-aur-{{this.packageManagerInfo.pacmanAur}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        {{#if this.packageManagerInfo.pacmanAurNightly}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAurNightly}}">
-                                    pacman-aur-nightly{{this.packageManagerInfo.pacmanAurNightly}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        {{#if this.packageManagerInfo.pacmanAurGit}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAurGit}}">
-                                    pacman-aur-git-{{this.packageManagerInfo.pacmanAurGit}}
-                                </a>
-                            </li>
-                        {{/if}}
-                        {{#if this.packageManagerInfo.winget}}
-                            <li class="program-tag program-tag-positive">
-                                <a href="https://winget.run/pkg/{{replaceWinget this.packageManagerInfo.winget '.' '/'}}">
-                                    winget-{{this.packageManagerInfo.winget}}
-                                </a>
-                            </li>
-                        {{/if}}
-                    {{/if}}
                     {{#if this.tags}}
                         {{#each this.tags}}
                         <li class="program-tag">{{this}}</li>
                         {{/each}}
+                    {{/if}}
+                </ul>
+            </div>
+            <div class="program-package-manager">
+                <ul>
+                    {{#if this.packageManagerInfo}}
+                        {{#if this.packageManagerInfo.pacman}}
+                            <li class="program-tag program-tag-positive" data-filter="pacman">
+                                <code>
+                                    sudo pacman -S {{this.packageManagerInfo.pacman}}
+                                </code>
+                                <a href="https://www.archlinux.org/packages/?q={{this.packageManagerInfo.pacman}}" class="info-button"></a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanGroup}}
+                            <li class="program-tag program-tag-positive" data-filter="pacmanGroup">
+                                <code>
+                                    sudo pacman -S {{this.packageManagerInfo.pacmanGroup}}
+                                </code>
+                                <a href="https://www.archlinux.org/groups/x86_64/{{this.packageManagerInfo.pacmanGroup}}" class="info-button"></a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanAur}}
+                            <li class="program-tag program-tag-positive" data-filter="pacmanAur">
+                                <code>
+                                    sudo yay -S {{this.packageManagerInfo.pacmanAur}}
+                                </code>
+                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAur}}" class="info-button"></a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanAurNightly}}
+                            <li class="program-tag program-tag-positive" data-filter="pacmanAurNightly">
+                                <code>
+                                    sudo yay -S {{this.packageManagerInfo.pacmanAurNightly}}
+                                </code>
+                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAurNightly}}" class="info-button"></a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.pacmanAurGit}}
+                            <li class="program-tag program-tag-positive" data-filter="pacmanAurGit">
+                                <code>
+                                    sudo yay -S {{this.packageManagerInfo.pacmanAurGit}}
+                                </code>
+                                <a href="https://aur.archlinux.org/packages/?K={{this.packageManagerInfo.pacmanAurGit}}" class="info-button"></a>
+                            </li>
+                        {{/if}}
+                        {{#if this.packageManagerInfo.winget}}
+                            <li class="program-tag program-tag-positive" data-filter="winget">
+                                <code>
+                                    winget install -e --id {{this.packageManagerInfo.winget}}
+                                </code>
+                                <a href="https://winget.run/pkg/{{replaceWinget this.packageManagerInfo.winget '.' '/'}}" class="info-button"></a>
+                            </li>
+                        {{/if}}
                     {{/if}}
                 </ul>
             </div>

@@ -1,7 +1,10 @@
 :root {
 	--color-accent: #1e8fff;
+	--color-accent-focused: #0c4278;
 	--color-attention: #fbab00;
+	--color-attention-focused: #875c00;
 	--color-positive: #40c900;
+	--color-positive-focused: #247100;
 
 	--color-neutral-base: #ffffff;
 	--color-neutral-base-second: #f1f1f1;
@@ -14,6 +17,8 @@
 	--line-height: 1.25em;
 
 	--content-max-width: 1000px;
+
+	--animation-speed: 0.2s ease-in-out;
 }
 
 /* Light mode */
@@ -33,6 +38,8 @@
 	--bg-color: var(--color-neutral-base);
 	--text-color: var(--color-neutral-base-contrast);
 
+	--code-bg-color: var(--color-neutral-base-second);
+
 	--list-element-border-color: var(--color-neutral-base-border);
 
 	--filter-text-autocomplete-border: var(--color-neutral-base-third);
@@ -43,11 +50,14 @@
 	--filter-text-autocomplete-hover: var(--color-neutral-base-contrast);
 	--filter-text-autocomplete-select: var(--color-neutral-base-contrast);
 
-	--program-tag-bg-color: var(--color-neutral-base-second);
+	--program-tag-bg-color: var(--color-accent);
+	--program-tag-bg-color-focused: var(--color-accent-focused);
 	--program-tag-color: var(--color-neutral-base-contrast);
 	--program-tag-bg-color-attention: var(--color-attention);
+	--program-tag-bg-color-attention-focused: var(--color-attention-focused);
 	--program-tag-color-attention: var(--color-neutral-base-contrast);
 	--program-tag-bg-color-positive: var(--color-positive);
+	--program-tag-bg-color-positive-focused: var(--color-positive-focused);
 	--program-tag-color-positive: var(--color-neutral-base-contrast);
 }
 
@@ -238,6 +248,16 @@ div.program-container > div.program-tags > ul > li.program-tag {
 	padding: 0.5em;
 	background-color: var(--program-tag-bg-color);
 	color: var(--program-tag-color);
+	transition: background-color var(--animation-speed), color var(--animation-speed);
+}
+
+div.program-container > div.program-tags > ul > li.program-tag:hover,
+div.program-container > div.program-tags > ul > li.program-tag:focus {
+	background-color: var(--program-tag-bg-color-focused);
+}
+
+div.program-container > div.program-package-manager > ul > li {
+	width: 80vh;
 }
 
 div.program-container > div.program-tags > ul > li.program-tag > a {
@@ -250,9 +270,19 @@ div.program-container > div.program-tags > ul > li.program-tag-attention {
 	color: var(--program-tag-color-attention);
 }
 
+div.program-container > div.program-tags > ul > li.program-tag-attention:hover,
+div.program-container > div.program-tags > ul > li.program-tag-attention:focus {
+	background-color: var(--program-tag-bg-color-attention-focused);
+}
+
 div.program-container > div.program-tags > ul > li.program-tag-positive {
 	background-color: var(--program-tag-bg-color-positive);
 	color: var(--program-tag-color-positive);
+}
+
+div.program-container > div.program-tags > ul > li.program-tag-positive:hover,
+div.program-container > div.program-tags > ul > li.program-tag-positive:focus {
+	background-color: var(--program-tag-bg-color-positive-focused);
 }
 
 div.loading {
@@ -278,4 +308,32 @@ div.loading > span.blinkin-point.delay0-6s::after {
 	50% {
 		opacity: 0;
 	}
+}
+
+div.program-container > div.program-package-manager li > code {
+	color: var(--text-color);
+    background-color: var(--code-bg-color);
+    padding: 0.2em 1em;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+div.program-container li > .info-button {
+    margin-left: 0.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.program-container li > .info-button::after {
+    content: "ℹ️";
+}
+
+div.program-container li > .copy-button {
+    margin-left: 0.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.program-container li > .copy-button::after {
+    content: "📋";
 }

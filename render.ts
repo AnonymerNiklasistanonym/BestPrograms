@@ -80,7 +80,7 @@ export const renderBestProgramsSection = (data: BestPrograms.BestPrograms) => {
                     packageManagerString += `\n    - Pacman [AUR GIT]: [\`${program.packageManagerInfo.pacmanAurGit}\`](https://aur.archlinux.org/packages/?K=${program.packageManagerInfo.pacmanAurGit}) (\`yay -S ${program.packageManagerInfo.pacmanAurGit}\`)`
                 }
                 if (program.packageManagerInfo.winget) {
-                    packageManagerString += `\n    - Winget: [\`${program.packageManagerInfo.winget}\`](https://winget.run/pkg/${program.packageManagerInfo.winget.replace(".", "/")}) (\`winget install -e --id  ${program.packageManagerInfo.winget}\`)`
+                    packageManagerString += `\n    - Winget: [\`${program.packageManagerInfo.winget}\`](https://winget.run/pkg/${program.packageManagerInfo.winget.replace(".", "/")}) (\`winget install -e --id ${program.packageManagerInfo.winget}\`)`
                 }
             }
 

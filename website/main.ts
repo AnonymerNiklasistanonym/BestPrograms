@@ -141,6 +141,41 @@ try {
         }
     })
 
+    document.querySelectorAll("li.program-tag").forEach(element => {
+        element.addEventListener("click", (event) => {
+            // If the clicked element is an <a> or inside an <a>, do nothing
+            if ((event.target as HTMLElement).closest('a')) return
+
+            const currentContent = filterInput.value.trim()
+            const newContent = (element as HTMLElement).dataset?.filter?.trim().split(";").filter(a => a.trim() !== "").join("+") ?? element.textContent.trim()
+            filterInput.value = currentContent === "" ? newContent :
+                currentContent.includes(newContent) ? `${currentContent
+                        .replace(`+${newContent}`, "")
+                        .replace(`-${newContent}`, "")
+                        .replace(`${newContent}+`, "")
+                        .replace(`${newContent}-`, "")
+                        .replace(newContent, "")
+                    }` :
+                    `${currentContent}+${newContent}`
+            filterInput.dispatchEvent(new Event('change', {}));
+        })
+
+        // Check if the first child is a <code> tag and the second is an <a> tag
+        if (element.children.length > 0 && element.children[0].tagName === 'CODE') {
+            const copyBtn = document.createElement('a');
+            copyBtn.href = '#';
+            copyBtn.className = 'copy-button';
+
+            copyBtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                const codeText = element.children[0].textContent.trim();
+                navigator.clipboard.writeText(codeText);
+            });
+
+            element.append(copyBtn);
+        }
+    })
+
 } catch (err) {
     console.error(err)
 }

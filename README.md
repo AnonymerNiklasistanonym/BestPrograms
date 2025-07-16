@@ -98,7 +98,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/nickbnf/glogg), `GUI`, `log-reader`
     - Pacman [AUR]: [`glogg`](https://aur.archlinux.org/packages/?K=glogg) (`yay -S glogg`)
-    - Winget: [`Bonnefon.glogg`](https://winget.run/pkg/Bonnefon/glogg) (`winget install -e --id  Bonnefon.glogg`)
+    - Winget: [`Bonnefon.glogg`](https://winget.run/pkg/Bonnefon/glogg) (`winget install -e --id Bonnefon.glogg`)
   - [Intellij Idea Community](https://www.jetbrains.com/idea): Java (Android) IDE
 
     `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/JetBrains/intellij-community), `GUI`, `android`, `debugging`, `java`, `text-editor`
@@ -115,7 +115,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `ClosedSource`, `GUI`, `markdown`, `text-editor`
     - Pacman [AUR]: [`typora`](https://aur.archlinux.org/packages/?K=typora) (`yay -S typora`)
-    - Winget: [`appmakes.Typora`](https://winget.run/pkg/appmakes/Typora) (`winget install -e --id  appmakes.Typora`)
+    - Winget: [`appmakes.Typora`](https://winget.run/pkg/appmakes/Typora) (`winget install -e --id appmakes.Typora`)
   - [VSCode](https://github.com/microsoft/vscode): Open Source build of Visual Studio Code (vscode) editor that is able to provide development environments for many languages
 
     `Linux`, `Windows`, [`OpenSource-MIT`](https://github.com/microsoft/vscode), `GUI`, `debugging`, `extensions`, `javascript`, `text-editor`, `typescript`, `web-development`
@@ -180,7 +180,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL+LGPL`](https://gitlab.com/inkscape/inkscape), `GUI`, `CLI`, `vector-graphics-editor`
     - Pacman: [`inkscape`](https://www.archlinux.org/packages/?q=inkscape) (`sudo pacman -S inkscape`)
-    - Winget: [`Inkscape.Inkscape`](https://winget.run/pkg/Inkscape/Inkscape) (`winget install -e --id  Inkscape.Inkscape`)
+    - Winget: [`Inkscape.Inkscape`](https://winget.run/pkg/Inkscape/Inkscape) (`winget install -e --id Inkscape.Inkscape`)
   - [Krita](https://krita.org): Edit and paint images
 
     `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/KDE/krita), `GUI`, `draw`
@@ -202,7 +202,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-AGPL3`](https://github.com/ankitects/anki), `GUI`, `cloud-synchronization`, `index-card-based`
     - Pacman: [`anki`](https://www.archlinux.org/packages/?q=anki) (`sudo pacman -S anki`)
-    - Winget: [`Anki.Anki`](https://winget.run/pkg/Anki/Anki) (`winget install -e --id  Anki.Anki`)
+    - Winget: [`Anki.Anki`](https://winget.run/pkg/Anki/Anki) (`winget install -e --id Anki.Anki`)
 - Music
   - [MuseScore](https://musescore.org): A scorewriter
 
@@ -213,7 +213,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, [`OpenSource-GPL2`](https://github.com/xournalpp/xournalpp/), `GUI`, `notetaking`, `pdf-annotation`
     - Pacman: [`xournalpp`](https://www.archlinux.org/packages/?q=xournalpp) (`sudo pacman -S xournalpp`)
-    - Winget: [`Xournal++.Xournal++`](https://winget.run/pkg/Xournal++/Xournal++) (`winget install -e --id  Xournal++.Xournal++`)
+    - Winget: [`Xournal++.Xournal++`](https://winget.run/pkg/Xournal++/Xournal++) (`winget install -e --id Xournal++.Xournal++`)
   - [DiffPDF](https://gitlab.com/eang/diffpdf): Compare PDF files visually and find the differences on a page by page basis
 
     `Linux`, [`OpenSource-GPL2`](https://gitlab.com/eang/diffpdf), `GUI`, `comparison`, `pdf`
@@ -226,19 +226,19 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://gitlab.gnome.org/GNOME/meld), `GUI`, `comparison`, `text`
     - Pacman: [`meld`](https://www.archlinux.org/packages/?q=meld) (`sudo pacman -S meld`)
-    - Winget: [`Meld.Meld`](https://winget.run/pkg/Meld/Meld) (`winget install -e --id  Meld.Meld`)
+    - Winget: [`Meld.Meld`](https://winget.run/pkg/Meld/Meld) (`winget install -e --id Meld.Meld`)
   - [Pandoc](https://pandoc.org/): Create documents/presentations using Markdown (with LaTeX math/images/graphs) or other text files with many options for export/rendering
 
     `Linux`, `Windows`, [`OpenSource-GPL`](https://github.com/jgm/pandoc), `CLI`, `document-export`, `html`, `pdf`, `presentation-export`
     - Pacman: [`pandoc`](https://www.archlinux.org/packages/?q=pandoc) (`sudo pacman -S pandoc`)
-    - Winget: [`JohnMacFarlane.Pandoc`](https://winget.run/pkg/JohnMacFarlane/Pandoc) (`winget install -e --id  JohnMacFarlane.Pandoc`)
+    - Winget: [`JohnMacFarlane.Pandoc`](https://winget.run/pkg/JohnMacFarlane/Pandoc) (`winget install -e --id JohnMacFarlane.Pandoc`)
   - [pdf24](https://en.pdf24.org/): Freeware to easily delete/pick/reorder pages in pdf files
 
     `Windows`, `ClosedSource`, `GUI`, `pdf-editor`
   - [SumatraPDF](https://www.sumatrapdfreader.org/download-free-pdf-viewer): View pdf files
 
     `Windows`, [`OpenSource-GPL3`](https://github.com/sumatrapdfreader/sumatrapdf), `GUI`, `pdf-viewer`
-    - Winget: [`SumatraPDF.SumatraPDF`](https://winget.run/pkg/SumatraPDF/SumatraPDF) (`winget install -e --id  SumatraPDF.SumatraPDF`)
+    - Winget: [`SumatraPDF.SumatraPDF`](https://winget.run/pkg/SumatraPDF/SumatraPDF) (`winget install -e --id SumatraPDF.SumatraPDF`)
   - [TeX Live suite](http://tug.org/texlive): TeX Live suite
 
     `Linux`, [`OpenSource-GPL`](https://github.com/TeX-Live/texlive-source), `GUI`, `document-editor`, `office-suit`, `presentation-editor`
@@ -321,7 +321,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL2`](https://github.com/obsproject/obs-studio), `GUI`, `live-streaming`, `video-streaming`
     - Pacman: [`obs-studio`](https://www.archlinux.org/packages/?q=obs-studio) (`sudo pacman -S obs-studio`)
-    - Winget: [`OBSProject.OBSStudio`](https://winget.run/pkg/OBSProject/OBSStudio) (`winget install -e --id  OBSProject.OBSStudio`)
+    - Winget: [`OBSProject.OBSStudio`](https://winget.run/pkg/OBSProject/OBSStudio) (`winget install -e --id OBSProject.OBSStudio`)
   - [OpenShot](https://www.openshot.org/): A video editor
 
     `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/OpenShot/openshot-qt), `GUI`, `video-creator`, `video-editor`
