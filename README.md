@@ -60,10 +60,6 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, [`OpenSource-GPL3`](https://github.com/trigg/Discover), `GUI`, `screen-overlay`
     - Pacman [AUR GIT]: [`discover-overlay-git`](https://aur.archlinux.org/packages/?K=discover-overlay-git) (`yay -S discover-overlay-git`)
-  - [Skype](http://www.skype.com): Video/Audio/Text messaging service that can share your screen from Microsoft
-
-    `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`
-    - Pacman [AUR]: [`skype-preview`](https://aur.archlinux.org/packages/?K=skype-preview) (`yay -S skype-preview`)
   - [Slack](https://slack.com/downloads): Video/Audio/Text messaging service that can share your screen
 
     `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`

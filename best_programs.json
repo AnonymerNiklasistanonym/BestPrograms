@@ -258,26 +258,6 @@
         },
         {
             "category": "Communication",
-            "description": "Video/Audio/Text messaging service that can share your screen from Microsoft",
-            "gui": true,
-            "name": "Skype",
-            "packageManagerInfo": {
-                "pacmanAur": "skype-preview"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "audio-call",
-                "chat",
-                "screen-share",
-                "video-call"
-            ],
-            "website": "http://www.skype.com"
-        },
-        {
-            "category": "Communication",
             "description": "Video/Audio/Text messaging service that can share your screen",
             "gui": true,
             "name": "Slack",
