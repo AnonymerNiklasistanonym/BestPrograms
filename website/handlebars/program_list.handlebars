@@ -61,7 +61,7 @@
                 <ul>
                     {{#if this.packageManagerInfo}}
                         {{#if this.packageManagerInfo.pacman}}
-                            <li class="program-tag program-tag-positive" data-filter="pacman">
+                            <li class="program-tag program-tag-code" data-filter="pacman">
                                 <code>
                                     sudo pacman -S {{this.packageManagerInfo.pacman}}
                                 </code>
@@ -69,7 +69,7 @@
                             </li>
                         {{/if}}
                         {{#if this.packageManagerInfo.pacmanGroup}}
-                            <li class="program-tag program-tag-positive" data-filter="pacmanGroup">
+                            <li class="program-tag program-tag-code" data-filter="pacmanGroup">
                                 <code>
                                     sudo pacman -S {{this.packageManagerInfo.pacmanGroup}}
                                 </code>
@@ -77,7 +77,7 @@
                             </li>
                         {{/if}}
                         {{#if this.packageManagerInfo.pacmanAur}}
-                            <li class="program-tag program-tag-positive" data-filter="pacmanAur">
+                            <li class="program-tag program-tag-code" data-filter="pacmanAur">
                                 <code>
                                     sudo yay -S {{this.packageManagerInfo.pacmanAur}}
                                 </code>
@@ -85,7 +85,7 @@
                             </li>
                         {{/if}}
                         {{#if this.packageManagerInfo.pacmanAurNightly}}
-                            <li class="program-tag program-tag-positive" data-filter="pacmanAurNightly">
+                            <li class="program-tag program-tag-code" data-filter="pacmanAurNightly">
                                 <code>
                                     sudo yay -S {{this.packageManagerInfo.pacmanAurNightly}}
                                 </code>
@@ -93,7 +93,7 @@
                             </li>
                         {{/if}}
                         {{#if this.packageManagerInfo.pacmanAurGit}}
-                            <li class="program-tag program-tag-positive" data-filter="pacmanAurGit">
+                            <li class="program-tag program-tag-code" data-filter="pacmanAurGit">
                                 <code>
                                     sudo yay -S {{this.packageManagerInfo.pacmanAurGit}}
                                 </code>
@@ -101,7 +101,7 @@
                             </li>
                         {{/if}}
                         {{#if this.packageManagerInfo.winget}}
-                            <li class="program-tag program-tag-positive" data-filter="winget">
+                            <li class="program-tag program-tag-code" data-filter="winget">
                                 <code>
                                     winget install -e --id {{this.packageManagerInfo.winget}}
                                 </code>

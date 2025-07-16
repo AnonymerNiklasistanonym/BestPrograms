@@ -214,6 +214,7 @@ div.program-container > div.program-name > a{
 div.program-container > div.program-category {
 	grid-column: 3 / span 2;
 	font-weight: bolder;
+	text-align: right;
 }
 
 div.program-container > div.program-description {
@@ -236,6 +237,18 @@ div.program-container > div.program-tags {
 	padding: 0.25em;
 }
 
+div.program-container > div.program-package-manager {
+	grid-column: 1 / span 4;
+}
+
+div.program-container > div.program-package-manager li > code {
+	color: var(--text-color);
+    background-color: var(--code-bg-color);
+    padding: 0.2em 1em;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
 div.program-container > div.program-tags > ul {
 	list-style: none;
 	margin: 0;
@@ -254,10 +267,6 @@ div.program-container > div.program-tags > ul > li.program-tag {
 div.program-container > div.program-tags > ul > li.program-tag:hover,
 div.program-container > div.program-tags > ul > li.program-tag:focus {
 	background-color: var(--program-tag-bg-color-focused);
-}
-
-div.program-container > div.program-package-manager > ul > li {
-	width: 80vh;
 }
 
 div.program-container > div.program-tags > ul > li.program-tag > a {
@@ -310,13 +319,6 @@ div.loading > span.blinkin-point.delay0-6s::after {
 	}
 }
 
-div.program-container > div.program-package-manager li > code {
-	color: var(--text-color);
-    background-color: var(--code-bg-color);
-    padding: 0.2em 1em;
-    border-radius: 4px;
-    font-family: monospace;
-}
 
 div.program-container li > .info-button {
     margin-left: 0.5em;
