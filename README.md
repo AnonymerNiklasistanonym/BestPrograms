@@ -22,6 +22,10 @@ Repo for a list of the best programs (Linux + Windows):
   - [foobar2000](https://www.foobar2000.org/download): An advanced freeware audio player for the Windows platform
 
     `Windows`, `ClosedSource`, `GUI`, `audio-player`
+  - [Helvum](https://gitlab.freedesktop.org/pipewire/helvum): GUI to easily manage audio streams to outputs (e.g. for OBS on Linux) [create: `pactl load-module module-null-sink sink_name=game_sink sink_properties=device.description='OBS_Audio_(Game)'`, remove: `pactl list short modules` + `pactl unload-module 536870918`]
+
+    `Linux`, [`OpenSource-GPL3`](https://gitlab.freedesktop.org/pipewire/helvum), `GUI`, `audio-stream-control`
+    - Pacman: [`helvum`](https://www.archlinux.org/packages/?q=helvum) (`sudo pacman -S helvum`)
   - [Lollypop](https://gitlab.gnome.org/World/lollypop): A simple music player that automatically downloads cover/artist images and other information
 
     `Linux`, [`OpenSource-GPL`](https://gitlab.gnome.org/World/lollypop), `GUI`, `music-player`
@@ -374,5 +378,9 @@ To update the list edit [`best_programs.json`](best_programs.json) and run:
 
 ```sh
 npm install # this is only necessary once
-npm run start
+# Markdown/JSON update
+npm run render_markdown
+# Website update
+npm run handlebars
+npm run webpack
 ```
