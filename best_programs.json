@@ -86,8 +86,8 @@
         },
         {
             "category": "Audio",
-            "gui": true,
             "description": "GUI to easily manage audio streams to outputs (e.g. for OBS on Linux) [create: `pactl load-module module-null-sink sink_name=game_sink sink_properties=device.description='OBS_Audio_(Game)'`, remove: `pactl list short modules` + `pactl unload-module 536870918`]",
+            "gui": true,
             "name": "Helvum",
             "openSource": {
                 "license": "GPL3",
@@ -778,14 +778,14 @@
             "description": "Epic, GOG and Amazon Prime Games launcher",
             "gui": true,
             "name": "Steam",
-            "packageManagerInfo": {
-                "pacman": "heroic-games-launcher"
-            },
             "openSource": {
                 "license": [
                     "GPL3"
                 ],
                 "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
+            },
+            "packageManagerInfo": {
+                "pacman": "heroic-games-launcher"
             },
             "platformInfo": {
                 "linux": true,
@@ -1409,8 +1409,8 @@
         },
         {
             "category": "Storage",
-            "gui": true,
             "description": "Synchronize Microsoft OneDrive GUI",
+            "gui": true,
             "name": "onedrivegui",
             "openSource": {
                 "license": "GPL",
