@@ -47,6 +47,11 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, [`OpenSource-LGPL3`](https://github.com/altdesktop/playerctl), `CLI`, `media-player-control`
     - Pacman: [`playerctl`](https://www.archlinux.org/packages/?q=playerctl) (`sudo pacman -S playerctl`)
 - Command Line
+  - [bat](https://github.com/sharkdp/bat/): Display text files with syntax highlighting in the terminal (similar to cat)
+
+    `Linux`, `Windows`, [`OpenSource-MIT`](https://github.com/sharkdp/bat/), `CLI`
+    - Pacman: [`bat`](https://www.archlinux.org/packages/?q=bat) (`sudo pacman -S bat`)
+    - Winget: [`sharkdp.bat`](https://winget.run/pkg/sharkdp/bat) (`winget install -e --id sharkdp.bat`)
   - [tldr](https://github.com/tldr-pages/tldr-python-client): Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`
 
     `Linux`, [`OpenSource-MIT`](https://github.com/tldr-pages/tldr-python-client), `CLI`, `cli-helper`
@@ -73,6 +78,11 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`
     - Pacman: [`teamspeak3`](https://www.archlinux.org/packages/?q=teamspeak3) (`sudo pacman -S teamspeak3`)
 - Databases
+  - [HeidiSQL](https://www.heidisql.com/): Manage/Read SQL databases
+
+    `Linux`, `Windows`, [`OpenSource-GPL2`](https://github.com/HeidiSQL/HeidiSQL), `GUI`, `database-manager`, `sql`
+    - Pacman [AUR]: [`heidisql-qt6`](https://aur.archlinux.org/packages/?K=heidisql-qt6) (`yay -S heidisql-qt6`)
+    - Winget: [`HeidiSQL.HeidiSQL`](https://winget.run/pkg/HeidiSQL/HeidiSQL) (`winget install -e --id HeidiSQL.HeidiSQL`)
   - [MySQL Workbench](https://www.mysql.com/de/products/workbench): Manage/Read SQL databases
 
     `Linux`, [`OpenSource-GPL2`](https://github.com/mysql/mysql-workbench), `GUI`, `database-manager`, `sql`
@@ -275,6 +285,16 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/Genymobile/scrcpy), `CLI`, `android`
     - Pacman [AUR]: [`scrcpy`](https://aur.archlinux.org/packages/?K=scrcpy) (`yay -S scrcpy`)
+- Security
+  - [KeePassXC](https://keepassxc.org/): A password manager
+
+    `Linux`, `Windows`, [`OpenSource-GPL2+GPL3+LGPL2.1`](https://github.com/keepassxreboot/keepassxc), `GUI`, `password-pamanager`
+    - Pacman: [`keepassxc`](https://www.archlinux.org/packages/?q=keepassxc) (`sudo pacman -S keepassxc`)
+    - Winget: [`KeePassXCTeam.KeePassXC`](https://winget.run/pkg/KeePassXCTeam/KeePassXC) (`winget install -e --id KeePassXCTeam.KeePassXC`)
+  - [OpenSnitch](https://github.com/evilsocket/opensnitch): A connection manager
+
+    `Linux`, [`OpenSource-GPL3`](https://github.com/evilsocket/opensnitch), `GUI`, `network`
+    - Pacman: [`opensnitch`](https://www.archlinux.org/packages/?q=opensnitch) (`sudo pacman -S opensnitch`)
 - Storage
   - [baobab](https://wiki.gnome.org/Apps/DiskUsageAnalyzer): Visualize files and their sizes of a drive in a pie graph
 
@@ -323,6 +343,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, [`OpenSource-MIT`](https://github.com/htop-dev/htop), `CLI`, `hardware-monitor`, `task-manager`
     - Pacman: [`htop`](https://www.archlinux.org/packages/?q=htop) (`sudo pacman -S htop`)
+  - [Podman Desktop](https://podman-desktop.io/): Run and orchestrate container
+
+    `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/podman-desktop/podman-desktop), `GUI`, `container`
+    - Pacman: [`podman-desktop`](https://www.archlinux.org/packages/?q=podman-desktop) (`sudo pacman -S podman-desktop`)
+    - Winget: [`RedHat.Podman-Desktop`](https://winget.run/pkg/RedHat/Podman-Desktop) (`winget install -e --id RedHat.Podman-Desktop`)
   - [timeshift](https://github.com/teejee2008/timeshift): A system restore utility that also allows file restoration
 
     `Linux`, [`OpenSource-GPL`](https://github.com/teejee2008/timeshift), `GUI`, `os-backup`

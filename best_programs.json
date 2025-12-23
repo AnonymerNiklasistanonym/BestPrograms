@@ -198,6 +198,26 @@
         {
             "category": "Command Line",
             "cli": true,
+            "description": "Display text files with syntax highlighting in the terminal (similar to cat)",
+            "name": "bat",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/sharkdp/bat/"
+            },
+            "packageManagerInfo": {
+                "pacman": "bat",
+                "winget": "sharkdp.bat"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [],
+            "website": "https://github.com/sharkdp/bat/"
+        },
+        {
+            "category": "Command Line",
+            "cli": true,
             "description": "Get general and short $PROGRAM usage information for popular cli commands with `tldr $PROGRAM`",
             "name": "tldr",
             "openSource": {
@@ -313,6 +333,29 @@
                 "chat"
             ],
             "website": "http://www.teamspeak.com"
+        },
+        {
+            "category": "Databases",
+            "description": "Manage/Read SQL databases",
+            "gui": true,
+            "name": "HeidiSQL",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://github.com/HeidiSQL/HeidiSQL"
+            },
+            "packageManagerInfo": {
+                "pacmanAur": "heidisql-qt6",
+                "winget": "HeidiSQL.HeidiSQL"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "database-manager",
+                "sql"
+            ],
+            "website": "https://www.heidisql.com/"
         },
         {
             "category": "Databases",
@@ -1281,6 +1324,52 @@
             "website": "https://github.com/Genymobile/scrcpy"
         },
         {
+            "category": "Security",
+            "description": "A password manager",
+            "gui": true,
+            "name": "KeePassXC",
+            "openSource": {
+                "license": [
+                    "GPL2",
+                    "GPL3",
+                    "LGPL2.1"
+                ],
+                "url": "https://github.com/keepassxreboot/keepassxc"
+            },
+            "packageManagerInfo": {
+                "pacman": "keepassxc",
+                "winget": "KeePassXCTeam.KeePassXC"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "password-pamanager"
+            ],
+            "website": "https://keepassxc.org/"
+        },
+        {
+            "category": "Security",
+            "description": "A connection manager",
+            "gui": true,
+            "name": "OpenSnitch",
+            "openSource": {
+                "license": "GPL3",
+                "url": "https://github.com/evilsocket/opensnitch"
+            },
+            "packageManagerInfo": {
+                "pacman": "opensnitch"
+            },
+            "platformInfo": {
+                "linux": true
+            },
+            "tags": [
+                "network"
+            ],
+            "website": "https://github.com/evilsocket/opensnitch"
+        },
+        {
             "category": "Storage",
             "description": "Visualize files and their sizes of a drive in a pie graph",
             "gui": true,
@@ -1504,6 +1593,28 @@
                 "task-manager"
             ],
             "website": "https://htop.dev"
+        },
+        {
+            "category": "System",
+            "description": "Run and orchestrate container",
+            "gui": true,
+            "name": "Podman Desktop",
+            "openSource": {
+                "license": "APACHE",
+                "url": "https://github.com/podman-desktop/podman-desktop"
+            },
+            "packageManagerInfo": {
+                "pacman": "podman-desktop",
+                "winget": "RedHat.Podman-Desktop"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "container"
+            ],
+            "website": "https://podman-desktop.io/"
         },
         {
             "category": "System",
