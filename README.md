@@ -105,6 +105,11 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-APACHE`](https://github.com/JetBrains/intellij-community/), `GUI`, `debugging`, `python`, `text-editor`
     - Pacman: [`pycharm-community-edition`](https://www.archlinux.org/packages/?q=pycharm-community-edition) (`sudo pacman -S pycharm-community-edition`)
+  - [microsoft-edit](https://github.com/microsoft/edit): Terminal text editor by Microsoft
+
+    `Linux`, `Windows`, [`OpenSource-MIT`](https://github.com/microsoft/edit), `CLI`, `cli`, `terminal`, `text-editor`
+    - Pacman: [`msedit`](https://www.archlinux.org/packages/?q=msedit) (`sudo pacman -S msedit`)
+    - Winget: [`Microsoft.Edit`](https://winget.run/pkg/Microsoft/Edit) (`winget install -e --id Microsoft.Edit`)
   - [QtCreator](https://www.qt.io): C++ (Qt) development environment
 
     `Linux`, `Windows`, [`OpenSource-LGPL`](https://github.com/qt-creator/qt-creator), `GUI`, `c++`, `debugging`, `qt`, `text-editor`
@@ -201,6 +206,12 @@ Repo for a list of the best programs (Linux + Windows):
     `Linux`, `Windows`, [`OpenSource-AGPL3`](https://github.com/ankitects/anki), `GUI`, `cloud-synchronization`, `index-card-based`
     - Pacman: [`anki`](https://www.archlinux.org/packages/?q=anki) (`sudo pacman -S anki`)
     - Winget: [`Anki.Anki`](https://winget.run/pkg/Anki/Anki) (`winget install -e --id Anki.Anki`)
+- Multimedia
+  - [digikam](https://www.digikam.org): Photo management and editing application
+
+    `Linux`, `Windows`, [`OpenSource-GPL2`](https://invent.kde.org/graphics/digikam), `GUI`, `photo-editing`, `photo-management`
+    - Pacman: [`digikam`](https://www.archlinux.org/packages/?q=digikam) (`sudo pacman -S digikam`)
+    - Winget: [`KDE.digiKam`](https://winget.run/pkg/KDE/digiKam) (`winget install -e --id KDE.digiKam`)
 - Music
   - [Elisa](https://elisa.kde.org): Music player by KDE
 

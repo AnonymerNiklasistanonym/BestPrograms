@@ -475,6 +475,30 @@
         },
         {
             "category": "Development",
+            "cli": true,
+            "description": "Terminal text editor by Microsoft",
+            "name": "microsoft-edit",
+            "openSource": {
+                "license": "MIT",
+                "url": "https://github.com/microsoft/edit"
+            },
+            "packageManagerInfo": {
+                "pacman": "msedit",
+                "winget": "Microsoft.Edit"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "cli",
+                "terminal",
+                "text-editor"
+            ],
+            "website": "https://github.com/microsoft/edit"
+        },
+        {
+            "category": "Development",
             "description": "C++ (Qt) development environment",
             "gui": true,
             "name": "QtCreator",
@@ -923,6 +947,29 @@
                 "index-card-based"
             ],
             "website": "https://ankisrs.net/"
+        },
+        {
+            "category": "Multimedia",
+            "description": "Photo management and editing application",
+            "gui": true,
+            "name": "digikam",
+            "openSource": {
+                "license": "GPL2",
+                "url": "https://invent.kde.org/graphics/digikam"
+            },
+            "packageManagerInfo": {
+                "pacman": "digikam",
+                "winget": "KDE.digiKam"
+            },
+            "platformInfo": {
+                "linux": true,
+                "windows": true
+            },
+            "tags": [
+                "photo-editing",
+                "photo-management"
+            ],
+            "website": "https://www.digikam.org"
         },
         {
             "category": "Music",
