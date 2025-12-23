@@ -1,6 +1,6 @@
 {
   "name": "bestprograms",
-  "version": "1.0.1",
+  "version": "1.1.6",
   "description": "Repo for a list of the best programs (Linux + Windows)",
   "scripts": {
     "createTsTypeFromJsonSchema": "tsx types/createTsTypeFromJsonSchema.ts",
