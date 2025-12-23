@@ -65,14 +65,6 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`
     - Pacman: [`discord`](https://www.archlinux.org/packages/?q=discord) (`sudo pacman -S discord`)
-  - [Discord Overlay 'Discover'](https://github.com/trigg/Discover): Discord overlay for linux
-
-    `Linux`, [`OpenSource-GPL3`](https://github.com/trigg/Discover), `GUI`, `screen-overlay`
-    - Pacman [AUR GIT]: [`discover-overlay-git`](https://aur.archlinux.org/packages/?K=discover-overlay-git) (`yay -S discover-overlay-git`)
-  - [Slack](https://slack.com/downloads): Video/Audio/Text messaging service that can share your screen
-
-    `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`, `screen-share`, `video-call`
-    - Pacman [AUR]: [`slack-desktop`](https://aur.archlinux.org/packages/?K=slack-desktop) (`yay -S slack-desktop`)
   - [Teamspeak](http://www.teamspeak.com): Audio/Text messaging service
 
     `Linux`, `Windows`, `ClosedSource`, `GUI`, `audio-call`, `chat`
@@ -91,17 +83,7 @@ Repo for a list of the best programs (Linux + Windows):
 
     `Linux`, `Windows`, [`OpenSource-GPL3`](https://github.com/pawelsalawa/sqlitestudio), `GUI`, `database-manager`, `sqlite`
     - Pacman [AUR]: [`sqlitestudio`](https://aur.archlinux.org/packages/?K=sqlitestudio) (`yay -S sqlitestudio`)
-- Desktop Environment
-  - [xscreensaver](https://www.jwz.org/xscreensaver): Extended screensaver/locker for xserver environments
-
-    `Linux`, [`OpenSource-BSD`](https://github.com/Zygo/xscreensaver), `GUI`, `screensaver`, `xserver`
-    - Bugs: The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown
-    - Pacman: [`xscreensaver`](https://www.archlinux.org/packages/?q=xscreensaver) (`sudo pacman -S xscreensaver`)
 - Development
-  - [CudaText](https://cudatext.github.io/): Very fast and minimal text editor
-
-    `Linux`, `Windows`, [`OpenSource-MPL2`](https://github.com/Alexey-T/CudaText), `GUI`, `code-syntax-highlighting`, `text-editor`
-    - Pacman [AUR]: [`cudatext-qt5-bin`](https://aur.archlinux.org/packages/?K=cudatext-qt5-bin) (`yay -S cudatext-qt5-bin`)
   - [gedit](https://wiki.gnome.org/Apps/Gedit): Simple text editor
 
     `Linux`, [`OpenSource-GPL`](https://gitlab.gnome.org/GNOME/gedit), `GUI`, `code-syntax-highlighting`, `text-editor`

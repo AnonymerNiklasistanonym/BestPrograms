@@ -278,46 +278,6 @@
         },
         {
             "category": "Communication",
-            "description": "Discord overlay for linux",
-            "gui": true,
-            "name": "Discord Overlay 'Discover'",
-            "openSource": {
-                "license": "GPL3",
-                "url": "https://github.com/trigg/Discover"
-            },
-            "packageManagerInfo": {
-                "pacmanAurGit": "discover-overlay-git"
-            },
-            "platformInfo": {
-                "linux": true
-            },
-            "tags": [
-                "screen-overlay"
-            ],
-            "website": "https://github.com/trigg/Discover"
-        },
-        {
-            "category": "Communication",
-            "description": "Video/Audio/Text messaging service that can share your screen",
-            "gui": true,
-            "name": "Slack",
-            "packageManagerInfo": {
-                "pacmanAur": "slack-desktop"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "audio-call",
-                "chat",
-                "screen-share",
-                "video-call"
-            ],
-            "website": "https://slack.com/downloads"
-        },
-        {
-            "category": "Communication",
             "description": "Audio/Text messaging service",
             "gui": true,
             "name": "Teamspeak",
@@ -399,50 +359,6 @@
                 "sqlite"
             ],
             "website": "http://sqlitestudio.pl"
-        },
-        {
-            "bugs": "The default screensaver/locker needs to be disabled otherwise multiple lock screens will be shown",
-            "category": "Desktop Environment",
-            "description": "Extended screensaver/locker for xserver environments",
-            "gui": true,
-            "name": "xscreensaver",
-            "openSource": {
-                "license": "BSD",
-                "url": "https://github.com/Zygo/xscreensaver"
-            },
-            "packageManagerInfo": {
-                "pacman": "xscreensaver"
-            },
-            "platformInfo": {
-                "linux": true
-            },
-            "tags": [
-                "screensaver",
-                "xserver"
-            ],
-            "website": "https://www.jwz.org/xscreensaver"
-        },
-        {
-            "category": "Development",
-            "description": "Very fast and minimal text editor",
-            "gui": true,
-            "name": "CudaText",
-            "openSource": {
-                "license": "MPL2",
-                "url": "https://github.com/Alexey-T/CudaText"
-            },
-            "packageManagerInfo": {
-                "pacmanAur": "cudatext-qt5-bin"
-            },
-            "platformInfo": {
-                "linux": true,
-                "windows": true
-            },
-            "tags": [
-                "code-syntax-highlighting",
-                "text-editor"
-            ],
-            "website": "https://cudatext.github.io/"
         },
         {
             "category": "Development",
